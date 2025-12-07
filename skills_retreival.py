@@ -8,7 +8,6 @@ import os
 from typing import List, Dict
 import pandas as pd
 
-
 def read_pdf(path: str) -> str:
     """
     Read PDF file and return its full text
@@ -89,6 +88,65 @@ def semantic_chunk_text(
 
     return chunks
 
+# NEW: paragraph-based chunking
+def paragraph_chunk_text(
+    text: str,
+    max_chars: int = 800,
+    min_chars: int = 200
+) -> list[str]:
+    """
+    Simple paragraph-based chunking.
+
+    - Split on blank lines to get paragraphs
+    - Merge small paragraphs together
+    - If a chunk gets too long, start a new one
+    """
+    # Normalize newlines
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+    # Split on blank lines => paragraphs
+    raw_paragraphs = [p.strip() for p in text.split("\n\n") if p.strip()]
+
+    chunks: list[str] = []
+    current_lines: list[str] = []
+    current_len = 0
+
+    for para in raw_paragraphs:
+        # If this paragraph alone is huge, just cut it into pieces
+        if len(para) > max_chars:
+            # flush existing chunk
+            if current_lines:
+                chunks.append("\n\n".join(current_lines))
+                current_lines = []
+                current_len = 0
+
+            # split big paragraph into smaller slices
+            start = 0
+            while start < len(para):
+                end = min(start + max_chars, len(para))
+                chunks.append(para[start:end])
+                start = end
+            continue
+
+        # Normal case: try to add this paragraph to current chunk
+        if current_len + len(para) + 2 <= max_chars:
+            current_lines.append(para)
+            current_len += len(para) + 2
+        else:
+            # end current chunk if it's big enough
+            if current_len >= min_chars:
+                chunks.append("\n\n".join(current_lines))
+                current_lines = [para]
+                current_len = len(para) + 2
+            else:
+                # if current chunk is too small, just force add
+                current_lines.append(para)
+                current_len += len(para) + 2
+
+    if current_lines:
+        chunks.append("\n\n".join(current_lines))
+
+    return chunks
+
 def build_pdf_corpus_json(input_dir: str, output_json_path: str) -> None:
     """
     Read all PDF files from input_dir, extract their text, and save them as a JSON list.
@@ -152,8 +210,14 @@ def build_kaggle_resume_corpus(
 
     print(f"Saved {len(data)} Kaggle resumes into JSON corpus: {output_json_path}")
 
-def build_pdfs_index_from_json(json_path: str, collection_name: str = "pdf_docs"):
-    chroma_client = chromadb.PersistentClient(path="chromadb_data/")
+# NEW: generic indexer that accepts a chunking function
+def index_json_with_chunker(
+    json_path: str,
+    collection_name: str,
+    chunk_fn,
+    persist_path: str = "chromadb_data/"
+):
+    chroma_client = chromadb.PersistentClient(path=persist_path)
 
     embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
         model_name="all-MiniLM-L6-v2"
@@ -177,17 +241,16 @@ def build_pdfs_index_from_json(json_path: str, collection_name: str = "pdf_docs"
         file_name = d.get("file_name", f"{base_id}.txt")
         source = d.get("source", "pdf")
 
-        # 🔹 semantic chunking here
-        chunks = semantic_chunk_text(full_text)
+        chunks = chunk_fn(full_text)
 
-        if not chunks:  # just in case
+        if not chunks:
             continue
 
         for i, chunk in enumerate(chunks):
             chunk_id = f"{base_id}_chunk_{i}"
             documents.append(chunk)
             metadatas.append({
-                "id": base_id,            # keep base resume id
+                "id": base_id,
                 "chunk_index": i,
                 "file_name": file_name,
                 "source": source
@@ -200,7 +263,25 @@ def build_pdfs_index_from_json(json_path: str, collection_name: str = "pdf_docs"
         ids=ids
     )
 
-    print(f"Indexed {len(documents)} PDF chunks into Chroma collection '{collection_name}'.")
+    print(f"Indexed {len(documents)} chunks into Chroma collection '{collection_name}' using {chunk_fn.__name__}.")
+
+# keep old API for semantic chunking
+def build_pdfs_index_from_json(json_path: str, collection_name: str = "pdf_docs"):
+    index_json_with_chunker(
+        json_path=json_path,
+        collection_name=collection_name,
+        chunk_fn=semantic_chunk_text,
+        persist_path="chromadb_data/"
+    )
+
+# NEW: index with paragraph chunking
+def build_pdfs_index_paragraph_from_json(json_path: str, collection_name: str = "pdf_docs_paragraph"):
+    index_json_with_chunker(
+        json_path=json_path,
+        collection_name=collection_name,
+        chunk_fn=paragraph_chunk_text,
+        persist_path="chromadb_data/"
+    )
 
 def get_pdf_collection(collection_name: str = "pdf_docs"):
     chroma_client = chromadb.PersistentClient(path="chromadb_data/")
@@ -320,6 +401,7 @@ def load_kaggle_id_to_category(
         id_to_cat[resume_id] = category
 
     return id_to_cat
+
 def evaluate_retrieval_system(
     corpus_json_path: str = "data/careers.json",
     kaggle_csv_path: str = "data/resumes/UpdatedResumeDataSet.csv",
@@ -410,10 +492,10 @@ def evaluate_retrieval_system(
         if not ranked_base_ids:
             continue
 
-        p = precision_at_k(ranked_base_ids, relevant_ids, k)
-        r = recall_at_k(ranked_base_ids, relevant_ids, k)
-        ap = average_precision(ranked_base_ids, relevant_ids)
-        nd = ndcg_at_k(ranked_base_ids, relevant_ids, k)
+        p = precision_at_k(ranked_ids=ranked_base_ids, relevant_ids=relevant_ids, k=k)
+        r = recall_at_k(ranked_ids=ranked_base_ids, relevant_ids=relevant_ids, k=k)
+        ap = average_precision(ranked_ids=ranked_base_ids, relevant_ids=relevant_ids)
+        nd = ndcg_at_k(ranked_ids=ranked_base_ids, relevant_ids=relevant_ids, k=k)
 
         precisions.append(p)
         recalls.append(r)
@@ -425,7 +507,7 @@ def evaluate_retrieval_system(
         print("No queries had at least one relevant document. Evaluation skipped.")
         return
 
-    print(f"\nEvaluation over {num_effective_queries} queries")
+    print(f"\n[Collection: {collection_name}] Evaluation over {num_effective_queries} queries")
     print(f"Precision@{k}: {sum(precisions)/len(precisions):.4f}")
     print(f"Recall@{k}:    {sum(recalls)/len(recalls):.4f}")
     print(f"MAP:           {sum(aps)/len(aps):.4f}")
@@ -433,36 +515,47 @@ def evaluate_retrieval_system(
 
 if __name__ == "__main__":
     
-    # Build Kaggle resume corpus(full data in a text file)
-    build_kaggle_resume_corpus(
-        input_csv_path="data/resumes/UpdatedResumeDataSet.csv",
-        output_json_path="data/careers.json",
-        text_column="Resume",     
-    )
+    # # 1) Build Kaggle resume corpus (text -> JSON)
+    # build_kaggle_resume_corpus(
+    #     input_csv_path="data/resumes/UpdatedResumeDataSet.csv",
+    #     output_json_path="data/careers.json",
+    #     text_column="Resume",     
+    # )
 
-    # 2) Then, index that corpus into Chroma
-    build_pdfs_index_from_json(
-        json_path="data/careers.json",
-        collection_name="pdf_docs"
-    )
+    # # 2) Index the corpus into TWO collections:
+    # #    - one with semantic chunking
+    # #    - one with paragraph chunking
+    # build_pdfs_index_from_json(
+    #     json_path="data/careers.json",
+    #     collection_name="pdf_semantic"
+    # )
 
-    collection=get_pdf_collection("pdf_docs")
+    # build_pdfs_index_paragraph_from_json(
+    #     json_path="data/careers.json",
+    #     collection_name="pdf_paragraph"
+    # )
 
+    # 3) Evaluate both chunking strategies using the SAME eval code
+
+    # Semantic chunking evaluation
     evaluate_retrieval_system(
         corpus_json_path="data/careers.json",
         kaggle_csv_path="data/resumes/UpdatedResumeDataSet.csv",
-        collection_name="pdf_docs",
+        collection_name="pdf_semantic",
         k=10,
         max_queries=100,   
     )
-    
-    # to save pdf in the json file
-    # 1) First, build the JSON corpus from PDFs
-    # build_pdf_corpus_json(
-    #     input_dir="data/resumes",
-    #     output_json_path="data/careers.json"
-    # )
-    # Example retrieval from indexed PDFs
-        # query = "Python and backend skills with web development experience"
-        # results = retrieve_from_pdfs(query, k=3)
-        # pprint(results)
+
+    # Paragraph chunking evaluation
+    evaluate_retrieval_system(
+        corpus_json_path="data/careers.json",
+        kaggle_csv_path="data/resumes/UpdatedResumeDataSet.csv",
+        collection_name="pdf_paragraph",
+        k=10,
+        max_queries=100,   
+    )
+
+    # Optional: example retrieval
+    # query = "Python and backend skills with web development experience"
+    # results = retrieve_from_pdfs(query, k=3, collection_name="pdf_semantic")
+    # pprint(results)

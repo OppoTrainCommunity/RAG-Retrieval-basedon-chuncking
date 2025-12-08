@@ -1,4 +1,3 @@
-
 # 📝 Mini-RAG Resume Retrieval System  
 *A lightweight Retrieval-Augmented Generation (RAG) pipeline for resume understanding and career recommendation.*
 
@@ -194,16 +193,6 @@ Recall@10:    0.2236
 MAP:          0.8502
 nDCG@10:      0.8938
 ```
-
----
-
-# 🔮 Future Enhancements
-
-- Add reranking (Cohere Rerank / bge-reranker)  
-- Streamlit or Gradio interface  
-- Try sentence-based chunking  
-- Support multi-modal resumes (tables, images)  
-- Integrate personalized CV evaluation tests  
 
 ---
 

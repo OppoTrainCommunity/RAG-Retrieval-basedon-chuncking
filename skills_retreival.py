@@ -515,25 +515,25 @@ def evaluate_retrieval_system(
 
 if __name__ == "__main__":
     
-    # # 1) Build Kaggle resume corpus (text -> JSON)
-    # build_kaggle_resume_corpus(
-    #     input_csv_path="data/resumes/UpdatedResumeDataSet.csv",
-    #     output_json_path="data/careers.json",
-    #     text_column="Resume",     
-    # )
+    # 1) Build Kaggle resume corpus (text -> JSON)
+    build_kaggle_resume_corpus(
+        input_csv_path="data/resumes/UpdatedResumeDataSet.csv",
+        output_json_path="data/careers.json",
+        text_column="Resume",     
+    )
 
-    # # 2) Index the corpus into TWO collections:
-    # #    - one with semantic chunking
-    # #    - one with paragraph chunking
-    # build_pdfs_index_from_json(
-    #     json_path="data/careers.json",
-    #     collection_name="pdf_semantic"
-    # )
+    # 2) Index the corpus into TWO collections:
+    # semantic chunking
+    build_pdfs_index_from_json(
+        json_path="data/careers.json",
+        collection_name="pdf_semantic"
+    )
 
-    # build_pdfs_index_paragraph_from_json(
-    #     json_path="data/careers.json",
-    #     collection_name="pdf_paragraph"
-    # )
+    # with paragraph chunking
+    build_pdfs_index_paragraph_from_json(
+        json_path="data/careers.json",
+        collection_name="pdf_paragraph"
+    )
 
     # 3) Evaluate both chunking strategies using the SAME eval code
 

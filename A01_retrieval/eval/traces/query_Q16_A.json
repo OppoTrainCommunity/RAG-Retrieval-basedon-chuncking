@@ -1,0 +1,33 @@
+{
+    "query_id": "Q16",
+    "query": "Describe Toqa's Sign Language Translation project",
+    "expected_answer": "Machine learning",
+    "strategy": "A",
+    "retrieved": [
+        {
+            "rank": 1,
+            "snippet": "https://github.com/IbrahimKhdeir\nIbrahim Khdier\nibraheem.khdier@gmail.com https://www.linkedin.com/in/ibrah\n+(970) 569-049-126 eem-khdier-0b34a3252/\nExperience\nSoftware Engineer Intern\nOppoTrain Jul 2025 - Sep 2025\n● Developed problem-solving skills through leetcode.\n● Strengthened soft skills such as communication, and teamwork.\nProjects\n9gag Meme Sharing Platform | GitHub Link | MERN Stack Aug20",
+            "is_correct": false
+        },
+        {
+            "rank": 2,
+            "snippet": "ftware Engineering & Back-End Development | Data Structures and Algorithms\nPROFESSIONAL EXPERIENCE\nAI Intern – ASAL Technologies (Summer 2025):\n• Completed a summer internship focused on Artificial Intelligence projects and R&D.\n• Contributed to the development of a Sign Language Translation project, including machine learning\nmodel training, data preprocessing, and real-time inference.\n• Built an",
+            "is_correct": true
+        },
+        {
+            "rank": 3,
+            "snippet": "Toqa khaled asedah\nPalestinian-Jordanian ● toqaasedah@gmail.com● +972 59-763-6654\nLinkedIn | Github\nPROFILE SUMMARY\nAI Engineering student at An-Najah National University, passionate about Machine Learning, Data\nEngineering, and Back-End Development. Skilled in Python, SQL, and Apache Spark, with experience in\ndeveloping scalable data pipelines, building AI projects in computer vision and NLP, and",
+            "is_correct": true
+        },
+        {
+            "rank": 4,
+            "snippet": "ywright and\ntest-driven development in Java and TypeScript. The projects appear to be coursework, demonstrating your\nunderstanding of software testing principles and practices.\nCap Advisor | GitHub Link | Node.js | Express | MongoDB | EJS | Bootstrap Apr 2024 – May 2024A\ndecision-support web application designed to help capstone students identify whether their interests align more with\nsoftware de",
+            "is_correct": false
+        },
+        {
+            "rank": 5,
+            "snippet": "yter Notebooks, JSON,\nGitHub Actions, VS Code\nFamiliar: Docker, TensorFlow, MongoDB, FastAPI\nSoft Skills:\nProblem Solving, Critical Thinking, Time Management, Team Collaboration, Communication,\nAttention to Detail\nPROJECTS\nFetal Health Classification https://github.com/Rama-sab/Fetal_Health_Classification\nIn this project use many ML algorithms to Classification Fetal Health and make it in website\n",
+            "is_correct": false
+        }
+    ]
+}

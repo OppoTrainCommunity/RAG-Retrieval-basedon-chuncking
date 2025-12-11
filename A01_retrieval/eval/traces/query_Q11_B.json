@@ -1,0 +1,33 @@
+{
+    "query_id": "Q11",
+    "query": "List Toqa's technical skills",
+    "expected_answer": "Python",
+    "strategy": "B",
+    "retrieved": [
+        {
+            "rank": 1,
+            "snippet": "SKILLS & ABILITIES",
+            "is_correct": false
+        },
+        {
+            "rank": 2,
+            "snippet": "Soft Skills:\nProblem Solving, Critical Thinking, Time Management, Team Collaboration, Communication,\nAttention to Detail",
+            "is_correct": false
+        },
+        {
+            "rank": 3,
+            "snippet": "● Developed problem-solving skills through leetcode.",
+            "is_correct": false
+        },
+        {
+            "rank": 4,
+            "snippet": "technology and AI. I have honed my technical skills through continuous self-learning and",
+            "is_correct": false
+        },
+        {
+            "rank": 5,
+            "snippet": "Training & Certifications",
+            "is_correct": false
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "query_id": "Q7",
+    "query": "Which university does Ibrahim attend?",
+    "expected_answer": "An-Najah National University",
+    "strategy": "A",
+    "retrieved": [
+        {
+            "rank": 1,
+            "snippet": "e is present or not.\nEDUCATION\n• Data Analyst, Udacity Feb.2025-Jul 2025\n• Computer Science Apprenticeship Program (CAP) – Artificial Intelligence (AI) Track\nAn-Najah National University — 2022 – Present\nGPA: 3.68\nTraining & Certifications\nBackend Java Training – EXALT, Summer 2025\nCompleted an intensive 360+ hour training program focusing on Java, Spring Boot, REST APIs,\nJPA/Hibernate, and backen",
+            "is_correct": true
+        },
+        {
+            "rank": 2,
+            "snippet": "Toqa khaled asedah\nPalestinian-Jordanian ● toqaasedah@gmail.com● +972 59-763-6654\nLinkedIn | Github\nPROFILE SUMMARY\nAI Engineering student at An-Najah National University, passionate about Machine Learning, Data\nEngineering, and Back-End Development. Skilled in Python, SQL, and Apache Spark, with experience in\ndeveloping scalable data pipelines, building AI projects in computer vision and NLP, and",
+            "is_correct": true
+        },
+        {
+            "rank": 3,
+            "snippet": "RAMA MOHAMMED SABBOUBEH\nهبوبس رمن دمحم امار\nAnabta, Tulkarm\nramah.sabboubeh@gmail.com www.linkedin.com/in/rama-sabboubeh-11b198343\nHTTPS://GITHUB.COM/RAMA-SAB +970 594 671 965\nPROFESSIONAL SUMMARY\nAs a passionate student enrolled in the Computer Science Apprenticeship Program (CAP) at the\nArtificial Intelligence (AI) Path in An-Najah National University, I am wishful to start my career in AI\nand b",
+            "is_correct": true
+        },
+        {
+            "rank": 4,
+            "snippet": "https://github.com/IbrahimKhdeir\nIbrahim Khdier\nibraheem.khdier@gmail.com https://www.linkedin.com/in/ibrah\n+(970) 569-049-126 eem-khdier-0b34a3252/\nExperience\nSoftware Engineer Intern\nOppoTrain Jul 2025 - Sep 2025\n● Developed problem-solving skills through leetcode.\n● Strengthened soft skills such as communication, and teamwork.\nProjects\n9gag Meme Sharing Platform | GitHub Link | MERN Stack Aug20",
+            "is_correct": false
+        },
+        {
+            "rank": 5,
+            "snippet": "OSAMA ABUREESH\nosama.aboresh7@gmail.com +972-569-505-950\nllinkedin.com/in/o-abureesh github.com/OsamaAbuReesh\nSUMMARY\nAs a dedicated CAP student in the Artificial Intelligence track, I am deeply passionate about\ntechnology and AI. I have honed my technical skills through continuous self-learning and\npractical projects. My aim is to excel in data science, using it to enhance AI predictive models.\nE",
+            "is_correct": true
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "query_id": "Q26",
+    "query": "What is Osama's email address?",
+    "expected_answer": "osama.aboresh7@gmail.com",
+    "strategy": "B",
+    "retrieved": [
+        {
+            "rank": 1,
+            "snippet": "OSAMA ABUREESH\nosama.aboresh7@gmail.com +972-569-505-950\nllinkedin.com/in/o-abureesh github.com/OsamaAbuReesh\nSUMMARY\nAs a dedicated CAP student in the Artificial Intelligence track, I am deeply passionate about",
+            "is_correct": true
+        },
+        {
+            "rank": 2,
+            "snippet": "https://github.com/IbrahimKhdeir\nIbrahim Khdier\nibraheem.khdier@gmail.com https://www.linkedin.com/in/ibrah\n+(970) 569-049-126 eem-khdier-0b34a3252/",
+            "is_correct": false
+        },
+        {
+            "rank": 3,
+            "snippet": "Experience\nSoftware Engineer Intern\nOppoTrain Jul 2025 - Sep 2025",
+            "is_correct": false
+        },
+        {
+            "rank": 4,
+            "snippet": "Toqa khaled asedah\nPalestinian-Jordanian ● toqaasedah@gmail.com● +972 59-763-6654\nLinkedIn | Github\nPROFILE SUMMARY\nAI Engineering student at An-Najah National University, passionate about Machine Learning, Data",
+            "is_correct": false
+        },
+        {
+            "rank": 5,
+            "snippet": "Education\nAn-Najah National University Aug 2021 - 2025\nComputer Science Apprenticeship (CAP) (Focus in software engineer ).\nFeatured Courses: Data structure , DataBase, Algorithms, S.W .",
+            "is_correct": false
+        }
+    ]
+}

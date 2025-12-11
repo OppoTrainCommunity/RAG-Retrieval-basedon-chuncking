@@ -1,0 +1,33 @@
+{
+    "query_id": "Q24",
+    "query": "List all databases mentioned across all resumes",
+    "expected_answer": "SQL, MongoDB, MySQL, Elasticsearch",
+    "strategy": "A",
+    "retrieved": [
+        {
+            "rank": 1,
+            "snippet": "OSAMA ABUREESH\nosama.aboresh7@gmail.com +972-569-505-950\nllinkedin.com/in/o-abureesh github.com/OsamaAbuReesh\nSUMMARY\nAs a dedicated CAP student in the Artificial Intelligence track, I am deeply passionate about\ntechnology and AI. I have honed my technical skills through continuous self-learning and\npractical projects. My aim is to excel in data science, using it to enhance AI predictive models.\nE",
+            "is_correct": false
+        },
+        {
+            "rank": 2,
+            "snippet": "rer communication and increased engagement.\nImplemented best search practices criteria to select optimal opportunities, improving the\neffectiveness and efficiency of the search process.\nDemonstrated proficiency in data entry software and tools, maintaining a high level of\naccuracy and attention to detail while working under deadlines.\nSKILLS\nNode.js\nGit & GitHub\nReact.js\nExcellent Communication sk",
+            "is_correct": false
+        },
+        {
+            "rank": 3,
+            "snippet": "g, enabling efficient analytical queries.\nHOBBIES & INTERESTS\nAI & Machine Learning | Problem Solving | Hackathons | Traveling\nCERTIFICATIONS\nMachine Learning Nanodegree (Udacity) | FastAPI (DataCamp) | SQL Fundamentals (DataCamp) | Python\nProgramming (DataCamp)\n",
+            "is_correct": false
+        },
+        {
+            "rank": 4,
+            "snippet": "e is present or not.\nEDUCATION\n• Data Analyst, Udacity Feb.2025-Jul 2025\n• Computer Science Apprenticeship Program (CAP) – Artificial Intelligence (AI) Track\nAn-Najah National University — 2022 – Present\nGPA: 3.68\nTraining & Certifications\nBackend Java Training – EXALT, Summer 2025\nCompleted an intensive 360+ hour training program focusing on Java, Spring Boot, REST APIs,\nJPA/Hibernate, and backen",
+            "is_correct": false
+        },
+        {
+            "rank": 5,
+            "snippet": "ftware Engineering & Back-End Development | Data Structures and Algorithms\nPROFESSIONAL EXPERIENCE\nAI Intern – ASAL Technologies (Summer 2025):\n• Completed a summer internship focused on Artificial Intelligence projects and R&D.\n• Contributed to the development of a Sign Language Translation project, including machine learning\nmodel training, data preprocessing, and real-time inference.\n• Built an",
+            "is_correct": false
+        }
+    ]
+}

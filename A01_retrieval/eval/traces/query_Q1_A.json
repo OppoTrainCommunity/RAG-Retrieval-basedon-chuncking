@@ -1,0 +1,33 @@
+{
+    "query_id": "Q1",
+    "query": "What is Rama's email address?",
+    "expected_answer": "ramah.sabboubeh@gmail.com",
+    "strategy": "A",
+    "retrieved": [
+        {
+            "rank": 1,
+            "snippet": "e is present or not.\nEDUCATION\n• Data Analyst, Udacity Feb.2025-Jul 2025\n• Computer Science Apprenticeship Program (CAP) – Artificial Intelligence (AI) Track\nAn-Najah National University — 2022 – Present\nGPA: 3.68\nTraining & Certifications\nBackend Java Training – EXALT, Summer 2025\nCompleted an intensive 360+ hour training program focusing on Java, Spring Boot, REST APIs,\nJPA/Hibernate, and backen",
+            "is_correct": false
+        },
+        {
+            "rank": 2,
+            "snippet": "te.\nE-Commerce System - Storify\nParticipated in the design and development of 'Storify', a multifunctional e-commerce\nwebsite.\nEnhanced my skills in team work and conflict resolution.\nReceived high recognition from the project supervisor for excellent performance\nTRAINING & VOLUNTEERING\nData Science Intern - DataCamp | Remote Feb 2024 - Present\nSuccessfully completed the AI Fundamental certificate",
+            "is_correct": false
+        },
+        {
+            "rank": 3,
+            "snippet": "https://github.com/IbrahimKhdeir\nIbrahim Khdier\nibraheem.khdier@gmail.com https://www.linkedin.com/in/ibrah\n+(970) 569-049-126 eem-khdier-0b34a3252/\nExperience\nSoftware Engineer Intern\nOppoTrain Jul 2025 - Sep 2025\n● Developed problem-solving skills through leetcode.\n● Strengthened soft skills such as communication, and teamwork.\nProjects\n9gag Meme Sharing Platform | GitHub Link | MERN Stack Aug20",
+            "is_correct": false
+        },
+        {
+            "rank": 4,
+            "snippet": "o\nspecific categories.\nApplied word embedding techniques such as (Glove, Word2Vec) to convert text data into\nnumerical vectors for model training.\nUtilized advanced machine learning algorithms, including random forest and Support\nVector Machine, to build efficient and high-performance classification models.\n1\nPROJECTS\nTalent Management - Talento\nLed a team as part of the Talento project\nCollaborat",
+            "is_correct": false
+        },
+        {
+            "rank": 5,
+            "snippet": "Toqa khaled asedah\nPalestinian-Jordanian ● toqaasedah@gmail.com● +972 59-763-6654\nLinkedIn | Github\nPROFILE SUMMARY\nAI Engineering student at An-Najah National University, passionate about Machine Learning, Data\nEngineering, and Back-End Development. Skilled in Python, SQL, and Apache Spark, with experience in\ndeveloping scalable data pipelines, building AI projects in computer vision and NLP, and",
+            "is_correct": false
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "query_id": "Q9",
+    "query": "What programming languages does Ibrahim know?",
+    "expected_answer": "Python",
+    "strategy": "B",
+    "retrieved": [
+        {
+            "rank": 1,
+            "snippet": "Technical Skills\nProgramming languages: Python, JavaScript, C++, Java\nFrameworks : Node.js, React,Express\nDatabase: MySQL , MongoDB\nOther: GitHub, Trello, Slack, Notion,Jira ,design pattern and Design principle",
+            "is_correct": true
+        },
+        {
+            "rank": 2,
+            "snippet": "Toqa khaled asedah\nPalestinian-Jordanian ● toqaasedah@gmail.com● +972 59-763-6654\nLinkedIn | Github\nPROFILE SUMMARY\nAI Engineering student at An-Najah National University, passionate about Machine Learning, Data",
+            "is_correct": false
+        },
+        {
+            "rank": 3,
+            "snippet": "https://github.com/IbrahimKhdeir\nIbrahim Khdier\nibraheem.khdier@gmail.com https://www.linkedin.com/in/ibrah\n+(970) 569-049-126 eem-khdier-0b34a3252/",
+            "is_correct": false
+        },
+        {
+            "rank": 4,
+            "snippet": "Technical Skills:\nProficient: Python, React, Git, SQL, NumPy, Pandas, frontend, JavaScript, Jupyter Notebooks, JSON,\nGitHub Actions, VS Code\nFamiliar: Docker, TensorFlow, MongoDB, FastAPI",
+            "is_correct": true
+        },
+        {
+            "rank": 5,
+            "snippet": "Education\nAn-Najah National University Aug 2021 - 2025\nComputer Science Apprenticeship (CAP) (Focus in software engineer ).\nFeatured Courses: Data structure , DataBase, Algorithms, S.W .",
+            "is_correct": false
+        }
+    ]
+}

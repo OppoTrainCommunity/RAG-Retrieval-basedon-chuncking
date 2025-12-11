@@ -1,0 +1,33 @@
+{
+    "query_id": "Q19",
+    "query": "Who has more backend experience?",
+    "expected_answer": "Ibrahim",
+    "strategy": "A",
+    "retrieved": [
+        {
+            "rank": 1,
+            "snippet": "ftware Engineering & Back-End Development | Data Structures and Algorithms\nPROFESSIONAL EXPERIENCE\nAI Intern – ASAL Technologies (Summer 2025):\n• Completed a summer internship focused on Artificial Intelligence projects and R&D.\n• Contributed to the development of a Sign Language Translation project, including machine learning\nmodel training, data preprocessing, and real-time inference.\n• Built an",
+            "is_correct": false
+        },
+        {
+            "rank": 2,
+            "snippet": "ywright and\ntest-driven development in Java and TypeScript. The projects appear to be coursework, demonstrating your\nunderstanding of software testing principles and practices.\nCap Advisor | GitHub Link | Node.js | Express | MongoDB | EJS | Bootstrap Apr 2024 – May 2024A\ndecision-support web application designed to help capstone students identify whether their interests align more with\nsoftware de",
+            "is_correct": false
+        },
+        {
+            "rank": 3,
+            "snippet": "trollers, models, and routes.\nEnvironment variables are managed via dotenv, and the development workflow uses Nodemon for hot reloading.\nTechnical Skills\nProgramming languages: Python, JavaScript, C++, Java\nFrameworks : Node.js, React,Express\nDatabase: MySQL , MongoDB\nOther: GitHub, Trello, Slack, Notion,Jira ,design pattern and Design principle\nEducation\nAn-Najah National University Aug 2021 - 20",
+            "is_correct": false
+        },
+        {
+            "rank": 4,
+            "snippet": "RAMA MOHAMMED SABBOUBEH\nهبوبس رمن دمحم امار\nAnabta, Tulkarm\nramah.sabboubeh@gmail.com www.linkedin.com/in/rama-sabboubeh-11b198343\nHTTPS://GITHUB.COM/RAMA-SAB +970 594 671 965\nPROFESSIONAL SUMMARY\nAs a passionate student enrolled in the Computer Science Apprenticeship Program (CAP) at the\nArtificial Intelligence (AI) Path in An-Najah National University, I am wishful to start my career in AI\nand b",
+            "is_correct": false
+        },
+        {
+            "rank": 5,
+            "snippet": "rer communication and increased engagement.\nImplemented best search practices criteria to select optimal opportunities, improving the\neffectiveness and efficiency of the search process.\nDemonstrated proficiency in data entry software and tools, maintaining a high level of\naccuracy and attention to detail while working under deadlines.\nSKILLS\nNode.js\nGit & GitHub\nReact.js\nExcellent Communication sk",
+            "is_correct": false
+        }
+    ]
+}

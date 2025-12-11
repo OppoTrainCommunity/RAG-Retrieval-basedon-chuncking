@@ -1,0 +1,33 @@
+{
+    "query_id": "Q30",
+    "query": "Describe Osama's Smart Document Indexing project",
+    "expected_answer": "Smart Document Indexing and Query Processing",
+    "strategy": "B",
+    "retrieved": [
+        {
+            "rank": 1,
+            "snippet": "PROJECTS\nSmart Document Indexing and Query Processing\nCreated a document retrieval system using Elasticsearch that can index and search\ndocuments based on spatial, temporal, and textual data, significantly improving query\nresponse efficiency.\nApplied advanced indexing methods to extract and integrate georeferenced data and\ntemporal expressions from a wide variety of documents\nDesigned an intellige",
+            "is_correct": true
+        },
+        {
+            "rank": 2,
+            "snippet": "OSAMA ABUREESH\nosama.aboresh7@gmail.com +972-569-505-950\nllinkedin.com/in/o-abureesh github.com/OsamaAbuReesh\nSUMMARY\nAs a dedicated CAP student in the Artificial Intelligence track, I am deeply passionate about",
+            "is_correct": false
+        },
+        {
+            "rank": 3,
+            "snippet": "Gained hands-on experience by building projects such as Investigating Netflix Movies.\nData Entry, Data Collector - Foras.ps | Remote Jan 2024 - Present\nCollected, filtered, and inserted the best opportunities onto the organization's website,\nensuring accuracy and completeness of the information.\nAnalyzed and optimized descriptions of opportunities to enhance user understanding,\nresulting in cleare",
+            "is_correct": false
+        },
+        {
+            "rank": 4,
+            "snippet": "PROJECT EXPERIENCE\n• Big Data Twitter Analysis – Designed a real-time data pipeline for processing, sentiment analysis, and visualization of\nTwitter data using Apache Kafka and Elasticsearch.\n• Greenatick Web Application – Contributed to a full-stack MERN web application promoting recycling. Focused on\nfront-end UX and built back-end APIs for key features such as checkout, currency conversion, Wis",
+            "is_correct": false
+        },
+        {
+            "rank": 5,
+            "snippet": "TECHNICAL SKILLS\nPython | SQL | C++ | Scala | Assembly | Apache Spark | Hadoop | Kafka | ElasticSearch | MongoDB | MERN Stack |\nREST APIs | FastAPI | Transfer Learning | CNNs | Transformers | DVC | Information Retrieval | Data Analysis | Problem\nSolving | n8n | LangChain",
+            "is_correct": false
+        }
+    ]
+}

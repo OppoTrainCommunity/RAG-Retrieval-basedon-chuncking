@@ -1,0 +1,34 @@
+query_id,query_text,strategy,precision@k,recall@k,f1_score,hit_rate@k,rr,latency_sec
+Q1,What is Rama's email address?,B,0.2,1.0,0.33333333333333337,1,0.5,0.10978865623474121
+Q2,What is Ibrahim's email address?,B,0.2,1.0,0.33333333333333337,1,1.0,0.05111360549926758
+Q3,What is Toqa's email address?,B,0.2,1.0,0.33333333333333337,1,0.3333333333333333,0.027633190155029297
+Q4,What is Rama's phone number?,B,0.0,0.0,0,0,0,0.025333166122436523
+Q5,What is Ibrahim's phone number?,B,0.2,1.0,0.33333333333333337,1,1.0,0.026230335235595703
+Q6,Which university does Rama attend?,B,1.0,5.0,1.6666666666666667,1,1.0,0.02677154541015625
+Q7,Which university does Ibrahim attend?,B,0.8,4.0,1.3333333333333335,1,0.5,0.018018484115600586
+Q8,Which university does Toqa attend?,B,0.8,4.0,1.3333333333333335,1,1.0,0.019005775451660156
+Q9,What programming languages does Ibrahim know?,B,0.4,2.0,0.6666666666666667,1,1.0,0.018007278442382812
+Q10,List Rama's technical skills,B,0.2,1.0,0.33333333333333337,1,0.2,0.020000219345092773
+Q11,List Toqa's technical skills,B,0.0,0.0,0,0,0,0.018009424209594727
+Q12,Does Rama have experience with TensorFlow?,B,0.0,0.0,0,0,0,0.016000032424926758
+Q13,Does Ibrahim have experience with AWS?,B,0.2,1.0,0.33333333333333337,1,0.2,0.018995046615600586
+Q14,What internship did Ibrahim complete and when?,B,0.0,0.0,0,0,0,0.017001628875732422
+Q15,Describe Rama's Fetal Health Classification project,B,0.0,0.0,0,0,0,0.016997337341308594
+Q16,Describe Toqa's Sign Language Translation project,B,0.4,2.0,0.6666666666666667,1,1.0,0.016980648040771484
+Q17,Compare the technical skills of Rama and Ibrahim,B,0.0,0.0,0,0,0,0.016999483108520508
+Q18,Which candidate has more machine learning background?,B,0.0,0.0,0,0,0,0.021002769470214844
+Q19,Who has more backend experience?,B,0.0,0.0,0,0,0,0.01597738265991211
+Q20,Which candidate has experience with FastAPI?,B,0.0,0.0,0,0,0,0.017000198364257812
+Q21,When did Rama complete the Backend Java Training?,B,0.0,0.0,0,0,0,0.01799631118774414
+Q22,When was Ibrahim's 9gag project developed?,B,0.0,0.0,0,0,0,0.016982316970825195
+Q23,When did Toqa complete her ASAL internship?,B,0.2,1.0,0.33333333333333337,1,0.5,0.015997648239135742
+Q24,List all databases mentioned across all resumes,B,0.0,0.0,0,0,0,0.016016244888305664
+Q25,Count the total number of projects for each candidate,B,0.0,0.0,0,0,0,0.020992279052734375
+Q26,What is Osama's email address?,B,0.2,1.0,0.33333333333333337,1,1.0,0.028023958206176758
+Q27,What is Osama's phone number?,B,0.2,1.0,0.33333333333333337,1,1.0,0.01575779914855957
+Q28,Which university does Osama attend?,B,0.8,4.0,1.3333333333333335,1,0.5,0.014013290405273438
+Q29,List Osama's technical skills,B,0.0,0.0,0,0,0,0.012986183166503906
+Q30,Describe Osama's Smart Document Indexing project,B,0.2,1.0,0.33333333333333337,1,1.0,0.02099752426147461
+Q31,What machine learning project did Osama build with car price prediction?,B,0.2,1.0,0.33333333333333337,1,1.0,0.015953540802001953
+Q32,Does Osama have experience with text classification?,B,0.0,0.0,0,0,0,0.015020370483398438
+Q33,What internships or training programs has Osama completed?,B,0.0,0.0,0,0,0,0.01701951026916504

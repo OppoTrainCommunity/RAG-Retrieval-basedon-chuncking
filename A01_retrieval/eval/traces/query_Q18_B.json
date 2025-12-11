@@ -1,0 +1,33 @@
+{
+    "query_id": "Q18",
+    "query": "Which candidate has more machine learning background?",
+    "expected_answer": "Rama",
+    "strategy": "B",
+    "retrieved": [
+        {
+            "rank": 1,
+            "snippet": "Toqa khaled asedah\nPalestinian-Jordanian ● toqaasedah@gmail.com● +972 59-763-6654\nLinkedIn | Github\nPROFILE SUMMARY\nAI Engineering student at An-Najah National University, passionate about Machine Learning, Data",
+            "is_correct": false
+        },
+        {
+            "rank": 2,
+            "snippet": "and backend development. I have been studying and building projects in machine learning, deep",
+            "is_correct": false
+        },
+        {
+            "rank": 3,
+            "snippet": "TRAINING & VOLUNTEERING\nData Science Intern - DataCamp | Remote Feb 2024 - Present\nSuccessfully completed the AI Fundamental certificate.",
+            "is_correct": false
+        },
+        {
+            "rank": 4,
+            "snippet": "numerical vectors for model training.\nUtilized advanced machine learning algorithms, including random forest and Support\nVector Machine, to build efficient and high-performance classification models.\n1",
+            "is_correct": false
+        },
+        {
+            "rank": 5,
+            "snippet": "CERTIFICATIONS\nMachine Learning Nanodegree (Udacity) | FastAPI (DataCamp) | SQL Fundamentals (DataCamp) | Python\nProgramming (DataCamp)",
+            "is_correct": false
+        }
+    ]
+}

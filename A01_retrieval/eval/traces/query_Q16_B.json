@@ -1,0 +1,33 @@
+{
+    "query_id": "Q16",
+    "query": "Describe Toqa's Sign Language Translation project",
+    "expected_answer": "Machine learning",
+    "strategy": "B",
+    "retrieved": [
+        {
+            "rank": 1,
+            "snippet": "• Completed a summer internship focused on Artificial Intelligence projects and R&D.\n• Contributed to the development of a Sign Language Translation project, including machine learning",
+            "is_correct": true
+        },
+        {
+            "rank": 2,
+            "snippet": "Toqa khaled asedah\nPalestinian-Jordanian ● toqaasedah@gmail.com● +972 59-763-6654\nLinkedIn | Github\nPROFILE SUMMARY\nAI Engineering student at An-Najah National University, passionate about Machine Learning, Data",
+            "is_correct": true
+        },
+        {
+            "rank": 3,
+            "snippet": "OSAMA ABUREESH\nosama.aboresh7@gmail.com +972-569-505-950\nllinkedin.com/in/o-abureesh github.com/OsamaAbuReesh\nSUMMARY\nAs a dedicated CAP student in the Artificial Intelligence track, I am deeply passionate about",
+            "is_correct": false
+        },
+        {
+            "rank": 4,
+            "snippet": "Projects\n9gag Meme Sharing Platform | GitHub Link | MERN Stack Aug2022- Dec 2022\na full-stack web application for sharing memes, forked from an existing project. You implemented user\nauthentication, meme upload, and social interaction features, and designed a responsive and intuitive user\ninterface.\nQA | GitHub Link | Java | TypeScript | Playwright Aug 2025 - Dec2025",
+            "is_correct": false
+        },
+        {
+            "rank": 5,
+            "snippet": "PROJECTS\nFetal Health Classification https://github.com/Rama-sab/Fetal_Health_Classification\nIn this project use many ML algorithms to Classification Fetal Health and make it in website\nand API for best algorithm\nMessages Chat Web Page https://github.com/marselHanani/Messages_team 8\nThis application uses React as frontend and uses cloud as DB for the project, I make the\nnotification for messages\nB",
+            "is_correct": false
+        }
+    ]
+}

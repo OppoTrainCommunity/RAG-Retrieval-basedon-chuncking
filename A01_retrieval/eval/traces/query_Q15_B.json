@@ -1,0 +1,33 @@
+{
+    "query_id": "Q15",
+    "query": "Describe Rama's Fetal Health Classification project",
+    "expected_answer": "ML classification website + API",
+    "strategy": "B",
+    "retrieved": [
+        {
+            "rank": 1,
+            "snippet": "PROJECTS\nFetal Health Classification https://github.com/Rama-sab/Fetal_Health_Classification\nIn this project use many ML algorithms to Classification Fetal Health and make it in website\nand API for best algorithm\nMessages Chat Web Page https://github.com/marselHanani/Messages_team 8\nThis application uses React as frontend and uses cloud as DB for the project, I make the\nnotification for messages\nB",
+            "is_correct": false
+        },
+        {
+            "rank": 2,
+            "snippet": "CERTIFICATIONS\nMachine Learning Nanodegree (Udacity) | FastAPI (DataCamp) | SQL Fundamentals (DataCamp) | Python\nProgramming (DataCamp)",
+            "is_correct": false
+        },
+        {
+            "rank": 3,
+            "snippet": "• Completed a summer internship focused on Artificial Intelligence projects and R&D.\n• Contributed to the development of a Sign Language Translation project, including machine learning",
+            "is_correct": false
+        },
+        {
+            "rank": 4,
+            "snippet": "RAMA MOHAMMED SABBOUBEH\nهبوبس رمن دمحم امار\nAnabta, Tulkarm\nramah.sabboubeh@gmail.com www.linkedin.com/in/rama-sabboubeh-11b198343\nHTTPS://GITHUB.COM/RAMA-SAB +970 594 671 965\nPROFESSIONAL SUMMARY\nAs a passionate student enrolled in the Computer Science Apprenticeship Program (CAP) at the\nArtificial Intelligence (AI) Path in An-Najah National University, I am wishful to start my career in AI",
+            "is_correct": false
+        },
+        {
+            "rank": 5,
+            "snippet": "numerical vectors for model training.\nUtilized advanced machine learning algorithms, including random forest and Support\nVector Machine, to build efficient and high-performance classification models.\n1",
+            "is_correct": false
+        }
+    ]
+}

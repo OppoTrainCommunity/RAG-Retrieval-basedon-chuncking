@@ -1,0 +1,33 @@
+{
+    "query_id": "Q17",
+    "query": "Compare the technical skills of Rama and Ibrahim",
+    "expected_answer": "Rama: Python, React, SQL, ML, DL; Ibrahim: Python, JavaScript, C++, Java",
+    "strategy": "B",
+    "retrieved": [
+        {
+            "rank": 1,
+            "snippet": "SKILLS & ABILITIES",
+            "is_correct": false
+        },
+        {
+            "rank": 2,
+            "snippet": "RAMA MOHAMMED SABBOUBEH\nهبوبس رمن دمحم امار\nAnabta, Tulkarm\nramah.sabboubeh@gmail.com www.linkedin.com/in/rama-sabboubeh-11b198343\nHTTPS://GITHUB.COM/RAMA-SAB +970 594 671 965\nPROFESSIONAL SUMMARY\nAs a passionate student enrolled in the Computer Science Apprenticeship Program (CAP) at the\nArtificial Intelligence (AI) Path in An-Najah National University, I am wishful to start my career in AI",
+            "is_correct": false
+        },
+        {
+            "rank": 3,
+            "snippet": "technology and AI. I have honed my technical skills through continuous self-learning and",
+            "is_correct": false
+        },
+        {
+            "rank": 4,
+            "snippet": "● Strengthened soft skills such as communication, and teamwork.",
+            "is_correct": false
+        },
+        {
+            "rank": 5,
+            "snippet": "Soft Skills:\nProblem Solving, Critical Thinking, Time Management, Team Collaboration, Communication,\nAttention to Detail",
+            "is_correct": false
+        }
+    ]
+}

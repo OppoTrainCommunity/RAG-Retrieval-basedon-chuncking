@@ -1,0 +1,33 @@
+{
+    "query_id": "Q4",
+    "query": "What is Rama's phone number?",
+    "expected_answer": "+970594671965",
+    "strategy": "B",
+    "retrieved": [
+        {
+            "rank": 1,
+            "snippet": "OSAMA ABUREESH\nosama.aboresh7@gmail.com +972-569-505-950\nllinkedin.com/in/o-abureesh github.com/OsamaAbuReesh\nSUMMARY\nAs a dedicated CAP student in the Artificial Intelligence track, I am deeply passionate about",
+            "is_correct": false
+        },
+        {
+            "rank": 2,
+            "snippet": "RAMA MOHAMMED SABBOUBEH\nهبوبس رمن دمحم امار\nAnabta, Tulkarm\nramah.sabboubeh@gmail.com www.linkedin.com/in/rama-sabboubeh-11b198343\nHTTPS://GITHUB.COM/RAMA-SAB +970 594 671 965\nPROFESSIONAL SUMMARY\nAs a passionate student enrolled in the Computer Science Apprenticeship Program (CAP) at the\nArtificial Intelligence (AI) Path in An-Najah National University, I am wishful to start my career in AI",
+            "is_correct": false
+        },
+        {
+            "rank": 3,
+            "snippet": "PROJECTS\nFetal Health Classification https://github.com/Rama-sab/Fetal_Health_Classification\nIn this project use many ML algorithms to Classification Fetal Health and make it in website\nand API for best algorithm\nMessages Chat Web Page https://github.com/marselHanani/Messages_team 8\nThis application uses React as frontend and uses cloud as DB for the project, I make the\nnotification for messages\nB",
+            "is_correct": false
+        },
+        {
+            "rank": 4,
+            "snippet": "https://github.com/IbrahimKhdeir\nIbrahim Khdier\nibraheem.khdier@gmail.com https://www.linkedin.com/in/ibrah\n+(970) 569-049-126 eem-khdier-0b34a3252/",
+            "is_correct": false
+        },
+        {
+            "rank": 5,
+            "snippet": "Toqa khaled asedah\nPalestinian-Jordanian ● toqaasedah@gmail.com● +972 59-763-6654\nLinkedIn | Github\nPROFILE SUMMARY\nAI Engineering student at An-Najah National University, passionate about Machine Learning, Data",
+            "is_correct": false
+        }
+    ]
+}

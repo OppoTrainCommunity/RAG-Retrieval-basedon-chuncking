@@ -1,0 +1,35 @@
+query_id,expected_answer,total_relevant
+Q1,ramah.sabboubeh@gmail.com,1
+Q2,ibraheem.khdier@gmail.com,1
+Q3,toqaasedah@gmail.com,1
+Q4,+970594671965,1
+Q5,+(970) 569-049-126,1
+Q6,An-Najah National University,1
+Q7,An-Najah National University,1
+Q8,An-Najah National University,1
+Q9,Python,1
+Q10,Python,1
+Q11,Python,1
+Q12,Yes,1
+Q13,No,1
+Q14,"OppoTrain internship Jul 2025 - Sep 2025",1
+Q15,"ML classification website + API",1
+Q16,Machine learning,1
+Q17,"Rama: Python, React, SQL, ML, DL; Ibrahim: Python, JavaScript, C++, Java",1
+Q18,Rama,1
+Q19,Ibrahim,1
+Q20,Toqa,1
+Q21,"Summer 2025 (360+ hours)",1
+Q22,"Aug 2022 - Dec 2022",1
+Q23,Summer 2025,1
+Q24,"SQL, MongoDB, MySQL, Elasticsearch",4
+Q25,"Rama: 3, Ibrahim: 3, Toqa: 6",3
+Q26,"osama.aboresh7@gmail.com",1
+Q27,"+972-569-505-950",1
+Q28,"An-Najah National University",1
+Q29,"Node.js, React.js, Python, MongoDB, Machine Learning techniques, Data Visualization, Troubleshooting, Git, GitHub, SQL, Feature Engineering, Networking",1
+Q30,"Smart Document Indexing and Query Processing",1
+Q31,"Car price prediction service",1
+Q32,"Yes",1
+Q33,"Foras.ps, DataCamp, Talento, Storify",1
+

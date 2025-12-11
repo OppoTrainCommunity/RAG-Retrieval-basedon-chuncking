@@ -1,0 +1,33 @@
+{
+    "query_id": "Q12",
+    "query": "Does Rama have experience with TensorFlow?",
+    "expected_answer": "Yes",
+    "strategy": "B",
+    "retrieved": [
+        {
+            "rank": 1,
+            "snippet": "and backend development. I have been studying and building projects in machine learning, deep",
+            "is_correct": false
+        },
+        {
+            "rank": 2,
+            "snippet": "RAMA MOHAMMED SABBOUBEH\nهبوبس رمن دمحم امار\nAnabta, Tulkarm\nramah.sabboubeh@gmail.com www.linkedin.com/in/rama-sabboubeh-11b198343\nHTTPS://GITHUB.COM/RAMA-SAB +970 594 671 965\nPROFESSIONAL SUMMARY\nAs a passionate student enrolled in the Computer Science Apprenticeship Program (CAP) at the\nArtificial Intelligence (AI) Path in An-Najah National University, I am wishful to start my career in AI",
+            "is_correct": false
+        },
+        {
+            "rank": 3,
+            "snippet": "Technical Skills:\nProficient: Python, React, Git, SQL, NumPy, Pandas, frontend, JavaScript, Jupyter Notebooks, JSON,\nGitHub Actions, VS Code\nFamiliar: Docker, TensorFlow, MongoDB, FastAPI",
+            "is_correct": false
+        },
+        {
+            "rank": 4,
+            "snippet": "Toqa khaled asedah\nPalestinian-Jordanian ● toqaasedah@gmail.com● +972 59-763-6654\nLinkedIn | Github\nPROFILE SUMMARY\nAI Engineering student at An-Najah National University, passionate about Machine Learning, Data",
+            "is_correct": false
+        },
+        {
+            "rank": 5,
+            "snippet": "neural networks, and backend APIs. I am now actively seeking a training opportunity where I can",
+            "is_correct": false
+        }
+    ]
+}

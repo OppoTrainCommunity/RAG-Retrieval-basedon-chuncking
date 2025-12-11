@@ -1,0 +1,118 @@
+{"cv_id": "kaggle_row_0", "question": "What is the candidate's job category?", "expected_category": "Data Science"}
+{"cv_id": "kaggle_row_0", "question": "Which field does this resume belong to?", "expected_category": "Data Science"}
+{"cv_id": "kaggle_row_0", "question": "Identify the specialization area of this candidate.", "expected_category": "Data Science"}
+{"cv_id": "kaggle_row_0", "question": "What professional domain describes this profile?", "expected_category": "Data Science"}
+{"cv_id": "kaggle_row_0", "question": "Which industry best matches the candidate?", "expected_category": "Data Science"}
+
+{"cv_id": "kaggle_row_1", "question": "What field does the candidate specialize in?", "expected_category": "HR"}
+{"cv_id": "kaggle_row_1", "question": "Identify the candidate's professional domain.", "expected_category": "HR"}
+{"cv_id": "kaggle_row_1", "question": "Which job category applies to this resume?", "expected_category": "HR"}
+{"cv_id": "kaggle_row_1", "question": "What type of work is this candidate suited for?", "expected_category": "HR"}
+{"cv_id": "kaggle_row_1", "question": "Which industry does this profile fall into?", "expected_category": "HR"}
+
+{"cv_id": "kaggle_row_2", "question": "What is the candidate's job type?", "expected_category": "Python Developer"}
+{"cv_id": "kaggle_row_2", "question": "Which technical role fits this resume?", "expected_category": "Python Developer"}
+{"cv_id": "kaggle_row_2", "question": "Identify the candidate's engineering domain.", "expected_category": "Python Developer"}
+{"cv_id": "kaggle_row_2", "question": "The resume best matches which developer role?", "expected_category": "Python Developer"}
+{"cv_id": "kaggle_row_2", "question": "What programming field is this candidate part of?", "expected_category": "Python Developer"}
+
+{"cv_id": "kaggle_row_3", "question": "What engineering role matches this candidate?", "expected_category": "Mechanical Engineer"}
+{"cv_id": "kaggle_row_3", "question": "Which engineering specialization fits this resume?", "expected_category": "Mechanical Engineer"}
+{"cv_id": "kaggle_row_3", "question": "Identify the engineering category for this profile.", "expected_category": "Mechanical Engineer"}
+{"cv_id": "kaggle_row_3", "question": "What type of engineer is the candidate?", "expected_category": "Mechanical Engineer"}
+{"cv_id": "kaggle_row_3", "question": "What is the technical field of expertise?", "expected_category": "Mechanical Engineer"}
+
+{"cv_id": "kaggle_row_4", "question": "What job sector is most suitable for this resume?", "expected_category": "DevOps Engineer"}
+{"cv_id": "kaggle_row_4", "question": "Which specialization matches this profile?", "expected_category": "DevOps Engineer"}
+{"cv_id": "kaggle_row_4", "question": "What is the most appropriate engineering field?", "expected_category": "DevOps Engineer"}
+{"cv_id": "kaggle_row_4", "question": "Classify the candidate's profession.", "expected_category": "DevOps Engineer"}
+{"cv_id": "kaggle_row_4", "question": "What technical role describes this resume?", "expected_category": "DevOps Engineer"}
+
+{"cv_id": "kaggle_row_5", "question": "What job category applies to this candidate?", "expected_category": "Testing"}
+{"cv_id": "kaggle_row_5", "question": "Identify the field of expertise in this resume.", "expected_category": "Testing"}
+{"cv_id": "kaggle_row_5", "question": "Which job sector does this candidate fit?", "expected_category": "Testing"}
+{"cv_id": "kaggle_row_5", "question": "What technical specialization is shown here?", "expected_category": "Testing"}
+{"cv_id": "kaggle_row_5", "question": "Which professional area does the candidate belong to?", "expected_category": "Testing"}
+
+{"cv_id": "kaggle_row_6", "question": "What is the candidate’s job specialization?", "expected_category": "Electrical Engineer"}
+{"cv_id": "kaggle_row_6", "question": "Which engineering category fits this resume?", "expected_category": "Electrical Engineer"}
+{"cv_id": "kaggle_row_6", "question": "Identify the engineering field.", "expected_category": "Electrical Engineer"}
+{"cv_id": "kaggle_row_6", "question": "Which technical role matches this CV?", "expected_category": "Electrical Engineer"}
+{"cv_id": "kaggle_row_6", "question": "What engineering domain is this candidate from?", "expected_category": "Electrical Engineer"}
+
+{"cv_id": "kaggle_row_7", "question": "What job category does this resume belong to?", "expected_category": "Network Engineer"}
+{"cv_id": "kaggle_row_7", "question": "Which IT specialization fits this profile?", "expected_category": "Network Engineer"}
+{"cv_id": "kaggle_row_7", "question": "Identify the candidate’s domain of expertise.", "expected_category": "Network Engineer"}
+{"cv_id": "kaggle_row_7", "question": "What type of engineering is this?", "expected_category": "Network Engineer"}
+{"cv_id": "kaggle_row_7", "question": "Which industry best describes the candidate?", "expected_category": "Network Engineer"}
+
+{"cv_id": "kaggle_row_8", "question": "What is the candidate’s job field?", "expected_category": "Civil Engineer"}
+{"cv_id": "kaggle_row_8", "question": "Which engineering discipline fits this resume?", "expected_category": "Civil Engineer"}
+{"cv_id": "kaggle_row_8", "question": "Identify the candidate’s engineering specialization.", "expected_category": "Civil Engineer"}
+{"cv_id": "kaggle_row_8", "question": "What engineering category suits this profile?", "expected_category": "Civil Engineer"}
+{"cv_id": "kaggle_row_8", "question": "Which construction-related domain is relevant here?", "expected_category": "Civil Engineer"}
+
+{"cv_id": "kaggle_row_9", "question": "What type of role fits this profile?", "expected_category": "Sales"}
+{"cv_id": "kaggle_row_9", "question": "What is the job category of this candidate?", "expected_category": "Sales"}
+{"cv_id": "kaggle_row_9", "question": "Identify the field this resume belongs to.", "expected_category": "Sales"}
+{"cv_id": "kaggle_row_9", "question": "Which profession is shown in this resume?", "expected_category": "Sales"}
+{"cv_id": "kaggle_row_9", "question": "What industry matches this job profile?", "expected_category": "Sales"}
+{"cv_id": "kaggle_row_10", "question": "What category does this resume fall under?", "expected_category": "Web Developer"}
+{"cv_id": "kaggle_row_10", "question": "Which technical role matches this candidate?", "expected_category": "Web Developer"}
+{"cv_id": "kaggle_row_10", "question": "Identify the candidate’s professional domain.", "expected_category": "Web Developer"}
+{"cv_id": "kaggle_row_10", "question": "Which development field suits this resume?", "expected_category": "Web Developer"}
+{"cv_id": "kaggle_row_10", "question": "What is the candidate’s specialization?", "expected_category": "Web Developer"}
+
+{"cv_id": "kaggle_row_11", "question": "Which business role matches this profile?", "expected_category": "Business Analyst"}
+{"cv_id": "kaggle_row_11", "question": "Identify the candidate's job category.", "expected_category": "Business Analyst"}
+{"cv_id": "kaggle_row_11", "question": "What is the professional domain of the candidate?", "expected_category": "Business Analyst"}
+{"cv_id": "kaggle_row_11", "question": "Which analytical role fits this resume?", "expected_category": "Business Analyst"}
+{"cv_id": "kaggle_row_11", "question": "Which industry describes this candidate best?", "expected_category": "Business Analyst"}
+
+{"cv_id": "kaggle_row_12", "question": "What type of engineering does this CV represent?", "expected_category": "Computer Engineer"}
+{"cv_id": "kaggle_row_12", "question": "What technical domain does this candidate belong to?", "expected_category": "Computer Engineer"}
+{"cv_id": "kaggle_row_12", "question": "Which engineering specialty fits the resume?", "expected_category": "Computer Engineer"}
+{"cv_id": "kaggle_row_12", "question": "Identify the engineering classification.", "expected_category": "Computer Engineer"}
+{"cv_id": "kaggle_row_12", "question": "What job category applies to this candidate?", "expected_category": "Computer Engineer"}
+
+{"cv_id": "kaggle_row_13", "question": "Which finance-related role is this resume suited for?", "expected_category": "Finance"}
+{"cv_id": "kaggle_row_13", "question": "Identify the candidate’s job category.", "expected_category": "Finance"}
+{"cv_id": "kaggle_row_13", "question": "What is the financial domain of this profile?", "expected_category": "Finance"}
+{"cv_id": "kaggle_row_13", "question": "Which financial sector fits this resume?", "expected_category": "Finance"}
+{"cv_id": "kaggle_row_13", "question": "Which industry category matches this candidate?", "expected_category": "Finance"}
+
+{"cv_id": "kaggle_row_14", "question": "Identify the profession described in the resume.", "expected_category": "Marketing"}
+{"cv_id": "kaggle_row_14", "question": "What type of business role fits this candidate?", "expected_category": "Marketing"}
+{"cv_id": "kaggle_row_14", "question": "Which marketing field does this profile belong to?", "expected_category": "Marketing"}
+{"cv_id": "kaggle_row_14", "question": "What industry matches this job profile?", "expected_category": "Marketing"}
+{"cv_id": "kaggle_row_14", "question": "What is the candidate’s area of specialization?", "expected_category": "Marketing"}
+
+{"cv_id": "kaggle_row_15", "question": "Which job category applies to this teacher's resume?", "expected_category": "Teacher"}
+{"cv_id": "kaggle_row_15", "question": "What field does this educational resume fit?", "expected_category": "Teacher"}
+{"cv_id": "kaggle_row_15", "question": "Identify the teaching specialization.", "expected_category": "Teacher"}
+{"cv_id": "kaggle_row_15", "question": "What is the profession of the candidate?", "expected_category": "Teacher"}
+{"cv_id": "kaggle_row_15", "question": "Which education domain matches this profile?", "expected_category": "Teacher"}
+
+{"cv_id": "kaggle_row_16", "question": "What IT support field does this resume represent?", "expected_category": "IT Support"}
+{"cv_id": "kaggle_row_16", "question": "Which support-related job fits this profile?", "expected_category": "IT Support"}
+{"cv_id": "kaggle_row_16", "question": "Identify the specialization for this candidate.", "expected_category": "IT Support"}
+{"cv_id": "kaggle_row_16", "question": "Which technical assistance role applies here?", "expected_category": "IT Support"}
+{"cv_id": "kaggle_row_16", "question": "What industry fits this resume best?", "expected_category": "IT Support"}
+
+{"cv_id": "kaggle_row_17", "question": "What managerial category fits this resume?", "expected_category": "Management"}
+{"cv_id": "kaggle_row_17", "question": "Identify the management domain for this candidate.", "expected_category": "Management"}
+{"cv_id": "kaggle_row_17", "question": "Which leadership role matches this profile?", "expected_category": "Management"}
+{"cv_id": "kaggle_row_17", "question": "What industry classification fits the resume?", "expected_category": "Management"}
+{"cv_id": "kaggle_row_17", "question": "What professional field is represented?", "expected_category": "Management"}
+
+{"cv_id": "kaggle_row_18", "question": "What specialization does this designer belong to?", "expected_category": "Graphic Designer"}
+{"cv_id": "kaggle_row_18", "question": "Which creative job matches this resume?", "expected_category": "Graphic Designer"}
+{"cv_id": "kaggle_row_18", "question": "Identify the candidate’s creative industry.", "expected_category": "Graphic Designer"}
+{"cv_id": "kaggle_row_18", "question": "Which design role fits this CV?", "expected_category": "Graphic Designer"}
+{"cv_id": "kaggle_row_18", "question": "What professional area describes this candidate?", "expected_category": "Graphic Designer"}
+
+{"cv_id": "kaggle_row_19", "question": "Which medical role fits this resume?", "expected_category": "Healthcare"}
+{"cv_id": "kaggle_row_19", "question": "What healthcare category does this candidate belong to?", "expected_category": "Healthcare"}
+{"cv_id": "kaggle_row_19", "question": "Identify the medical specialization shown here.", "expected_category": "Healthcare"}
+{"cv_id": "kaggle_row_19", "question": "What is the professional field for this profile?", "expected_category": "Healthcare"}
+{"cv_id": "kaggle_row_19", "question": "Which healthcare domain matches the resume?", "expected_category": "Healthcare"}

@@ -1,0 +1,38 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# Data folders (prevent large datasets)
+data/
+datasets/
+raw_data/
+processed_data/
+
+# ChromaDB or vector stores
+chroma_cvs_db/
+chroma_db/
+vectorstore/
+index/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# Log files
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+*.env
+*.secret

@@ -1,0 +1,164 @@
+{
+  "What is Rama’s email address?": {
+    "relevant": ["ramah.sabboubeh@gmail.com"]
+  },
+  "Which university does Ibrahim attend?": {
+    "relevant": ["An-Najah National University"]
+  },
+  "What is Rama’s GPA?": {
+    "relevant": ["3.68"]
+  },
+  "What programming languages does Ibrahim know?": {
+    "relevant": ["Python, JavaScript, C++, Java"]
+  },
+  "List Rama's technical skills": {
+    "relevant": ["Python, React, Git, SQL, NumPy, Pandas, frontend, JavaScript, Jupyter Notebooks, JSON, GitHub Actions, VS Code, Docker, TensorFlow, MongoDB, FastAPI"]
+  },
+  "What is Ibrahim's phone number?": {
+    "relevant": ["+(970) 569-049-126"]
+  },
+  "When did Rama complete the Backend Java Training?": {
+    "relevant": ["Summer 2025"]
+  },
+  "What internship did Ibrahim complete and when?": {
+    "relevant": ["Software Engineer Intern at OppoTrain from Jul 2025 to Sep 2025"]
+  },
+  "Describe Rama's experience with the Fetal Health Classification project": {
+    "relevant": ["In this project, Rama used many ML algorithms to classify fetal health and made it into a website and API for the best algorithm."]
+  },
+  "What technologies did Ibrahim use in the Cap Advisor project?": {
+    "relevant": ["Node.js, Express, MongoDB, EJS, Bootstrap"]
+  },
+  "What was Rama's role in the Messages Chat Web Page project?": {
+    "relevant": ["Rama made the notification for messages."]
+  },
+  "How many hours was Rama's EXALT training program?": {
+    "relevant": ["360+ hours"]
+  },
+  "Compare the technical skills of both candidates": {
+    "relevant": ["Rama: Python, React, Git, SQL, NumPy, Pandas, JavaScript, Jupyter Notebooks, JSON, GitHub Actions, VS Code, Docker, TensorFlow, MongoDB, FastAPI. Ibrahim: Python, JavaScript, C++, Java, Node.js, React, Express, MySQL, MongoDB, GitHub, Trello, Slack, Notion, Jira."]
+  },
+  "Which candidate has more experience with databases?": {
+    "relevant": ["Both have experience with databases. Rama is proficient in SQL and familiar with MongoDB. Ibrahim has experience with MySQL and MongoDB. It's comparable."]
+  },
+  "Who has experience with React?": {
+    "relevant": ["Rama and Ibrahim both have experience with React."]
+  },
+  "Compare the GitHub profiles of both candidates": {
+    "relevant": ["Rama's GitHub: https://github.com/Rama-sab, Ibrahim's GitHub: https://github.com/IbrahimKhdier"]
+  },
+  "Which candidate has completed more certifications?": {
+    "relevant": ["Rama has more certifications: Backend Java Training (EXALT) and Data Analyst (Udacity), while Ibrahim has none listed."]
+  },
+  "Do both candidates have MongoDB experience?": {
+    "relevant": ["Rama has experience with MongoDB. Ibrahim has experience with MongoDB."]
+  },
+  "Which candidate is more suitable for a backend developer role?": {
+    "relevant": ["Rama is more suitable due to Backend Java Training (EXALT) and experience with FastAPI, SQL, MongoDB. Ibrahim has backend experience with Node.js, Express, MongoDB but less formal backend training."]
+  },
+  "Who has stronger machine learning background?": {
+    "relevant": ["Rama has a stronger machine learning background with projects like Fetal Health Classification and Bone Fractures Classification. Ibrahim's projects are more focused on web development and QA."]
+  },
+  "Which candidate has more full-stack development experience?": {
+    "relevant": ["Ibrahim has more full-stack experience with projects like 9gag Meme Sharing Platform (MERN) and Cap Advisor (Node.js, Express, MongoDB, EJS). Rama's projects are more focused on ML and API development."]
+  },
+  "Based on their projects, who has better problem-solving experience?": {
+    "relevant": ["Rama has worked on ML classification projects requiring problem-solving in healthcare domains. Ibrahim has built complete web applications and a decision-support system, demonstrating different types of problem-solving."]
+  },
+  "Which candidate is better suited for a QA automation role?": {
+    "relevant": ["Ibrahim is better suited due to experience with Playwright for automated testing and a QA project. Rama has no listed QA experience."]
+  },
+  "What machine learning frameworks has the candidate who worked on bone fracture classification used?": {
+    "relevant": ["The bone fracture classification project by Rama uses advanced ML algorithms (specific frameworks not mentioned)."]
+  },
+  "Which university graduate has experience with both Node.js and MongoDB?": {
+    "relevant": ["Ibrahim has experience with Node.js and MongoDB."]
+  },
+  "Find all projects involving classification tasks and list their technologies": {
+    "relevant": ["Fetal Health Classification (Rama), Bone Fractures Classification (Rama), Fraud Detection (Ahmad), Essay Grading (Ahmad), Advanced text classification (Osama), Waste Classification (Toqa). Technologies include ML algorithms, NLP models, and various frameworks."]
+  },
+  "What soft skills does the candidate with the highest GPA possess?": {
+    "relevant": ["Rama has soft skills: Problem Solving, Critical Thinking, Time Management, Team Collaboration, Communication, Attention to Detail."]
+  },
+  "Which candidate has more recent training or certifications?": {
+    "relevant": ["Both have recent training in 2025. Rama completed Backend Java Training (EXALT) and Data Analyst (Udacity) in 2025. Ibrahim completed OppoTrain internship in 2025."]
+  },
+  "When did Ibrahim work on the 9gag project?": {
+    "relevant": ["Aug 2022 - Dec 2022"]
+  },
+  "What is the timeline of Rama's education and training?": {
+    "relevant": ["2022-Present: CAP AI Track at An-Najah National University. Feb 2025-Jul 2025: Data Analyst at Udacity. Summer 2025: Backend Java Training at EXALT."]
+  },
+  "Which projects were completed in 2024?": {
+    "relevant": ["Tale3 (Ghaith) March 2024-July 2024, Event Booking Platform (Zeyad) Oct 2024-Jan 2025, Library Management System (Emad) Dec 2024-Jun 2025"]
+  },
+  "Does Rama have experience with Java?": {
+    "relevant": ["Yes, Rama completed Backend Java Training (EXALT)."]
+  },
+  "Has Ibrahim completed any Udacity courses?": {
+    "relevant": ["No, Ibrahim has not completed any Udacity courses."]
+  },
+  "Does Ibrahim have experience with TensorFlow?": {
+    "relevant": ["No, Ibrahim does not have experience with TensorFlow."]
+  },
+  "Has Rama worked as a Software Engineer Intern?": {
+    "relevant": ["No, Rama has not worked as a Software Engineer Intern."]
+  },
+  "Does either candidate have AWS experience?": {
+    "relevant": ["No, neither Rama nor Ibrahim has AWS experience."]
+  },
+  "List all the frameworks mentioned across both resumes": {
+    "relevant": ["React, Express.js, Flutter, Firebase, Next.js, Tailwind CSS, Spark, Spring Boot, FastAPI, Blazor, ASP.NET Core, Radzen, JavaFX, Hibernate, Laravel, Angular, Bootstrap, Playwright, Xamarin"]
+  },
+  "Count the total number of projects across both candidates": {
+    "relevant": ["Approximately 42 projects across all 12 candidates."]
+  },
+  "What are all the databases mentioned in the resumes?": {
+    "relevant": ["MySQL, MongoDB, PostgreSQL, Oracle, Firebase, Elasticsearch"]
+  },
+  "List all GitHub repository links provided": {
+    "relevant": ["Ahmad: github.com/Ahmad-F-Obaid/Automatic-Essay-Grading-System, github.com/Ahmad-F-Obaid/Machine-learning-Project, github.com/Ghaith-abohantash/Tale3. Rama: github.com/Rama-sab/Fetal_Health_Classification, github.com/marselflanani/Messages_team_8, github.com/Rama-sab/Classification_bone_fractures. Emad: Github.com/EmadAbuAmer. Osama: github.com/OsamaAbuReesh. Reema: GitHub.com/Reemakusa. Zeyad: github.com/zeyad-barahme."]
+  },
+  "How many candidates have Python experience?": {
+    "relevant": ["12 out of 12 candidates have Python experience."]
+  },
+  "Who is more qualified for an AI position?": {
+    "relevant": ["Toqa Khaled Asedah is most qualified with AI Engineering degree, ML/NLP/Computer Vision projects, and AI internship at ASAL Technologies."]
+  },
+  "Find information about testing experience": {
+    "relevant": ["Ibrahim: Playwright automation testing. Baraa: Manual testing, JIRA. Zeyad: Playwright automation testing. Reema: QA testing. Rama: No testing experience listed."]
+  },
+  "What experience do the candidates have with APIs?": {
+    "relevant": ["Rama: FastAPI. Ghaith: REST APIs. Emad: RESTful APIs. Toqa: REST APIs, FastAPI. Osama: Flask API. Ibrahim: REST APIs with Node.js/Express. Reema: REST APIs with Node.js/Express."]
+  },
+  "Who has better teamwork skills?": {
+    "relevant": ["Both have teamwork skills. Rama lists 'Team Collaboration' and has team projects. Ibrahim has team projects and mentions teamwork."]
+  },
+  "Find all cloud-related experience": {
+    "relevant": ["Ghaith: AWS. Toqa: Azure DevOps. Israa Obaid: AWS, Azure, Google Cloud. Israa Falah Obaid: Azure, GCP. Reema: Firebase."]
+  },
+  "What REST API experience does Ibrahim have?": {
+    "relevant": ["Ibrahim built REST APIs in Cap Advisor project using Node.js, Express, and MongoDB."]
+  },
+  "Describe Rama's deep learning project experience": {
+    "relevant": ["Rama has worked on Bone Fractures Classification using advanced ML algorithms (not specified as deep learning)."]
+  },
+  "What testing tools and frameworks are mentioned?": {
+    "relevant": ["Playwright, JIRA, Postman, manual testing"]
+  },
+  "Which candidate has experience with CI/CD?": {
+    "relevant": ["Rama: GitHub Actions. Ahmad: CI/CD. Israa Falah Obaid: GitHub Actions."]
+  },
+  "What containerization technologies are mentioned?": {
+    "relevant": ["Docker, Kubernetes"]
+  },
+  "Who has the longest project duration?": {
+    "relevant": ["Toqa's projects have the longest durations, e.g., Big Data Twitter Analysis and Greenatick Web Application span multiple months."]
+  },
+  "Find all acronyms and their meanings (CAP, MERN, etc.)": {
+    "relevant": ["CAP: Computer Science Apprenticeship Program. MERN: MongoDB, Express, React, Node.js. NLP: Natural Language Processing. CI/CD: Continuous Integration/Continuous Deployment. IAM: Identity and Access Management. SIEM: Security Information and Event Management."]
+  },
+  "What location information is provided for each candidate?": {
+    "relevant": ["Rama: Anabta, Tulkarm. Ibrahim: Not specified. Ahmad: Not specified. Ghaith: Not specified. Emad: Not specified. Toqa: Palestinian-Jordanian. Osama: Not specified. Baraa: Not specified. Israa Obaid: Nablus, Turkey. Reema: Not specified. Israa Falah Obaid: Nablus. Zeyad: Not specified."]
+  }
+}

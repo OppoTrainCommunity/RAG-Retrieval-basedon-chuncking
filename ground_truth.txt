@@ -1,0 +1,6 @@
+What are my technical skills? | python,java,c++,sql,machine learning,deep learning,data analysis,flask,react,tensorflow,pytorch
+What projects have I worked on? | project,system,application,model,implementation,development,engine,platform
+Do I have internship experience? | internship,intern,training,practical training
+What did I do during my internship? | developed,implemented,worked on,designed,analyzed,assisted,participated
+What is my email? | @gmail.com,@hotmail.com,@outlook.com,email
+What is my GPA? | gpa,grade point,average

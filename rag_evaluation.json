@@ -1,0 +1,350 @@
+# Define your evaluation set
+
+EVAL_QUERIES = [
+    # ---------- Direct Information Retrieval ----------
+    {
+        "id": "q1_email_rama",
+        "category": "direct",
+        "question": "What is Rama’s email address?",
+        "gold_answer": "<RAMA_EMAIL>",          # fill manually
+        "gold_metadata": {"candidate": "Rama"}, # e.g. your metadata field
+    },
+    {
+        "id": "q2_uni_ibrahim",
+        "category": "direct",
+        "question": "Which university does Ibrahim attend?",
+        "gold_answer": "<IBRAHIM_UNIVERSITY>",
+        "gold_metadata": {"candidate": "Ibrahim"},
+    },
+    {
+        "id": "q3_gpa_rama",
+        "category": "direct",
+        "question": "What is Rama’s GPA?",
+        "gold_answer": "<RAMA_GPA>",
+        "gold_metadata": {"candidate": "Rama"},
+    },
+    {
+        "id": "q4_langs_ibrahim",
+        "category": "direct",
+        "question": "What programming languages does Ibrahim know?",
+        "gold_answer": "<LIST_LANGS>",
+        "gold_metadata": {"candidate": "Ibrahim", "section": "skills"},
+    },
+    {
+        "id": "q5_skills_rama",
+        "category": "direct",
+        "question": "List Rama’s technical skills",
+        "gold_answer": "<LIST_SKILLS>",
+        "gold_metadata": {"candidate": "Rama", "section": "skills"},
+    },
+    {
+        "id": "q6_phone_ibrahim",
+        "category": "direct",
+        "question": "What is Ibrahim’s phone number?",
+        "gold_answer": "<IBRAHIM_PHONE>",
+        "gold_metadata": {"candidate": "Ibrahim"},
+    },
+    {
+        "id": "q7_backend_date_rama",
+        "category": "direct",
+        "question": "When did Rama complete the Backend Java Training?",
+        "gold_answer": "<DATE_OR_RANGE>",
+        "gold_metadata": {"candidate": "Rama", "training": "Backend Java"},
+    },
+
+    # ---------- Experience Queries ----------
+    {
+        "id": "q8_internship_ibrahim",
+        "category": "experience",
+        "question": "What internship did Ibrahim complete and when?",
+        "gold_metadata": {"candidate": "Ibrahim", "type": "internship"},
+    },
+    {
+        "id": "q9_fetal_health_rama",
+        "category": "experience",
+        "question": "Describe Rama’s experience with the Fetal Health Classification project",
+        "gold_metadata": {"candidate": "Rama", "project": "Fetal Health Classification"},
+    },
+    {
+        "id": "q10_cap_advisor_tech_ibrahim",
+        "category": "experience",
+        "question": "What technologies did Ibrahim use in the Cap Advisor project?",
+        "gold_metadata": {"candidate": "Ibrahim", "project": "Cap Advisor"},
+    },
+    {
+        "id": "q11_messages_role_rama",
+        "category": "experience",
+        "question": "What was Rama’s role in the Messages Chat Web Page project?",
+        "gold_metadata": {"candidate": "Rama", "project": "Messages Chat Web Page"},
+    },
+    {
+        "id": "q12_exalt_hours_rama",
+        "category": "experience",
+        "question": "How many hours was Rama’s EXALT training program?",
+        "gold_metadata": {"candidate": "Rama", "training": "EXALT"},
+    },
+
+    # ---------- Multi-Document Queries ----------
+    {
+        "id": "q13_compare_skills",
+        "category": "multi_doc",
+        "question": "Compare the technical skills of both candidates",
+        "gold_metadata": {"needs_both_candidates": True},
+    },
+    {
+        "id": "q14_more_db_experience",
+        "category": "multi_doc",
+        "question": "Which candidate has more experience with databases?",
+        "gold_metadata": {"needs_both_candidates": True, "topic": "databases"},
+    },
+    {
+        "id": "q15_react_experience",
+        "category": "multi_doc",
+        "question": "Who has experience with React?",
+        "gold_metadata": {"topic": "React"},
+    },
+    {
+        "id": "q16_compare_github",
+        "category": "multi_doc",
+        "question": "Compare the GitHub profiles of both candidates",
+        "gold_metadata": {"needs_both_candidates": True, "topic": "GitHub"},
+    },
+    {
+        "id": "q17_more_certs",
+        "category": "multi_doc",
+        "question": "Which candidate has completed more certifications?",
+        "gold_metadata": {"needs_both_candidates": True, "topic": "certifications"},
+    },
+    {
+        "id": "q18_both_mongodb",
+        "category": "multi_doc",
+        "question": "Do both candidates have MongoDB experience?",
+        "gold_metadata": {"topic": "MongoDB", "needs_both_candidates": True},
+    },
+
+    # ---------- Inference & Interpretation ----------
+    {
+        "id": "q19_backend_fit",
+        "category": "inference",
+        "question": "Which candidate is more suitable for a backend developer role?",
+        "gold_metadata": {"role": "backend"},
+    },
+    {
+        "id": "q20_stronger_ml",
+        "category": "inference",
+        "question": "Who has stronger machine learning background?",
+        "gold_metadata": {"topic": "machine learning"},
+    },
+    {
+        "id": "q21_fullstack_experience",
+        "category": "inference",
+        "question": "Which candidate has more full-stack development experience?",
+        "gold_metadata": {"topic": "full-stack"},
+    },
+    {
+        "id": "q22_problem_solving",
+        "category": "inference",
+        "question": "Based on their projects, who has better problem-solving experience?",
+        "gold_metadata": {"topic": "problem-solving"},
+    },
+    {
+        "id": "q23_qa_fit",
+        "category": "inference",
+        "question": "Which candidate is better suited for a QA automation role?",
+        "gold_metadata": {"role": "qa"},
+    },
+
+    # ---------- Complex Multi-Hop ----------
+    {
+        "id": "q24_ml_frameworks_bone",
+        "category": "multi_hop",
+        "question": "What machine learning frameworks has the candidate who worked on bone fracture classification used?",
+        "gold_metadata": {"project": "bone fracture classification"},
+    },
+    {
+        "id": "q25_node_mongo_unigrad",
+        "category": "multi_hop",
+        "question": "Which university graduate has experience with both Node.js and MongoDB?",
+        "gold_metadata": {"tech": ["Node.js", "MongoDB"], "needs_education": True},
+    },
+    {
+        "id": "q26_all_classification_projects",
+        "category": "multi_hop",
+        "question": "Find all projects involving classification tasks and list their technologies",
+        "gold_metadata": {"task_type": "classification"},
+    },
+    {
+        "id": "q27_soft_skills_highest_gpa",
+        "category": "multi_hop",
+        "question": "What soft skills does the candidate with the highest GPA possess?",
+        "gold_metadata": {"needs_highest_gpa": True, "topic": "soft skills"},
+    },
+
+    # ---------- Temporal / Date-Based ----------
+    {
+        "id": "q28_recent_training",
+        "category": "temporal",
+        "question": "Which candidate has more recent training or certifications?",
+        "gold_metadata": {"topic": "training"},
+    },
+    {
+        "id": "q29_9gag_date",
+        "category": "temporal",
+        "question": "When did Ibrahim work on the 9gag project?",
+        "gold_metadata": {"candidate": "Ibrahim", "project": "9gag"},
+    },
+    {
+        "id": "q30_rama_timeline",
+        "category": "temporal",
+        "question": "What is the timeline of Rama’s education and training?",
+        "gold_metadata": {"candidate": "Rama", "topic": "timeline"},
+    },
+    {
+        "id": "q31_projects_2024",
+        "category": "temporal",
+        "question": "Which projects were completed in 2024?",
+        "gold_metadata": {"year": 2024},
+    },
+
+    # ---------- Negative / Absence ----------
+    {
+        "id": "q32_java_rama",
+        "category": "negative",
+        "question": "Does Rama have experience with Java?",
+        "gold_metadata": {"candidate": "Rama", "topic": "Java"},
+    },
+    {
+        "id": "q33_udacity_ibrahim",
+        "category": "negative",
+        "question": "Has Ibrahim completed any Udacity courses?",
+        "gold_metadata": {"candidate": "Ibrahim", "topic": "Udacity"},
+    },
+    {
+        "id": "q34_tf_ibrahim",
+        "category": "negative",
+        "question": "Does Ibrahim have experience with TensorFlow?",
+        "gold_metadata": {"candidate": "Ibrahim", "topic": "TensorFlow"},
+    },
+    {
+        "id": "q35_se_intern_rama",
+        "category": "negative",
+        "question": "Has Rama worked as a Software Engineer Intern?",
+        "gold_metadata": {"candidate": "Rama", "role": "Software Engineer Intern"},
+    },
+    {
+        "id": "q36_aws_any",
+        "category": "negative",
+        "question": "Does either candidate have AWS experience?",
+        "gold_metadata": {"topic": "AWS"},
+    },
+
+    # ---------- Aggregation ----------
+    {
+        "id": "q37_all_frameworks",
+        "category": "aggregation",
+        "question": "List all the frameworks mentioned across both resumes",
+        "gold_metadata": {"topic": "frameworks"},
+    },
+    {
+        "id": "q38_count_projects",
+        "category": "aggregation",
+        "question": "Count the total number of projects across both candidates",
+        "gold_metadata": {"topic": "projects"},
+    },
+    {
+        "id": "q39_all_databases",
+        "category": "aggregation",
+        "question": "What are all the databases mentioned in the resumes?",
+        "gold_metadata": {"topic": "databases"},
+    },
+    {
+        "id": "q40_all_github_links",
+        "category": "aggregation",
+        "question": "List all GitHub repository links provided",
+        "gold_metadata": {"topic": "GitHub links"},
+    },
+
+    # ---------- Ambiguous / Challenging ----------
+    {
+        "id": "q41_ai_position",
+        "category": "ambiguous",
+        "question": "Who is more qualified for an AI position?",
+        "gold_metadata": {"topic": "AI"},
+    },
+    {
+        "id": "q42_testing_experience",
+        "category": "ambiguous",
+        "question": "Find information about testing experience",
+        "gold_metadata": {"topic": "testing"},
+    },
+    {
+        "id": "q43_api_experience",
+        "category": "ambiguous",
+        "question": "What experience do the candidates have with APIs?",
+        "gold_metadata": {"topic": "APIs"},
+    },
+    {
+        "id": "q44_teamwork",
+        "category": "ambiguous",
+        "question": "Who has better teamwork skills?",
+        "gold_metadata": {"topic": "teamwork"},
+    },
+    {
+        "id": "q45_cloud_experience",
+        "category": "ambiguous",
+        "question": "Find all cloud-related experience",
+        "gold_metadata": {"topic": "cloud"},
+    },
+
+    # ---------- Domain-Specific Technical ----------
+    {
+        "id": "q46_rest_ibrahim",
+        "category": "technical",
+        "question": "What REST API experience does Ibrahim have?",
+        "gold_metadata": {"candidate": "Ibrahim", "topic": "REST API"},
+    },
+    {
+        "id": "q47_dl_rama",
+        "category": "technical",
+        "question": "Describe Rama’s deep learning project experience",
+        "gold_metadata": {"candidate": "Rama", "topic": "deep learning"},
+    },
+    {
+        "id": "q48_testing_tools",
+        "category": "technical",
+        "question": "What testing tools and frameworks are mentioned?",
+        "gold_metadata": {"topic": "testing tools"},
+    },
+    {
+        "id": "q49_ci_cd",
+        "category": "technical",
+        "question": "Which candidate has experience with CI/CD?",
+        "gold_metadata": {"topic": "CI/CD"},
+    },
+    {
+        "id": "q50_containerization",
+        "category": "technical",
+        "question": "What containerization technologies are mentioned?",
+        "gold_metadata": {"topic": "containers"},
+    },
+
+    # ---------- Edge Cases & Stress Tests ----------
+    {
+        "id": "q51_longest_project",
+        "category": "edge",
+        "question": "Who has the longest project duration?",
+        "gold_metadata": {"topic": "duration"},
+    },
+    {
+        "id": "q52_acronyms",
+        "category": "edge",
+        "question": "Find all acronyms and their meanings (CAP, MERN, etc.)",
+        "gold_metadata": {"topic": "acronyms"},
+    },
+    {
+        "id": "q53_locations",
+        "category": "edge",
+        "question": "What location information is provided for each candidate?",
+        "gold_metadata": {"topic": "location"},
+    },
+]

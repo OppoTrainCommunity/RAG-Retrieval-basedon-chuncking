@@ -1,0 +1,71 @@
+[
+
+  { "qid": "DIR_01", "type": "direct", "query": "What is Rama’s email address?" },
+  { "qid": "DIR_02", "type": "direct", "query": "Which university does Ibrahim attend?" },
+  { "qid": "DIR_03", "type": "direct", "query": "What is Rama’s GPA?" },
+  { "qid": "DIR_04", "type": "direct", "query": "What programming languages does Ibrahim know?" },
+  { "qid": "DIR_05", "type": "direct", "query": "List Rama’s technical skills" },
+  { "qid": "DIR_06", "type": "direct", "query": "What is Ibrahim’s phone number?" },
+  { "qid": "DIR_07", "type": "direct", "query": "When did Rama complete the Backend Java Training?" },
+
+  { "qid": "EXP_01", "type": "experience", "query": "What internship did Ibrahim complete and when?" },
+  { "qid": "EXP_02", "type": "experience", "query": "Describe Rama’s experience with the Fetal Health Classification project" },
+  { "qid": "EXP_03", "type": "experience", "query": "What technologies did Ibrahim use in the Cap Advisor project?" },
+  { "qid": "EXP_04", "type": "experience", "query": "What was Rama’s role in the Messages Chat Web Page project?" },
+  { "qid": "EXP_05", "type": "experience", "query": "How many hours was Rama’s EXALT training program?" },
+
+
+  { "qid": "MD_01", "type": "multi_doc", "query": "Compare the technical skills of both candidates" },
+  { "qid": "MD_02", "type": "multi_doc", "query": "Which candidate has more experience with databases?" },
+  { "qid": "MD_03", "type": "multi_doc", "query": "Who has experience with React?" },
+  { "qid": "MD_04", "type": "multi_doc", "query": "Compare the GitHub profiles of both candidates" },
+  { "qid": "MD_05", "type": "multi_doc", "query": "Which candidate has completed more certifications?" },
+  { "qid": "MD_06", "type": "multi_doc", "query": "Do both candidates have MongoDB experience?" },
+
+
+  { "qid": "INF_01", "type": "inference", "query": "Which candidate is more suitable for a backend developer role?" },
+  { "qid": "INF_02", "type": "inference", "query": "Who has stronger machine learning background?" },
+  { "qid": "INF_03", "type": "inference", "query": "Which candidate has more full-stack development experience?" },
+  { "qid": "INF_04", "type": "inference", "query": "Based on their projects, who has better problem-solving experience?" },
+  { "qid": "INF_05", "type": "inference", "query": "Which candidate is better suited for a QA automation role?" },
+
+
+  { "qid": "MH_01", "type": "multi_hop", "query": "What machine learning frameworks has the candidate who worked on bone fracture classification used?" },
+  { "qid": "MH_02", "type": "multi_hop", "query": "Which university graduate has experience with both Node.js and MongoDB?" },
+  { "qid": "MH_03", "type": "multi_hop", "query": "Find all projects involving classification tasks and list their technologies" },
+  { "qid": "MH_04", "type": "multi_hop", "query": "What soft skills does the candidate with the highest GPA possess?" },
+
+  { "qid": "TMP_01", "type": "temporal", "query": "Which candidate has more recent training or certifications?" },
+  { "qid": "TMP_02", "type": "temporal", "query": "When did Ibrahim work on the 9gag project?" },
+  { "qid": "TMP_03", "type": "temporal", "query": "What is the timeline of Rama’s education and training?" },
+  { "qid": "TMP_04", "type": "temporal", "query": "Which projects were completed in 2024?" },
+
+
+  { "qid": "NEG_01", "type": "negative", "query": "Does Rama have experience with Java?" },
+  { "qid": "NEG_02", "type": "negative", "query": "Has Ibrahim completed any Udacity courses?" },
+  { "qid": "NEG_03", "type": "negative", "query": "Does Ibrahim have experience with TensorFlow?" },
+  { "qid": "NEG_04", "type": "negative", "query": "Has Rama worked as a Software Engineer Intern?" },
+  { "qid": "NEG_05", "type": "negative", "query": "Does either candidate have AWS experience?" },
+
+  { "qid": "AGG_01", "type": "aggregation", "query": "List all the frameworks mentioned across both resumes" },
+  { "qid": "AGG_02", "type": "aggregation", "query": "Count the total number of projects across both candidates" },
+  { "qid": "AGG_03", "type": "aggregation", "query": "What are all the databases mentioned in the resumes?" },
+  { "qid": "AGG_04", "type": "aggregation", "query": "List all GitHub repository links provided" },
+
+  { "qid": "AMB_01", "type": "ambiguous", "query": "Who is more qualified for an AI position?" },
+  { "qid": "AMB_02", "type": "ambiguous", "query": "Find information about testing experience" },
+  { "qid": "AMB_03", "type": "ambiguous", "query": "What experience do the candidates have with APIs?" },
+  { "qid": "AMB_04", "type": "ambiguous", "query": "Who has better teamwork skills?" },
+  { "qid": "AMB_05", "type": "ambiguous", "query": "Find all cloud-related experience" },
+
+
+  { "qid": "DOM_01", "type": "domain", "query": "What REST API experience does Ibrahim have?" },
+  { "qid": "DOM_02", "type": "domain", "query": "Describe Rama’s deep learning project experience" },
+  { "qid": "DOM_03", "type": "domain", "query": "What testing tools and frameworks are mentioned?" },
+  { "qid": "DOM_04", "type": "domain", "query": "Which candidate has experience with CI/CD?" },
+  { "qid": "DOM_05", "type": "domain", "query": "What containerization technologies are mentioned?" },
+
+  { "qid": "EDGE_01", "type": "edge", "query": "Who has the longest project duration?" },
+  { "qid": "EDGE_02", "type": "edge", "query": "Find all acronyms and their meanings (CAP, MERN, etc.)" },
+  { "qid": "EDGE_03", "type": "edge", "query": "What location information is provided for each candidate?" }
+]

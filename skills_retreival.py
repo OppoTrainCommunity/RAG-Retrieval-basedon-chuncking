@@ -200,7 +200,6 @@ def build_kaggle_resume_corpus(
             "id": f"kaggle_{idx}",
             "file_name": f"kaggle_resume_{idx}.txt",   
             "text": text,
-            "source": "kaggle_resume"
         }
 
         data.append(doc)
@@ -265,7 +264,7 @@ def index_json_with_chunker(
 
     print(f"Indexed {len(documents)} chunks into Chroma collection '{collection_name}' using {chunk_fn.__name__}.")
 
-# keep old API for semantic chunking
+# semantic chunking
 def build_pdfs_index_from_json(json_path: str, collection_name: str = "pdf_docs"):
     index_json_with_chunker(
         json_path=json_path,
@@ -298,7 +297,7 @@ def get_pdf_collection(collection_name: str = "pdf_docs"):
     print("number of collection:" + str(collection.count()))
     return collection
 
-def retrieve_from_pdfs(query_text: str, k: int = 5, collection_name: str = "pdf_docs"):
+def retrieve_from_pdfs(query_text: str, k: int = 5, collection_name: str = "pdf_semantic"):
     """
     Retrieve top-k PDF documents (or chunks) relevant to the query_text.
     """
@@ -556,6 +555,6 @@ if __name__ == "__main__":
     )
 
     # Optional: example retrieval
-    # query = "Python and backend skills with web development experience"
-    # results = retrieve_from_pdfs(query, k=3, collection_name="pdf_semantic")
-    # pprint(results)
+    query = "Python and backend skills with web development experience"
+    results = retrieve_from_pdfs(query, k=3, collection_name="pdf_paragraph")
+    pprint(results)

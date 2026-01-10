@@ -1,0 +1,6 @@
+tiktoken>=0.5.0
+chromadb>=0.4.0
+langchain>=0.1.0
+langchain-community>=0.0.10
+sentence-transformers>=2.2.0
+git+https://github.com/brandonstarxel/chunking_evaluation.git

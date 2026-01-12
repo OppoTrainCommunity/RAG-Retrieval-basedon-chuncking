@@ -1,79 +1,64 @@
 """
-Main entry point for chunking evaluation.
+Main entry point for chunking evaluation with ChromaDB indexing.
 
 This script demonstrates how to use the chunking evaluation pipeline with
-different chunking strategies.
+different chunking strategies and index the results to ChromaDB.
 """
-
-from src.evaluation.comparison_pipeline import ComparisonPipeline
-from src.evaluation.custom_RAG_evaluation import CustomRAGEvaluation
 from src.preprocessors import CVDataPreprocessor
 from src.chunkers import SemanticChunker, ParagraphChunker
 from src.pipeline import ChunkingPipeline
+from src.indexers import ChromaIndexer
 
-def run_custom_evaluation():
+
+def search_example():
     """
-    Example function showing how to run custom RAG evaluation.
+    Example function demonstrating how to search existing ChromaDB collections.
     
-    This demonstrates the complete workflow for evaluating chunking strategies
-    using your own question-answer pairs.
-    """
-    from src.preprocessors import CVDataPreprocessor
-    from src.chunkers import SemanticChunker, ParagraphChunker
-    from chromadb.utils import embedding_functions
-    
-    # Step 1: Prepare your data
-    preprocessor = CVDataPreprocessor()
-    texts, metadatas = preprocessor.prepare_data("data/CVs.json")
-    
-    # Step 2: Load your QA pairs
-    evaluation = CustomRAGEvaluation(k_values=[1, 3, 5, 10])
-    
-    # Option A: Load from JSON file
-    evaluation.load_qa_data("data/CVs.json")
-    
-    # Option B: Load from dictionary
-    # qa_data = [
-    #     {
-    #         "question": "What programming languages does John know?",
-    #         "relevant_doc_ids": ["doc1_sem_3", "doc1_sem_4"]
-    #     },
-    #     ...
-    # ]
-    # evaluation.load_qa_from_dict(qa_data)
-    
-    # Step 3: Initialize embedding function
-    embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
-        model_name="all-MiniLM-L6-v2"
-    )
-    
-    # Step 4: Initialize chunkers
-    semantic_chunker = SemanticChunker(avg_chunk_size=400)
-    paragraph_chunker = ParagraphChunker(tokens_per_chunk=200)
-    
-    # Step 5: Run comparison
-    pipeline = ComparisonPipeline(evaluation)
-    results = pipeline.compare_chunkers(
-        chunkers=[semantic_chunker, paragraph_chunker],
-        texts=texts,
-        metadatas=metadatas,
-        embedding_fn=embedding_fn
-    )
-    
-    return results
-    
-def main():
-    """
-    Main function to run the chunking evaluation pipeline.
-    
-    Initializes a CV preprocessor, creates semantic and paragraph chunking
-    strategies, and runs them through the evaluation pipeline.
+    Shows how to load existing collections and perform searches without
+    re-indexing.
     
     Returns:
-        None: Prints evaluation results to stdout
+        None: Prints search results to stdout
+    """
+    # Connect to existing collection
+    indexer = ChromaIndexer(
+        collection_name="semantic_chunking",
+        persist_directory="./chroma_db"
+    )
+    
+    # Perform search
+    query = "machine learning and data science skills"
+    results = indexer.search(query, n_results=10)
+    
+    print("="*60)
+    print(f"Search results for: '{query}'")
+    print("="*60)
+    
+    for i, (doc, meta, dist) in enumerate(zip(
+        results['documents'][0],
+        results['metadatas'][0],
+        results['distances'][0]
+    ), 1):
+        print(f"\nResult {i}:")
+        print(f"Distance: {dist:.4f}")
+        print(f"File: {meta.get('file_name', 'N/A')}")
+        print(f"Text: {doc[:300]}...")
+        print("-"*60)
+
+
+def main():
+    """
+    Main function to run the chunking evaluation pipeline with ChromaDB indexing.
+    
+    Initializes a CV preprocessor, creates semantic and paragraph chunking
+    strategies, runs them through the evaluation pipeline, and indexes the
+    results to ChromaDB for semantic search.
+    
+    Returns:
+        None: Prints evaluation results and indexing status to stdout
         
     Examples:
-        To run the evaluation:
+        To run the evaluation and indexing:
         $ python main.py
     """
     DATA_PATH = "data/CVs.json"
@@ -102,12 +87,49 @@ def main():
     
     results = pipeline.run(DATA_PATH)
     
-    # Access results for further evaluation
+    # Index results to ChromaDB
+    print("\n" + "="*60)
+    print("Indexing chunks to ChromaDB")
+    print("="*60)
+    
     for strategy_name, (chunks, metas, ids) in results.items():
         print(f"\n{strategy_name}: {len(chunks)} total chunks")
+        
+        # Create collection name from strategy name
+        collection_name = strategy_name.lower().replace(" ", "_")
+        
+        # Initialize ChromaDB indexer
+        indexer = ChromaIndexer(
+            collection_name=collection_name,
+            embedding_model="all-MiniLM-L6-v2",
+            persist_directory="./chroma_db"
+        )
+        
+        # Add chunks to ChromaDB
+        indexer.add_chunks(chunks, metas, ids)
+        
+        # Get and print collection stats
+        stats = indexer.get_collection_stats()
+        print(f"Collection stats: {stats}")
+        
+        # Example search
+        print(f"\nExample search in {strategy_name}:")
+        search_results = indexer.search("python programming experience", n_results=10)
+        
+        for i, (doc, meta, dist) in enumerate(zip(
+            search_results['documents'][0],
+            search_results['metadatas'][0],
+            search_results['distances'][0]
+        ), 1):
+            print(f"\nResult {i} (distance: {dist:.4f}):")
+            print(f"File: {meta.get('file_name', 'N/A')}")
+            print(f"Chunk ID: {meta.get('chunk_id', 'N/A')}")
+            print(f"Text preview: {doc[:200]}...")
 
-    results = run_custom_evaluation()
+
 
 if __name__ == "__main__":
-    
     main()
+    
+    # Uncomment to run search example
+    search_example()

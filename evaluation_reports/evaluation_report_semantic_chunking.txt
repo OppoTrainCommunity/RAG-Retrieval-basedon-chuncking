@@ -1,0 +1,55 @@
+================================================================================
+RAG RETRIEVAL EVALUATION REPORT
+================================================================================
+
+OVERALL METRICS:
+--------------------------------------------------------------------------------
+Total Queries Evaluated: 33
+Top-K Retrieved: 10
+
+Precision@10: 0.0875
+Recall@10: 0.6970
+F1@10: 0.1551
+Mean Reciprocal Rank (MRR): 0.2747
+Hit Rate@10: 0.6970
+Average Latency: 19.56 ms
+
+Failed Queries (Recall=0): 10
+
+Perfect Queries (Recall=1): 23
+
+SAMPLE FAILED QUERIES:
+--------------------------------------------------------------------------------
+
+1. Query: What is the expected graduation date for Adham Mohammed Yaqoub's B.Sc in Computer Engineering?...
+   Expected Source: Adham  Yaqoub - CV.docx.pdf
+   Retrieved Sources: ['Gaith Resume Template 2026.pdf', 'Emad Daraghmeh CV.docx.pdf', 'sama shalabi CV(AI) latest.pdf', 'cv_training.pdf', 'samaShalabiCV(fullstack).pdf', 'Ibrahim khdairCV(SW).pdf', 'ToqaAsedahCV.pdf', 'Baraa Sulaiby_Resume.pdf', 'Ibrahim khdairCV .docx.pdf']
+   Top Distance: 0.4956
+
+2. Query: What is the name of the university where Baraa Sulaiby is pursuing their B.S. in Computer Science?...
+   Expected Source: Baraa Sulaiby_Resume (1).pdf
+   Retrieved Sources: ['Gaith Resume Template 2026.pdf', 'Emad Daraghmeh CV.docx.pdf', 'sama shalabi CV(AI) latest.pdf', 'cv_training.pdf', 'samaShalabiCV(fullstack).pdf', 'ToqaAsedahCV.pdf', 'Baraa Sulaiby_Resume.pdf', 'Ibrahim khdairCV .docx.pdf']
+   Top Distance: 0.5173
+
+3. Query: What programming languages is Baraa Sulaiby proficient in?...
+   Expected Source: Baraa Sulaiby_Resume (1).pdf
+   Retrieved Sources: ['Gaith Resume Template 2026.pdf', 'Emad Daraghmeh CV.docx.pdf', 'sama shalabi CV(AI) latest.pdf', 'samaShalabiCV(fullstack).pdf', 'Ibrahim khdairCV(SW).pdf', 'ToqaAsedahCV.pdf', 'Baraa Sulaiby_Resume.pdf', 'Ibrahim khdairCV .docx.pdf']
+   Top Distance: 0.5749
+
+4. Query: What technologies were used to develop the e-commerce web application?...
+   Expected Source: Baraa Sulaiby_Resume (1).pdf
+   Retrieved Sources: ['Gaith Resume Template 2026.pdf', 'Emad Daraghmeh CV.docx.pdf', 'samaShalabiCV(fullstack).pdf', 'Ibrahim khdairCV(SW).pdf', 'Mohammad Sayeh resume.pdf', 'O.AbuReesh - CV.pdf', 'Adham  Yaqoub - CV.docx.pdf', 'Ibrahim khdairCV .docx.pdf']
+   Top Distance: 0.5672
+
+5. Query: What technology was used to develop the full-stack e-commerce web application?...
+   Expected Source: Baraa Sulaiby_Resume.pdf
+   Retrieved Sources: ['Gaith Resume Template 2026.pdf', 'Emad Daraghmeh CV.docx.pdf', 'samaShalabiCV(fullstack).pdf', 'Ibrahim khdairCV(SW).pdf', 'Mohammad Sayeh resume.pdf', 'O.AbuReesh - CV.pdf', 'Adham  Yaqoub - CV.docx.pdf', 'Ibrahim khdairCV .docx.pdf']
+   Top Distance: 0.5372
+
+LATENCY STATISTICS:
+--------------------------------------------------------------------------------
+Min Latency: 13.00 ms
+Max Latency: 106.75 ms
+Avg Latency: 19.56 ms
+
+================================================================================

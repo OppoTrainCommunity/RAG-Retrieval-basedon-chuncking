@@ -46,7 +46,7 @@ def evaluate_strategy(collection_name: str, queries_path: str,
     print(report)
     
     # Save report to file
-    report_filename = f"evaluation_report_{collection_name}.txt"
+    report_filename = f"evaluation_reports/evaluation_report_{collection_name}.txt"
     evaluator.generate_report(results, report_filename)
     
     return results
@@ -94,11 +94,11 @@ def compare_strategies(strategies: list, queries_path: str, k: int = 5):
         for strategy, results in all_results.items()
     }
     
-    with open('strategy_comparison.json', 'w') as f:
+    with open('evaluation_reports/strategy_comparison.json', 'w') as f:
         json.dump(comparison_data, f, indent=2)
-    
-    print("\nComparison saved to strategy_comparison.json")
-    
+
+    print("\nComparison saved to evaluation_reports/strategy_comparison.json")
+
     # Determine best strategy
     best_strategy = max(all_results.items(), 
                        key=lambda x: x[1]['f1@k'])

@@ -7,49 +7,49 @@ OVERALL METRICS:
 Total Queries Evaluated: 33
 Top-K Retrieved: 10
 
-Precision@10: 0.1069
-Recall@10: 0.7576
-F1@10: 0.1868
-Mean Reciprocal Rank (MRR): 0.2895
-Hit Rate@10: 0.7576
-Average Latency: 21.60 ms
+Precision@10: 0.1307
+Recall@10: 0.8485
+F1@10: 0.2251
+Mean Reciprocal Rank (MRR): 0.2905
+Hit Rate@10: 0.8485
+Average Latency: 20.95 ms
 
-Failed Queries (Recall=0): 8
+Failed Queries (Recall=0): 5
 
-Perfect Queries (Recall=1): 25
+Perfect Queries (Recall=1): 28
 
 SAMPLE FAILED QUERIES:
 --------------------------------------------------------------------------------
 
 1. Query: What is the expected graduation date for Adham Mohammed Yaqoub's B.Sc in Computer Engineering?...
    Expected Source: Adham  Yaqoub - CV.docx.pdf
-   Retrieved Sources: ['Gaith Resume Template 2026.pdf', 'Emad Daraghmeh CV.docx.pdf', 'sama shalabi CV(AI) latest.pdf', 'samaShalabiCV(fullstack).pdf', 'Mohammad Sayeh resume.pdf', 'ToqaAsedahCV.pdf', 'Baraa Sulaiby_Resume.pdf', 'Ibrahim khdairCV .docx.pdf']
-   Top Distance: 0.4430
+   Retrieved Sources: ['Mohammad Sayeh resume.pdf', 'cv_training.pdf', 'sama shalabi CV(AI) latest.pdf', 'Ibrahim khdairCV .docx.pdf', 'samaShalabiCV(fullstack).pdf', 'Baraa Sulaiby_Resume.pdf', 'Emad Daraghmeh CV.docx.pdf', 'Gaith Resume Template 2026.pdf', 'Ibrahim khdairCV(SW).pdf']
+   Top Distance: 0.4089
 
 2. Query: What is the name of the university where Baraa Sulaiby is pursuing their B.S. in Computer Science?...
    Expected Source: Baraa Sulaiby_Resume (1).pdf
-   Retrieved Sources: ['Gaith Resume Template 2026.pdf', 'Emad Daraghmeh CV.docx.pdf', 'sama shalabi CV(AI) latest.pdf', 'samaShalabiCV(fullstack).pdf', 'Mohammad Sayeh resume.pdf', 'ToqaAsedahCV.pdf', 'Baraa Sulaiby_Resume.pdf', 'Ibrahim khdairCV .docx.pdf']
-   Top Distance: 0.4691
+   Retrieved Sources: ['Mohammad Sayeh resume.pdf', 'cv_training.pdf', 'sama shalabi CV(AI) latest.pdf', 'Ibrahim khdairCV .docx.pdf', 'Baraa Sulaiby_Resume.pdf', 'Emad Daraghmeh CV.docx.pdf', 'Gaith Resume Template 2026.pdf', 'Ibrahim khdairCV(SW).pdf']
+   Top Distance: 0.4795
 
-3. Query: What programming languages is Baraa Sulaiby proficient in?...
-   Expected Source: Baraa Sulaiby_Resume (1).pdf
-   Retrieved Sources: ['Emad Daraghmeh CV.docx.pdf', 'sama shalabi CV(AI) latest.pdf', 'samaShalabiCV(fullstack).pdf', 'Ibrahim khdairCV(SW).pdf', 'Mohammad Sayeh resume.pdf', 'Baraa Sulaiby_Resume.pdf']
-   Top Distance: 0.5608
+3. Query: What is the duration of Ibrahim Khdier's role as an AI Engineer & Automation Developer?...
+   Expected Source: Ibrahim khdairCV(AI) .docx.pdf
+   Retrieved Sources: ['Mohammad Sayeh resume.pdf', 'ToqaAsedahCV.pdf', 'cv_training.pdf', 'sama shalabi CV(AI) latest.pdf', 'Ibrahim khdairCV .docx.pdf', 'Emad Daraghmeh CV.docx.pdf']
+   Top Distance: 0.4987
 
-4. Query: What technologies were used to develop the e-commerce web application?...
-   Expected Source: Baraa Sulaiby_Resume (1).pdf
-   Retrieved Sources: ['cv_training.pdf', 'Emad Daraghmeh CV.docx.pdf', 'samaShalabiCV(fullstack).pdf', 'Ibrahim khdairCV(SW).pdf', 'O.AbuReesh - CV.pdf', 'Adham  Yaqoub - CV.docx.pdf', 'Baraa Sulaiby_Resume.pdf']
-   Top Distance: 0.4676
+4. Query: What technologies were used in the Cap Advisor project?...
+   Expected Source: Ibrahim khdairCV(AI) .docx.pdf
+   Retrieved Sources: ['ToqaAsedahCV.pdf', 'cv_training.pdf', 'Adham  Yaqoub - CV.docx.pdf', 'sama shalabi CV(AI) latest.pdf', 'Ibrahim khdairCV .docx.pdf', 'O.AbuReesh - CV.pdf', 'Gaith Resume Template 2026.pdf', 'Ibrahim khdairCV(SW).pdf']
+   Top Distance: 0.6257
 
-5. Query: What technologies did the individual gain hands-on experience in for web development?...
-   Expected Source: Gaith Resume Template 2026.pdf
-   Retrieved Sources: ['cv_training.pdf', 'Emad Daraghmeh CV.docx.pdf', 'samaShalabiCV(fullstack).pdf', 'Ibrahim khdairCV(SW).pdf', 'O.AbuReesh - CV.pdf', 'Adham  Yaqoub - CV.docx.pdf', 'Ibrahim khdairCV .docx.pdf']
-   Top Distance: 0.5255
+5. Query: What type of training did Ibrahim Khdair complete in November 2025?...
+   Expected Source: Ibrahim khdairCV(AI) .docx.pdf
+   Retrieved Sources: ['Mohammad Sayeh resume.pdf', 'ToqaAsedahCV.pdf', 'cv_training.pdf', 'Adham  Yaqoub - CV.docx.pdf', 'Ibrahim khdairCV .docx.pdf', 'O.AbuReesh - CV.pdf', 'samaShalabiCV(fullstack).pdf', 'Emad Daraghmeh CV.docx.pdf']
+   Top Distance: 0.5017
 
 LATENCY STATISTICS:
 --------------------------------------------------------------------------------
-Min Latency: 13.52 ms
-Max Latency: 83.24 ms
-Avg Latency: 21.60 ms
+Min Latency: 13.00 ms
+Max Latency: 72.20 ms
+Avg Latency: 20.95 ms
 
 ================================================================================

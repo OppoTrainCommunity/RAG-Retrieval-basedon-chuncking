@@ -2,8 +2,8 @@ What is the expected graduation date for Adham Mohammed Yaqoub's B.Sc in Compute
 What technologies were used to build the Orphan Support & Donation Management System? ||| Adham  Yaqoub - CV.docx.pdf ||| Node.js, Express, MySQL (Sequelize), JWT, WebSocket, Nodemailer, OpenStreetMap API, PDFKit, ExcelJS.
 What languages does Adham Yaqoub speak, read, and write natively? ||| Adham  Yaqoub - CV.docx.pdf ||| Arabic: Native – Speaking, Reading, Writing
 What is the name of the university where Baraa Sulaiby is pursuing their B.S. in Computer Science? ||| Baraa Sulaiby_Resume (1).pdf ||| An-Najah National University
-What programming languages is Baraa Sulaiby proficient in? ||| Baraa Sulaiby_Resume (1).pdf ||| Python | C/C++ | JavaScript
-What technologies were used to develop the e-commerce web application? ||| Baraa Sulaiby_Resume (1).pdf ||| "Developed a full-stack e-commerce web application using Angular for frontend and MySQL for backend storage."
+What programming languages is Baraa Sulaiby proficient in? ||| Baraa Sulaiby_Resume.pdf ||| Python | C/C++ | JavaScript
+What technologies were used to develop the e-commerce web application? ||| Baraa Sulaiby_Resume.pdf ||| "Developed a full-stack e-commerce web application using Angular for frontend and MySQL for backend storage."
 What is the degree that Baraa Sulaiby is pursuing at An-Najah National University? ||| Baraa Sulaiby_Resume.pdf ||| B.S. in Computer Science
 What programming language was used to develop the Restaurant Reservation App? ||| Baraa Sulaiby_Resume.pdf ||| C#
 What technology was used to develop the full-stack e-commerce web application? ||| Baraa Sulaiby_Resume.pdf ||| "Developed a full-stack e-commerce web application using Angular for frontend and MySQL for backend storage."
@@ -16,9 +16,9 @@ What technologies were used to develop the Library Management System? ||| Emad D
 What is Ghaith Abo Hantash's current degree program and university? ||| Gaith Resume Template 2026.pdf ||| Bachelor of Science in Computer Science | An-Najah National University
 What technologies did the individual gain hands-on experience in for web development? ||| Gaith Resume Template 2026.pdf ||| web development using React, Next.js, and Tailwind CSS for responsive UI.
 When was the Tale3 project developed? ||| Gaith Resume Template 2026.pdf ||| April 2024 - May 2024
-What is the duration of Ibrahim Khdier's role as an AI Engineer & Automation Developer? ||| Ibrahim khdairCV .docx.pdf ||| Jul 2025 - Dec 2025
-What technologies were used in the Cap Advisor project? ||| Ibrahim khdairCV .docx.pdf ||| "The backend is built with Node.js, Express, and MongoDB/Mongoose, with session management and form validation. The frontend uses EJS templates and Bootstrap for a responsive UI."
-What type of training did Ibrahim Khdair complete in November 2025? ||| Ibrahim khdairCV .docx.pdf ||| Completed a 30-hour hands-on training in workflow automation using n8n, API integrations, and LLM-powered content processing.
+What is the duration of Ibrahim Khdier's role as an AI Engineer & Automation Developer? ||| Ibrahim khdairCV(AI) .docx.pdf ||| Jul 2025 - Dec 2025
+What technologies were used in the Cap Advisor project? ||| Ibrahim khdairCV(AI) .docx.pdf ||| "The backend is built with Node.js, Express, and MongoDB/Mongoose, with session management and form validation. The frontend uses EJS templates and Bootstrap for a responsive UI."
+What type of training did Ibrahim Khdair complete in November 2025? ||| Ibrahim khdairCV(AI) .docx.pdf ||| Completed a 30-hour hands-on training in workflow automation using n8n, API integrations, and LLM-powered content processing.
 What is Mohammad Sayeh's expected graduation date from An-Najah National University? ||| Mohammad Sayeh resume.pdf ||| Expected Graduation: July 2026
 What programming languages is Mohammad Sayeh proficient in according to his resume? ||| Mohammad Sayeh resume.pdf ||| Programming Languages: C++, Python, C#, Scala
 What database technology was used to store processed tweets and metadata in the Big-Data-Tweets-Project? ||| Mohammad Sayeh resume.pdf ||| Stored processed tweets and metadata in Elasticsearch with an optimized schema for efficient querying and visualization.
@@ -28,6 +28,6 @@ What machine learning algorithms were utilized to build classification models? |
 What platform did Sama Shalabi build as an AI Developer Intern at Oppotrain? ||| sama shalabi CV(AI) latest.pdf ||| "Build an Arabic media editing platform that takes raw news text, rewrites it based on an editorial policy."
 What technology was used for object detection in the Road Sign Detection System? ||| sama shalabi CV(AI) latest.pdf ||| YOLOv8
 What is one of the AI frameworks mentioned in the resume? ||| sama shalabi CV(AI) latest.pdf ||| LangChain, scikit-learn, OpenSearch, TensorFlow, Spark, Pandas, Numpy
-What degree is Toqa Khaled Asedah pursuing at An-Najah National University? ||| ToqaAsedahCV (3).pdf ||| B.S. AI Engineering
-What project did Toqa Asedah work on during their internship at ASAL Technologies? ||| ToqaAsedahCV (3).pdf ||| Contributed to the development of a Sign Language Translation project, including machine learning model training, data preprocessing, and real-time inference.
-What was the achieved accuracy of the essay grading system built using the Mistral-7B-Instruct model? ||| ToqaAsedahCV (3).pdf ||| Achieved 74.65% accuracy, F1-score = 0.92, and Pearson correlation = 0.9197.
+What degree is Toqa Khaled Asedah pursuing at An-Najah National University? ||| ToqaAsedahCV.pdf ||| B.S. AI Engineering
+What project did Toqa Asedah work on during their internship at ASAL Technologies? ||| ToqaAsedahCV.pdf ||| Contributed to the development of a Sign Language Translation project, including machine learning model training, data preprocessing, and real-time inference.
+What was the achieved accuracy of the essay grading system built using the Mistral-7B-Instruct model? ||| ToqaAsedahCV.pdf ||| Achieved 74.65% accuracy, F1-score = 0.92, and Pearson correlation = 0.9197.

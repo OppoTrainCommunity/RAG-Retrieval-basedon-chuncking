@@ -23,7 +23,7 @@ def search_example():
     """
     # Connect to existing collection
     indexer = ChromaIndexer(
-        collection_name="semantic_chunking", persist_directory="./chroma_db"
+        collection_name="paragraph_chunking", persist_directory="./chroma_db"
     )
 
     # Perform search
@@ -71,10 +71,10 @@ def main():
     # Initialize preprocessor
     preprocessor = CVDataPreprocessor()
 
-    # Initialize chunkers with specific configurations
-    semantic_chunker = SemanticChunker(
-        avg_chunk_size=300, min_chunk_size=75, embedding_model=embedding_models[0]
-    )
+    # # Initialize chunkers with specific configurations
+    # semantic_chunker = SemanticChunker(
+    #     avg_chunk_size=300, min_chunk_size=75, embedding_model=embedding_models[0]
+    # )
 
     paragraph_chunker = ParagraphChunker(
         tokens_per_chunk=150, chunk_overlap=50, short_paragraph_threshold=90
@@ -82,7 +82,7 @@ def main():
 
     # Create and run pipeline
     pipeline = ChunkingPipeline(
-        preprocessor=preprocessor, chunkers=[semantic_chunker, paragraph_chunker]
+        preprocessor=preprocessor, chunkers=[paragraph_chunker]
     )
 
     results = pipeline.run(DATA_PATH)
@@ -134,4 +134,4 @@ if __name__ == "__main__":
     main()
 
     # Uncomment to run search example
-    search_example()
+    # search_example()

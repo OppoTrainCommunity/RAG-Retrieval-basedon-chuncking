@@ -1,0 +1,380 @@
+{
+  "llama_3_1_8b": {
+    "model_name": "llama_3_1_8b",
+    "num_samples": 20,
+    "json_valid_rate": 1.0,
+    "answer_match_rate": 0.15,
+    "avg_latency_ms": 17085.908901691437,
+    "details": [
+      {
+        "question": "What is the expected graduation date for Adham Mohammed Yaqoub's B.Sc in Computer Engineering?",
+        "expected_answer": "Aug 2025",
+        "source_file": "Adham  Yaqoub - CV.docx.pdf",
+        "latency_ms": 26069.27,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Backend Developer\",\n    \"top_strengths\": [\"Backend development using Django Rest Framework and PostgreSQL\", \"Implementation of RBAC & Authorization using JWT tokens\"],\n    \"likely_interests\": [\"Full Stack Development\", \"Web Development\", \"Data Analysis and Visualization\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Backend Developer\",\n      \"why_fit\": \""
+      },
+      {
+        "question": "What technologies were used to build the Orphan Support & Donation Management System?",
+        "expected_answer": "Node.js, Express, MySQL (Sequelize), JWT, WebSocket, Nodemailer, OpenStreetMap API, PDFKit, ExcelJS.",
+        "source_file": "Adham  Yaqoub - CV.docx.pdf",
+        "latency_ms": 3058.81,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Full Stack JavaScript Developer\",\n    \"top_strengths\": [\"Backend development using Node.js and Django\", \"Authorization using JWT tokens\", \"Full-stack web application development using Angular and Node.js\"],\n    \"likely_interests\": [\"Web development\", \"Backend development\", \"Full-stack development\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Backend Dev"
+      },
+      {
+        "question": "What languages does Adham Yaqoub speak, read, and write natively?",
+        "expected_answer": "Arabic: Native \u2013 Speaking, Reading, Writing",
+        "source_file": "Adham  Yaqoub - CV.docx.pdf",
+        "latency_ms": 7068.13,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Backend Developer with expertise in React, Node.js, and Django\",\n    \"top_strengths\": [\"Backend development using Django and Node.js\", \"Implementation of RBAC & Authorization using JWT tokens\"],\n    \"likely_interests\": [\"Full-stack web development\", \"Data analysis and visualization using Python and Pandas\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Ba"
+      },
+      {
+        "question": "What is the name of the university where Baraa Sulaiby is pursuing their B.S. in Computer Science?",
+        "expected_answer": "An-Najah National University",
+        "source_file": "Baraa Sulaiby_Resume (1).pdf",
+        "latency_ms": 24673.42,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Software Engineer\",\n    \"top_strengths\": [\"Problem-solving\", \"Analytical thinking\"],\n    \"likely_interests\": [\"Artificial intelligence\", \"Data analysis\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Software Engineer\",\n      \"why_fit\": \"Baraa Sulaiby has a strong foundation in computer science and problem-solving skills, making them a good fit for a care"
+      },
+      {
+        "question": "What programming languages is Baraa Sulaiby proficient in?",
+        "expected_answer": "Python | C/C++ | JavaScript",
+        "source_file": "Baraa Sulaiby_Resume (1).pdf",
+        "latency_ms": 17241.09,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Software Engineer\",\n    \"top_strengths\": [\"Problem-solving\", \"Communication\"],\n    \"likely_interests\": [\"Artificial Intelligence\", \"Data Science\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Full Stack Developer\",\n      \"why_fit\": \"Baraa's proficiency in multiple programming languages and strong problem-solving skills make him a good fit for this role.\""
+      },
+      {
+        "question": "What technologies were used to develop the e-commerce web application?",
+        "expected_answer": "\"Developed a full-stack e-commerce web application using Angular for frontend and MySQL for backend storage.\"",
+        "source_file": "Baraa Sulaiby_Resume (1).pdf",
+        "latency_ms": 21385.96,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"E-commerce Web Application Developer\",\n    \"top_strengths\": [\"HTML/CSS\", \"JavaScript\", \"React\"],\n    \"likely_interests\": [\"Front-end Development\", \"Back-end Development\", \"Full-stack Development\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Front-end Developer\",\n      \"why_fit\": \"Strong understanding of HTML/CSS and JavaScript\",\n      \"evidence\": [\"Expe"
+      },
+      {
+        "question": "What is the degree that Baraa Sulaiby is pursuing at An-Najah National University?",
+        "expected_answer": "B.S. in Computer Science",
+        "source_file": "Baraa Sulaiby_Resume.pdf",
+        "latency_ms": 2103.21,
+        "json_valid": true,
+        "answer_matched": true,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Software Engineer - Quality Assurance Intern\",\n    \"top_strengths\": [\"Manual testing\", \"Bug reporting\", \"Test case execution\"],\n    \"likely_interests\": [\"Software engineering\", \"Quality assurance\", \"Testing\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Software Engineer\",\n      \"why_fit\": \"Baraa Sulaiby has experience in manual testing, bug reporting, a"
+      },
+      {
+        "question": "What programming language was used to develop the Restaurant Reservation App?",
+        "expected_answer": "C#",
+        "source_file": "Baraa Sulaiby_Resume.pdf",
+        "latency_ms": 3943.39,
+        "json_valid": true,
+        "answer_matched": true,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Software Engineer\",\n    \"top_strengths\": [\"Mobile App Development\", \"Firebase\", \"C#\"],\n    \"likely_interests\": [\"Full-Stack Development\", \"Web Development\", \"Quality Assurance\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Mobile App Developer\",\n      \"why_fit\": \"Experience with Xamarin, C#, and Firebase makes you a strong fit for this role.\",\n      \"evi"
+      },
+      {
+        "question": "What technology was used to develop the full-stack e-commerce web application?",
+        "expected_answer": "\"Developed a full-stack e-commerce web application using Angular for frontend and MySQL for backend storage.\"",
+        "source_file": "Baraa Sulaiby_Resume.pdf",
+        "latency_ms": 3559.2,
+        "json_valid": true,
+        "answer_matched": true,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Software Engineer\",\n    \"top_strengths\": [\"Full-stack development\", \"Angular\", \"MySQL\", \"C#\", \"Firebase\"],\n    \"likely_interests\": [\"Web development\", \"Mobile app development\", \"Database management\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Full-stack Web Developer\",\n      \"why_fit\": \"Based on the provided context, it appears that the individual has "
+      },
+      {
+        "question": "What program is Rama Mohammed Sabboubeh enrolled in at An-Najah National University?",
+        "expected_answer": "\"Computer Science Apprenticeship Program (CAP) at the Artificial Intelligence (AI) Path\"",
+        "source_file": "cv_training.pdf",
+        "latency_ms": 75696.99,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Passionate student enrolled in the Computer Science Apprenticeship Program (CAP) at An-Najah National University, Artificial Intelligence (AI) track\",\n    \"top_strengths\": [\"Problem solving\", \"Critical thinking\", \"Time management\", \"Team collaboration\", \"Communication\", \"Attention to detail\"],\n    \"likely_interests\": [\"AI\", \"Backend development\", \"Machine "
+      },
+      {
+        "question": "What is the GPA of the individual in the Computer Science Apprenticeship Program?",
+        "expected_answer": "GPA: 3.68",
+        "source_file": "cv_training.pdf",
+        "latency_ms": 5571.77,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Passionate student in the Computer Science Apprenticeship Program (CAP) at An-Najah National University\",\n    \"top_strengths\": [\"Problem solving\", \"Critical thinking\", \"Time management\", \"Team collaboration\", \"Communication\", \"Attention to detail\"],\n    \"likely_interests\": [\"AI\", \"Backend development\", \"Machine learning\", \"Deep neural networks\"]\n  },\n  \"ca"
+      },
+      {
+        "question": "What training program did the individual complete in Summer 2025?",
+        "expected_answer": "Completed an intensive 360+ hour training program focusing on Java, Spring Boot, REST APIs, JPA/Hibernate, and backend development best practices.",
+        "source_file": "cv_training.pdf",
+        "latency_ms": 22434.01,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Passionate student enrolled in the Computer Science Apprenticeship Program (CAP) at An-Najah National University, aiming to start a career in AI and backend development.\",\n    \"top_strengths\": [\"Problem solving\", \"Critical thinking\", \"Time management\", \"Team collaboration\", \"Communication\", \"Attention to detail\"],\n    \"likely_interests\": [\"AI\", \"Backend de"
+      },
+      {
+        "question": "What is Emad Daraghmeh's expected graduation date from the Computer Science Apprenticeship program?",
+        "expected_answer": "Expected Graduation: Jan 2026",
+        "source_file": "Emad Daraghmeh CV.docx.pdf",
+        "latency_ms": 6762.39,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Software Engineer\",\n    \"top_strengths\": [\"Proficient in Java, C++, Scala, C#, and Python\", \"Experience with data processing, tokenization, and handling CSV, TXT, and JSON files\", \"Familiarity with development tools such as Git, Postman, IntelliJ IDEA, VSCode, and Visual Studio\"],\n    \"likely_interests\": [\"Software development\", \"Data processing\", \"Databas"
+      },
+      {
+        "question": "What programming languages and technologies did Emad use to develop backend services?",
+        "expected_answer": "Developed backend services with C# and MySQL, implementing structured data models, CRUD operations, and integration with Radzen components.",
+        "source_file": "Emad Daraghmeh CV.docx.pdf",
+        "latency_ms": 10046.29,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Software Engineering Intern with experience in backend services development\",\n    \"top_strengths\": [\"C#\", \"Blazor WebAssembly\", \"ASP.NET Core\", \"MySQL\", \"Node.js\", \"Flutter\", \"Dart\"],\n    \"likely_interests\": [\"Backend services development\", \"Full-stack development\", \"Cloud computing\", \"Database management\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Ba"
+      },
+      {
+        "question": "What technologies were used to develop the Library Management System?",
+        "expected_answer": "JavaFX, Hibernate, MySQL",
+        "source_file": "Emad Daraghmeh CV.docx.pdf",
+        "latency_ms": 23683.89,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Career Advisor Assistant\",\n    \"top_strengths\": [\"Validating user input\", \"Providing role-based actions\", \"Creating clean and user-friendly interfaces\"],\n    \"likely_interests\": [\"Software development\", \"Database management\", \"User authentication\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Software Engineer\",\n      \"why_fit\": \"The candidate has experi"
+      },
+      {
+        "question": "What is Ghaith Abo Hantash's current degree program and university?",
+        "expected_answer": "Bachelor of Science in Computer Science | An-Najah National University",
+        "source_file": "Gaith Resume Template 2026.pdf",
+        "latency_ms": 7151.65,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Software Engineering Intern with experience in Full-Stack Web Development, Mobile App Development, and Big Data Analytics\",\n    \"top_strengths\": [\"Full-Stack Web Development\", \"Mobile App Development\", \"Big Data Analytics\"],\n    \"likely_interests\": [\"Cloud Computing\", \"Database Management\", \"Data Analysis\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"So"
+      },
+      {
+        "question": "What technologies did the individual gain hands-on experience in for web development?",
+        "expected_answer": "web development using React, Next.js, and Tailwind CSS for responsive UI.",
+        "source_file": "Gaith Resume Template 2026.pdf",
+        "latency_ms": 36124.08,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Full Stack Web Developer\",\n    \"top_strengths\": [\"Web Development\", \"Mobile App Development\", \"Prompt Engineering\"],\n    \"likely_interests\": [\"Cloud Computing\", \"Database Management\", \"DevOps\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Full Stack Web Developer\",\n      \"why_fit\": \"Based on the provided context, the individual has gained hands-on experi"
+      },
+      {
+        "question": "When was the Tale3 project developed?",
+        "expected_answer": "April 2024 - May 2024",
+        "source_file": "Gaith Resume Template 2026.pdf",
+        "latency_ms": 9015.57,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Career Advisor Assistant\",\n    \"top_strengths\": [\"Prompt engineering\", \"Web development\", \"Mobile app development\", \"Full-stack development\"],\n    \"likely_interests\": [\"Software engineering\", \"Data analysis\", \"Cloud computing\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Software Engineer\",\n      \"why_fit\": \"Based on the provided context, the individual"
+      },
+      {
+        "question": "What is the duration of Ibrahim Khdier's role as an AI Engineer & Automation Developer?",
+        "expected_answer": "Jul 2025 - Dec 2025",
+        "source_file": "Ibrahim khdairCV .docx.pdf",
+        "latency_ms": 27315.47,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"AI Engineer & Automation Developer\",\n    \"top_strengths\": [\"Machine Learning\", \"NLP\", \"Workflow Automation\", \"Python\", \"Data Processing\", \"Backend Development\"],\n    \"likely_interests\": [\"Artificial Intelligence\", \"Automation\", \"Software Development\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"AI Engineer\",\n      \"why_fit\": \"Strong background in machin"
+      },
+      {
+        "question": "What technologies were used in the Cap Advisor project?",
+        "expected_answer": "\"The backend is built with Node.js, Express, and MongoDB/Mongoose, with session management and form validation. The frontend uses EJS templates and Bootstrap for a responsive UI.\"",
+        "source_file": "Ibrahim khdairCV .docx.pdf",
+        "latency_ms": 8813.59,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Career Advisor Assistant\",\n    \"top_strengths\": [\"Quality assurance\", \"Automated testing\", \"Test-driven development\"],\n    \"likely_interests\": [\"Software development\", \"Artificial intelligence\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Software Development\",\n      \"why_fit\": \"Strong background in programming languages, data processing, and backend de"
+      }
+    ]
+  },
+  "qwen_2_5_7b": {
+    "model_name": "qwen_2_5_7b",
+    "num_samples": 20,
+    "json_valid_rate": 1.0,
+    "answer_match_rate": 0.2,
+    "avg_latency_ms": 6707.313549518585,
+    "details": [
+      {
+        "question": "What is the expected graduation date for Adham Mohammed Yaqoub's B.Sc in Computer Engineering?",
+        "expected_answer": "Aug 2025",
+        "source_file": "Adham  Yaqoub - CV.docx.pdf",
+        "latency_ms": 9731.41,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Adham Mohammed Yaqoub is an upcoming computer engineering graduate from An-Najah National University, Palestine.\",\n    \"top_strengths\": [\"Problem Solving\", \"Agile Methodologies\", \"Cross-functional Collaboration\"],\n    \"likely_interests\": [\"Full Stack Development\", \"Backend Development\", \"Web Application Design\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\""
+      },
+      {
+        "question": "What technologies were used to build the Orphan Support & Donation Management System?",
+        "expected_answer": "Node.js, Express, MySQL (Sequelize), JWT, WebSocket, Nodemailer, OpenStreetMap API, PDFKit, ExcelJS.",
+        "source_file": "Adham  Yaqoub - CV.docx.pdf",
+        "latency_ms": 3703.0,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Adham Yaqoub, a skilled backend developer with expertise in Node.js and related technologies.\",\n    \"top_strengths\": [\"Technical Proficiency\", \"Problem Solving\", \"Project Management\"],\n    \"likely_interests\": [\"Full Stack Development\", \"Backend Systems\", \"Orphan Support Technologies\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Full Stack Developer\",\n  "
+      },
+      {
+        "question": "What languages does Adham Yaqoub speak, read, and write natively?",
+        "expected_answer": "Arabic: Native \u2013 Speaking, Reading, Writing",
+        "source_file": "Adham  Yaqoub - CV.docx.pdf",
+        "latency_ms": 3176.73,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Adham Yaqoub is a skilled software developer proficient in multiple programming languages and frameworks, with a strong foundation in backend development.\",\n    \"top_strengths\": [\"Proficient in JavaScript and React.js\", \"Strong backend development skills using Node.js and Express\", \"Experience with full-stack web application development\"],\n    \"likely_inte"
+      },
+      {
+        "question": "What is the name of the university where Baraa Sulaiby is pursuing their B.S. in Computer Science?",
+        "expected_answer": "An-Najah National University",
+        "source_file": "Baraa Sulaiby_Resume (1).pdf",
+        "latency_ms": 2366.45,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Baraa Sulaiby is a student pursuing a B.S. in Computer Science.\",\n    \"top_strengths\": [\"Academic Aspirations\", \"Technical Skills\"],\n    \"likely_interests\": [\"Programming\", \"Software Development\", \"Technology\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Software Developer\",\n      \"why_fit\": \"Baraa's degree in Computer Science aligns well with the skill"
+      },
+      {
+        "question": "What programming languages is Baraa Sulaiby proficient in?",
+        "expected_answer": "Python | C/C++ | JavaScript",
+        "source_file": "Baraa Sulaiby_Resume (1).pdf",
+        "latency_ms": 2332.93,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Baraa Sulaiby is proficient in multiple programming languages including Python, JavaScript, and Java.\",\n    \"top_strengths\": [\"Programming\", \"Software Development\"],\n    \"likely_interests\": [\"Web Development\", \"Data Science\", \"Application Development\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Full Stack Developer\",\n      \"why_fit\": \"Baraa's proficien"
+      },
+      {
+        "question": "What technologies were used to develop the e-commerce web application?",
+        "expected_answer": "\"Developed a full-stack e-commerce web application using Angular for frontend and MySQL for backend storage.\"",
+        "source_file": "Baraa Sulaiby_Resume (1).pdf",
+        "latency_ms": 8193.87,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Expert in E-Commerce Web Application Development\",\n    \"top_strengths\": [\"Technical Proficiency\", \"Project Management\", \"User Experience Design\"],\n    \"likely_interests\": [\"Innovation\", \"Business Strategy\", \"Technology\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Full Stack Developer\",\n      \"why_fit\": \"This role requires a broad skill set that can cov"
+      },
+      {
+        "question": "What is the degree that Baraa Sulaiby is pursuing at An-Najah National University?",
+        "expected_answer": "B.S. in Computer Science",
+        "source_file": "Baraa Sulaiby_Resume.pdf",
+        "latency_ms": 10309.98,
+        "json_valid": true,
+        "answer_matched": true,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Baraa Sulaiby is a Computer Science student at An-Najah National University with a focus on software engineering.\",\n    \"top_strengths\": [\"Technical Skills\", \"Project Development\", \"Quality Assurance\"],\n    \"likely_interests\": [\"Web Development\", \"Mobile Application Development\", \"Database Management\", \"Quality Assurance\"]\n  },\n  \"career_paths\": [\n    {\n  "
+      },
+      {
+        "question": "What programming language was used to develop the Restaurant Reservation App?",
+        "expected_answer": "C#",
+        "source_file": "Baraa Sulaiby_Resume.pdf",
+        "latency_ms": 10300.92,
+        "json_valid": true,
+        "answer_matched": true,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Software Engineer with experience in developing cross-platform mobile applications and full-stack web applications.\",\n    \"top_strengths\": [\"Problem Solving\", \"Programming\", \"Cross-Platform Development\", \"Real-Time Database Integration\"],\n    \"likely_interests\": [\"Mobile Application Development\", \"Full-Stack Web Development\", \"Real-Time Data Synchronizatio"
+      },
+      {
+        "question": "What technology was used to develop the full-stack e-commerce web application?",
+        "expected_answer": "\"Developed a full-stack e-commerce web application using Angular for frontend and MySQL for backend storage.\"",
+        "source_file": "Baraa Sulaiby_Resume.pdf",
+        "latency_ms": 9174.15,
+        "json_valid": true,
+        "answer_matched": true,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Developed a full-stack e-commerce web application using Angular for frontend and MySQL for backend storage.\",\n    \"top_strengths\": [\"Technical Skills\", \"Project Management\", \"Responsive Design\"],\n    \"likely_interests\": [\"Web Development\", \"E-commerce\", \"Full-Stack Technology\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Full-Stack Developer\",\n      \"wh"
+      },
+      {
+        "question": "What program is Rama Mohammed Sabboubeh enrolled in at An-Najah National University?",
+        "expected_answer": "\"Computer Science Apprenticeship Program (CAP) at the Artificial Intelligence (AI) Path\"",
+        "source_file": "cv_training.pdf",
+        "latency_ms": 10334.81,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Passionate student enrolled in the Computer Science Apprenticeship Program (CAP) at An-Najah National University's AI path.\",\n    \"top_strengths\": [\"problem solving\", \"critical thinking\", \"time management\", \"team collaboration\", \"communication\", \"attention to detail\"],\n    \"likely_interests\": [\"Artificial Intelligence\", \"Machine Learning\", \"Backend Develop"
+      },
+      {
+        "question": "What is the GPA of the individual in the Computer Science Apprenticeship Program?",
+        "expected_answer": "GPA: 3.68",
+        "source_file": "cv_training.pdf",
+        "latency_ms": 9891.49,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Rama Mohammed Sabboubeh is a passionate student enrolled in the Computer Science Apprenticeship Program (CAP) at An-Najah National University's AI track.\",\n    \"top_strengths\": [\"problem solving\", \"critical thinking\", \"time management\", \"team collaboration\", \"communication\", \"attention to detail\"],\n    \"likely_interests\": [\"AI\", \"Machine Learning\", \"Deep N"
+      },
+      {
+        "question": "What training program did the individual complete in Summer 2025?",
+        "expected_answer": "Completed an intensive 360+ hour training program focusing on Java, Spring Boot, REST APIs, JPA/Hibernate, and backend development best practices.",
+        "source_file": "cv_training.pdf",
+        "latency_ms": 2811.51,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Passionate AI and Backend Developer with a strong foundation in Machine Learning and Backend Development.\",\n    \"top_strengths\": [\"Technical Proficiency\", \"Problem Solving\", \"Critical Thinking\"],\n    \"likely_interests\": [\"Artificial Intelligence\", \"Machine Learning\", \"Backend Development\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"AI and Backend Devel"
+      },
+      {
+        "question": "What is Emad Daraghmeh's expected graduation date from the Computer Science Apprenticeship program?",
+        "expected_answer": "Expected Graduation: Jan 2026",
+        "source_file": "Emad Daraghmeh CV.docx.pdf",
+        "latency_ms": 3499.35,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Emad Daraghmeh is a Computer Science Apprentice at An-Najah National University, specializing in Software Engineering, with expertise in Java, C++, Scala, and Python.\",\n    \"top_strengths\": [\"Technical Proficiency\", \"Software Development\", \"Backend Services\"],\n    \"likely_interests\": [\"Web Development\", \"Mobile Application Development\", \"Database Managemen"
+      },
+      {
+        "question": "What programming languages and technologies did Emad use to develop backend services?",
+        "expected_answer": "Developed backend services with C# and MySQL, implementing structured data models, CRUD operations, and integration with Radzen components.",
+        "source_file": "Emad Daraghmeh CV.docx.pdf",
+        "latency_ms": 8662.01,
+        "json_valid": true,
+        "answer_matched": true,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Emad Daraghmeh is a Computer Science apprentice with a focus on backend development using C#, Java, Scala, and Python.\",\n    \"top_strengths\": [\"Backend Development\", \"Database Management\", \"API Integration\"],\n    \"likely_interests\": [\"Web Development\", \"Mobile Application Development\", \"Full Stack Development\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\":"
+      },
+      {
+        "question": "What technologies were used to develop the Library Management System?",
+        "expected_answer": "JavaFX, Hibernate, MySQL",
+        "source_file": "Emad Daraghmeh CV.docx.pdf",
+        "latency_ms": 3427.53,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Developed a JavaFX-based Library Management System with Hibernate and MySQL\",\n    \"top_strengths\": [\"Proficient in Java\", \"Experience with ORM frameworks like Hibernate\", \"Strong in database management with MySQL\"],\n    \"likely_interests\": [\"Desktop Application Development\", \"Database Management\", \"Automating Processes\"]\n  },\n  \"career_paths\": [\n    {\n    "
+      },
+      {
+        "question": "What is Ghaith Abo Hantash's current degree program and university?",
+        "expected_answer": "Bachelor of Science in Computer Science | An-Najah National University",
+        "source_file": "Gaith Resume Template 2026.pdf",
+        "latency_ms": 3366.44,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Ghaith Abo Hantash is currently pursuing his Bachelor's in Computer Science at An-Najah National University, specializing in software engineering, web & mobile development, databases, and cloud computing.\",\n    \"top_strengths\": [\"Strong programming skills\", \"Effective teamwork and collaboration\", \"Experience with web and mobile development frameworks\"],\n  "
+      },
+      {
+        "question": "What technologies did the individual gain hands-on experience in for web development?",
+        "expected_answer": "web development using React, Next.js, and Tailwind CSS for responsive UI.",
+        "source_file": "Gaith Resume Template 2026.pdf",
+        "latency_ms": 3581.25,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "```json\n{\n  \"summary\": {\n    \"profile_headline\": \"Web Developer with Experience in React, Next.js, and MongoDB\",\n    \"top_strengths\": [\"Problem-solving\", \"Collaboration\", \"Technical Skills\"],\n    \"likely_interests\": [\"Full-stack Development\", \"Responsive Design\", \"Microservices Architecture\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Full-Stack Web Developer\",\n      \"why_fit\": \"The individual"
+      },
+      {
+        "question": "When was the Tale3 project developed?",
+        "expected_answer": "April 2024 - May 2024",
+        "source_file": "Gaith Resume Template 2026.pdf",
+        "latency_ms": 9030.22,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "```json\n{\n  \"summary\": {\n    \"profile_headline\": \"Developed a full-stack web application for bus seat reservations from April 2024 to May 2024.\",\n    \"top_strengths\": [\"Web Development\", \"Full-Stack Application Development\", \"Collaboration\"],\n    \"likely_interests\": [\"Software Engineering\", \"Prompt Engineering\", \"Web & Mobile Development\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"Web Develop"
+      },
+      {
+        "question": "What is the duration of Ibrahim Khdier's role as an AI Engineer & Automation Developer?",
+        "expected_answer": "Jul 2025 - Dec 2025",
+        "source_file": "Ibrahim khdairCV .docx.pdf",
+        "latency_ms": 9487.9,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Passionate AI Engineer with Hands-On Experience in Machine Learning, NLP, and Workflow Automation\",\n    \"top_strengths\": [\"Machine Learning\", \"Workflow Automation\", \"Python\", \"Data Processing\", \"Backend Development\"],\n    \"likely_interests\": [\"AI Engineering\", \"Automation\", \"Software Development\", \"Quality Assurance\"]\n  },\n  \"career_paths\": [\n    {\n      \""
+      },
+      {
+        "question": "What technologies were used in the Cap Advisor project?",
+        "expected_answer": "\"The backend is built with Node.js, Express, and MongoDB/Mongoose, with session management and form validation. The frontend uses EJS templates and Bootstrap for a responsive UI.\"",
+        "source_file": "Ibrahim khdairCV .docx.pdf",
+        "latency_ms": 10764.32,
+        "json_valid": true,
+        "answer_matched": false,
+        "raw_output_preview": "{\n  \"summary\": {\n    \"profile_headline\": \"Passionate AI Engineer with Hands-On Experience in Workflow Automation and Full-Stack Development\",\n    \"top_strengths\": [\"AI Engineering\", \"Full-Stack Development\", \"Quality Assurance\"],\n    \"likely_interests\": [\"Machine Learning\", \"Natural Language Processing\", \"Data Science\", \"Workflow Automation\"]\n  },\n  \"career_paths\": [\n    {\n      \"title\": \"AI Engin"
+      }
+    ]
+  }
+}

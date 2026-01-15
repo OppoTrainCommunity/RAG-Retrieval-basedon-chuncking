@@ -1,1 +1,4 @@
 *.zip
+eval_app.py
+.env
+__pycache__/

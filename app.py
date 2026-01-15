@@ -5,136 +5,150 @@ from typing import List, Optional, Dict, Any
 import streamlit as st
 
 from src.services.retrieval_service import RetrievalService
+from src.chains.chain_factory import ChainFactory  # builds two chains (2 models)
 
 
 # -----------------------------
 # Helpers
 # -----------------------------
 def load_file_names_from_cvs_json(cvs_json_path: str) -> List[str]:
-    """
-    Loads unique file_name values from your data/CVs.json so the UI can filter results.
-    """
     p = Path(cvs_json_path)
     if not p.exists():
         return []
     with p.open("r", encoding="utf-8") as f:
         docs = json.load(f)
-    names = sorted({d.get("file_name") for d in docs if d.get("file_name")})
-    return names
+    return sorted({d.get("file_name") for d in docs if d.get("file_name")})
 
 
-def render_results(results: Dict[str, Any], max_show: int = 10):
+def parse_csv_list(s: str) -> List[str]:
+    # "Python, Django, REST" -> ["Python", "Django", "REST"]
+    items = [x.strip() for x in (s or "").split(",")]
+    return [x for x in items if x]
+
+
+def show_model_output(raw_text: str):
     """
-    Renders Chroma results returned by your ChromaIndexer.search() through the RetrievalService.
-    Expected keys: documents, metadatas, distances (same as your main.py).
+    Tries to show JSON nicely; falls back to raw text.
     """
-    if not results or "documents" not in results or not results["documents"]:
-        st.warning("No results returned.")
-        return
-
-    docs = results.get("documents", [[]])[0]
-    metas = results.get("metadatas", [[]])[0]
-    dists = results.get("distances", [[]])[0]
-
-    if not docs:
-        st.warning("No documents returned. (Is the collection empty?)")
-        return
-
-    st.subheader("Top results")
-    for i, (doc, meta, dist) in enumerate(zip(docs, metas, dists), start=1):
-        if i > max_show:
-            break
-
-        st.markdown(f"### Rank {i}  |  distance: `{dist:.4f}`")
-        st.caption(
-            f"file_name: {meta.get('file_name', 'N/A')}  |  "
-            f"doc_id: {meta.get('doc_id', 'N/A')}  |  "
-            f"chunk_id: {meta.get('chunk_id', 'N/A')}"
-        )
-        st.write(doc)
-        st.divider()
-
-    # Output context box (copy/paste into generation later)
-    st.subheader("Output (concatenated context)")
-    context = "\n\n---\n\n".join(docs)
-    st.text_area("Retrieved context", value=context, height=260)
+    try:
+        data = json.loads(raw_text)
+        st.json(data)
+    except Exception:
+        st.text_area("Model output (raw)", value=raw_text, height=350)
 
 
 # -----------------------------
 # Streamlit App
 # -----------------------------
-st.set_page_config(page_title="Resume RAG – Retrieval UI", layout="wide")
-st.title("Resume RAG – Retrieval UI (Paragraph Chunking)")
-
-# Defaults that match your project indexing
-DEFAULT_COLLECTION = "paragraph_chunking"
-DEFAULT_PERSIST_DIR = "./chroma_db"
-DEFAULT_EMBEDDING_MODEL = "all-mpnet-base-v2"  # your main.py used embedding_models[0]
+st.set_page_config(page_title="Recruitment RAG – LangChain", layout="wide")
+st.title("Recruitment RAG – Candidate Ranking (LangChain + OpenRouter)")
 
 with st.sidebar:
-    st.header("Chroma Settings (already indexed)")
-
-    persist_dir = st.text_input("persist_directory", value=DEFAULT_PERSIST_DIR)
-    collection_name = st.text_input("collection_name", value=DEFAULT_COLLECTION)
-    embedding_model = st.text_input("embedding_model", value=DEFAULT_EMBEDDING_MODEL)
-
-    st.divider()
-
-    st.header("Data (optional)")
-    cvs_json_path = st.text_input("CVs.json path (for file_name filter)", value="data/CVs.json")
+    st.header("Vector DB (already indexed)")
+    persist_dir = st.text_input("persist_directory", value="./chroma_db")
+    collection_name = st.text_input("collection_name", value="paragraph_chunking")
+    embedding_model = st.text_input("embedding_model", value="all-mpnet-base-v2")
 
     st.divider()
-
     st.header("Retrieval")
-    top_k = st.slider("Top K", 1, 20, 10, 1)
-    show_n = st.slider("Show results", 1, 20, 10, 1)
+    k = st.slider("Top K retrieved chunks", 5, 120, 40, 5)
 
-# init service (uses your project class)
-service = RetrievalService(
-    persist_dir=persist_dir,
-    embedding_model=embedding_model,
-)
+    st.divider()
+    st.header("Candidate scope (optional)")
+    cvs_json_path = st.text_input("CVs.json path (for file_name filter)", value="data/CVs.json")
+    use_filter = st.checkbox("Filter retrieval to ONE CV file", value=False)
 
-# UI: search
-st.subheader("Search & Retrieve Best Chunks")
+    st.divider()
+    st.header("Output")
+    top_n = st.slider("Return top N candidates", 1, 10, 5, 1)
 
-query = st.text_input("Search query", value="machine learning and data science skills")
 
-# Optional file_name filter
-file_names = load_file_names_from_cvs_json(cvs_json_path)
-use_filter = st.checkbox("Filter by file_name", value=False)
+# Init retrieval service + chains
+retrieval_service = RetrievalService(persist_dir=persist_dir, embedding_model=embedding_model)
+chains = ChainFactory.build_two_chains(retrieval_service, collection_name=collection_name)
 
+# Filter (optional)
+file_names = load_file_names_from_cvs_json(cvs_json_path) if use_filter else []
 selected_file_name: Optional[str] = None
 if use_filter:
     if file_names:
-        selected_file_name = st.selectbox("Select CV file_name", file_names)
+        selected_file_name = st.selectbox("Select file_name", file_names)
     else:
-        st.info("No file names found (check CVs.json path). Filter will be disabled.")
-        selected_file_name = None
+        st.warning("No file names found. Check CVs.json path.")
+where = {"file_name": selected_file_name} if (use_filter and selected_file_name) else None
 
-# Search button
-if st.button("🔎 Retrieve", type="primary"):
-    where = {"file_name": selected_file_name} if selected_file_name else None
+# Main form inputs
+st.subheader("Job Requirements")
 
-    try:
-        results = service.search(
-            collection_name=collection_name,
-            query=query,
-            k=top_k,
-            where=where,
-        )
-        render_results(results, max_show=show_n)
-    except Exception as e:
-        st.error("Search failed. Common causes: wrong persist_directory, wrong collection name, or missing Chroma DB.")
-        st.code(str(e))
-        st.info(
-            "Double-check:\n"
-            f"- persist_directory: {persist_dir}\n"
-            f"- collection_name: {collection_name}\n"
-            "And confirm you already built the index into that directory."
-        )
+col1, col2 = st.columns(2)
+with col1:
+    role_title = st.text_input("Role title", value="Backend Developer")
+    seniority = st.selectbox("Seniority", ["any", "intern", "junior", "mid", "senior"], index=0)
+with col2:
+    must_have_str = st.text_input("Must-have skills (comma-separated)", value="Python, Django, REST APIs")
+    nice_to_have_str = st.text_input("Nice-to-have skills (comma-separated)", value="PostgreSQL, Docker, CI/CD")
 
-st.caption(
-    "Note: This UI uses your project RetrievalService + ChromaIndexer (no custom chunking code here). "
-    "It assumes the collection is already indexed."
+job_notes = st.text_area("Job notes (optional)", value="We prefer candidates with real projects and clean API design.", height=80)
+
+st.subheader("Recruitment Question")
+question = st.text_input(
+    "Ask something like: 'Who is the best candidate for this role?'",
+    value="Who is the best candidate for this backend role?"
 )
+
+must_have = parse_csv_list(must_have_str)
+nice_to_have = parse_csv_list(nice_to_have_str)
+
+st.divider()
+
+# Two-model comparison UI
+st.subheader("Run LangChain RAG (2 models comparison)")
+
+model_a_name, model_b_name = list(chains.keys())[0], list(chains.keys())[1]
+chain_a = chains[model_a_name]
+chain_b = chains[model_b_name]
+
+run = st.button("✨ Rank Candidates (run both models)", type="primary")
+
+if run:
+    if not must_have:
+        st.error("Must-have skills list is empty. Add at least 1 skill.")
+        st.stop()
+
+    payload_common = dict(
+        question=question,
+        role_title=role_title,
+        must_have=must_have,
+        nice_to_have=nice_to_have,
+        seniority=seniority,
+        job_notes=job_notes,
+        top_n=top_n,
+        where=where,
+        k=k,
+    )
+
+    c1, c2 = st.columns(2)
+
+    with c1:
+        st.markdown(f"### Model A: `{model_a_name}`")
+        try:
+            out_a = chain_a.invoke(**payload_common)
+            show_model_output(out_a)
+        except Exception as e:
+            st.error("Model A failed.")
+            st.code(str(e))
+
+    with c2:
+        st.markdown(f"### Model B: `{model_b_name}`")
+        try:
+            out_b = chain_b.invoke(**payload_common)
+            show_model_output(out_b)
+        except Exception as e:
+            st.error("Model B failed.")
+            st.code(str(e))
+
+    st.divider()
+    st.info(
+        "Tip: For true recruitment ranking across all candidates, keep the filter OFF. "
+        "Turn filter ON only for debugging a single CV."
+    )

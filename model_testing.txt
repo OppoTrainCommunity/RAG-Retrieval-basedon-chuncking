@@ -1,0 +1,333 @@
+Q : List all candidates mentioned in the resumes.
+
+A : Candidates (as identified from the provided resume files):
+
+O.AbuReesh — (O.AbuReesh - CV.pdf, chunk_id=3) (O.AbuReesh - CV.pdf, chunk_id=5)
+Sama Shalabi — (sama shalabi CV(AI) latest.pdf, chunk_id=1) (sama shalabi CV(AI) latest.pdf, chunk_id=5)
+Mohammad Sayeh — (Mohammad Sayeh resume.pdf, chunk_id=0)
+Ibrahim Khdair — (Ibrahim khdairCV .docx.pdf, chunk_id=5) (Ibrahim khdairCV(SW).pdf, chunk_id=4)
+Emad Daraghmeh — (Emad Daraghmeh CV.docx.pdf, chunk_id=0) (Emad Daraghmeh CV.docx.pdf, chunk_id=1)
+Toqa Asedah — (ToqaAsedahCV.pdf, chunk_id=2) (ToqaAsedahCV.pdf, chunk_id=3)
+Adham Mohammed Yaqoub — (Adham Yaqoub - CV.docx.pdf, chunk_id=0) (Adham Yaqoub - CV.docx.pdf, chunk_id
+What skills does the candidate mentioned in the resumes have?
+
+Assuming you mean the candidate in O.AbuReesh - CV.pdf, their skills (as stated in the resume) are:
+
+Technical / programming
+
+Node.js (O.AbuReesh - CV.pdf, chunk_id=6; chunk_id=5)
+React.js (O.AbuReesh - CV.pdf, chunk_id=6)
+Python (O.AbuReesh - CV.pdf, chunk_id=6)
+SQL (O.AbuReesh - CV.pdf, chunk_id=6)
+MongoDB (O.AbuReesh - CV.pdf, chunk_id=6; chunk_id=5)
+Git & GitHub (O.AbuReesh - CV.pdf, chunk_id=6)
+Data entry software/tools (data collection, insertion) (O.AbuReesh - CV.pdf, chunk_id=5)
+Machine learning / data
+
+Machine learning techniques (general) (O.AbuReesh - CV.pdf, chunk_id=6)
+Feature engineering (O.AbuReesh - CV.pdf, chunk_id=6)
+Data visualization (O.AbuReesh - CV.pdf, chunk_id=6)
+Word embeddings: GloVe, Word2Vec (O.AbuReesh - CV.pdf, chunk_id=3)
+ML algorithms: Random Forest, Support Vector Machine (O.AbuReesh - CV.pdf, chunk_id=3)
+Data analysis / investigating datasets (example: Netflix, Reuters) (O.AbuReesh - CV.pdf, chunk_id=5; chunk_id=3)
+Web / application development
+
+Implemented user authentication features (O.AbuReesh - CV.pdf, chunk_id=4)
+E-commerce system (Storify) participation (O.AbuReesh - CV.pdf, chunk_id=4)
+Implemented search-practice criteria to select/optimize opportunities (O.AbuReesh - CV.pdf, chunk_id=5)
+Other technical / IT
+
+Networking troubleshooting (O.AbuReesh - CV.pdf, chunk_id=6)
+Soft / professional
+
+Excellent communication skills (O.AbuReesh - CV.pdf, chunk_id=6)
+Teamwork and conflict resolution (O.AbuReesh - CV.pdf, chunk_id=4)
+Attention to detail and working under deadlines (data entry accuracy) (O.AbuReesh - CV.pdf, chunk_id=5)
+If you meant a different candidate from the provided resumes, tell me which one and I will extract their skills with citations.
+
+Q: What skills does the candidates mentioned in the resumes have?
+
+A: Below I list each candidate (by resume file) and the skills shown in the provided evidence. Each skill is cited to the file_name and chunk_id where it appears.
+
+O.AbuReesh (O.AbuReesh - CV.pdf)
+
+Technical / programming: Node.js (node. js) (O.AbuReesh - CV.pdf, chunk_6); React.js (react. js) (O.AbuReesh - CV.pdf, chunk_6); Python (O.AbuReesh - CV.pdf, chunk_6); SQL (O.AbuReesh - CV.pdf, chunk_6); MongoDB (O.AbuReesh - CV.pdf, chunk_6).
+Machine learning / data: machine learning techniques, feature engineering, data visualization (O.AbuReesh - CV.pdf, chunk_6); applied word embedding techniques (GloVe, Word2Vec), Random Forest, Support Vector Machine (O.AbuReesh - CV.pdf, chunk_3).
+Other / work skills: Git & GitHub (git & github) (O.AbuReesh - CV.pdf, chunk_6); excellent communication skills (O.AbuReesh - CV.pdf, chunk_6); data entry / data collection (data entry, data collector) (O.AbuReesh - CV.pdf, chunk_5); user authentication (implemented auth features) (O.AbuReesh - CV.pdf, chunk_4).
+Ibrahim Khdair (Ibrahim khdairCV(SW).pdf)
+
+Programming languages: Python, JavaScript, C++, Java (Ibrahim khdairCV(SW).pdf, chunk_4).
+Frameworks / libs: Node.js, React, Express (Ibrahim khdairCV(SW).pdf, chunk_4).
+Databases: MySQL, MongoDB (Ibrahim khdairCV(SW).pdf, chunk_4).
+Tools / others: GitHub, Trello, Slack, Notion, Jira; design patterns & principles (Ibrahim khdairCV(SW).pdf, chunk_4).
+Ibrahim Khdair (alternate file) (Ibrahim khdairCV .docx.pdf)
+
+Programming languages: Java, JavaFX, JavaScript, TypeScript, C++, C#, PHP, Python (Ibrahim khdairCV .docx.pdf, chunk_5).
+Frameworks: Laravel, Angular, ASP.NET Core, React, Django REST Framework, Node.js (Ibrahim khdairCV .docx.pdf, chunk_5).
+Databases: MySQL, SQL Server, PostgreSQL (Ibrahim khdairCV .docx.pdf, chunk_5).
+Tools / others: GitHub, Trello, Slack, Figma, Postman, Swagger, Docker (basic), design patterns & principles (Ibrahim khdairCV .docx.pdf, chunk_5).
+Mohammad Sayeh (Mohammad Sayeh resume.pdf)
+
+Programming languages: C++ (Mohammad Sayeh resume.pdf, chunk_1); C++, Python, C#, Scala (Mohammad Sayeh resume.pdf, chunk_2).
+Web / frontend: HTML, CSS, JavaScript (basic) (Mohammad Sayeh resume.pdf, chunk_2).
+Databases / backend / tools: SQL Server, Elasticsearch (Mohammad Sayeh resume.pdf, chunk_2); ASP.NET Core, Entity Framework (Mohammad Sayeh resume.pdf, chunk_2); Git, GitHub (Mohammad Sayeh resume.pdf, chunk_2).
+Big data (basic): Apache Spark, Hadoop (Mohammad Sayeh resume.pdf, chunk_2).
+Concepts: OOP, data
+
+2. Skill-based queries (core recruiter use case)
+Q: Who has experience with Python?
+
+A: Candidates in the provided resumes who have explicit Python experience (with evidence):
+
+Emad Daraghmeh — "intermediate python" listed in skills (Emad Daraghmeh CV.docx.pdf, chunk_id=0) and reiterated in skills (Emad Daraghmeh CV.docx.pdf, chunk_id=1).
+Sama Shalabi — used Python (pandas, scikit-learn, Flask) for projects and lists Python as a technical skill (samaShalabiCV(fullstack).pdf, chunk_id=4; sama shalabi CV(AI) latest.pdf, chunk_id=5).
+Rama Mohammed Sabboubeh — "proficient: python" listed in technical skills (cv_training.pdf, chunk_id=1) (name appears in the resume header: cv_training.pdf, chunk_id=0).
+Ibrahim Khdair / Ibraheem Khdier — Python listed among programming languages and described as a strong background in Python (Ibrahim khdairCV(SW).pdf, chunk_id=4; Ibrahim khdairCV .docx.pdf, chunk_id=0).
+Gaith (Gaith Resume Template 2026) — Python included in languages list (Gaith Resume Template 2026.pdf, chunk_id=1).
+Adham Yaqoub — completed a data analysis nanodegree mentioning "data analysis and visualization using python, pandas, and numpy" (Adham Yaqoub - CV.docx.pdf, chunk_id=4).
+If you want, I can produce a shorter shortlist (e.g., for hiring) or extract the specific Python-related projects/stack per candidate with the exact citations.
+
+Q: Which candidates mention machine learning or data science?
+
+A: Candidates who explicitly mention machine learning or data science (with supporting evidence):
+
+O. AbuReesh — mentions "data science intern" and use of machine learning (word embeddings, random forest, SVM, car price prediction ML model). (O.AbuReesh - CV.pdf, chunk5; O.AbuReesh - CV.pdf, chunk3; O.AbuReesh - CV.pdf, chunk1)
+
+Toqa Khaled Asedah — profile and coursework cite "machine learning", internship work includes "machine learning model training", and projects include ML models (e.g., auction car price prediction). (ToqaAsedahCV.pdf, chunk0; ToqaAsedahCV.pdf, chunk1; ToqaAsedahCV.pdf, chunk2; ToqaAsedahCV.pdf, chunk4)
+
+Rama Mohammed Sabboubeh — states building projects in "machine learning, deep neural networks" and has ML projects (fetal health classification using ML algorithms). (cv_training.pdf, chunk0; cv_training.pdf, chunk2; cv_training.pdf, chunk4)
+
+Sama Shalabi — coursework lists "advanced topics in machine learning, data mining, NLP" and skills include ML frameworks (scikit-learn, tensorflow). (samaShalabiCV(fullstack).pdf, chunk1; sama shalabi CV(AI) latest.pdf, chunk5; sama shalabi CV(AI) latest.pdf, chunk6)
+
+Ibrahim Khdair — featured courses include "machine learning, deep learning, data mining" and holds/mentions data science certificate(s). (Ibrahim khdairCV .docx.pdf, chunk6; Ibrahim khdairCV .docx.pdf, chunk3)
+
+Mohammad Sayeh — lists ML projects (e.g., "medicalclaimpredictor - ml" and other data/big-data projects). (Mohammad Sayeh resume.pdf, chunk4)
+
+If you want, I can extract the exact phrases/sentences from each resume or produce a short summary of each candidate's ML/data-science experience.
+
+Q: Who has worked with databases or SQL?
+
+A: Candidates in the provided resumes who have worked with databases or SQL (with evidence):
+
+Emad Daraghmeh — "database : mysql, firebase, mongodb" and uses "mysql management server, oracle"; backend development with C# and MySQL (Emad Daraghmeh CV.docx.pdf, chunk_id=1).
+Mohammad Sayeh — "database systems : sql server, elasticsearch" (Mohammad Sayeh resume.pdf, chunk_id=2).
+Ghaith (Ghaith A. Hantash) — lists "sql" and "my sql · mongo db" in skills and coursework includes "databases" (Gaith Resume Template 2026.pdf, chunk_id=2; Gaith Resume Template 2026.pdf, chunk_id=1).
+Ibrahim Khdair — "database : mysql, mongodb" and a project backend built with node.js/express and "mongodb / mongoose" (Ibrahim khdairCV(SW).pdf, chunk_id=4; Ibrahim khdairCV(SW).pdf, chunk_id=2).
+Baraa Sulaiby — lists "mysql | oracle | mongodb | firebase" (Baraa Sulaiby_Resume.pdf, chunk_id=2).
+Adham Mohammed Yaqoub — training in backend development using Django REST Framework and "postgresql" (Adham Yaqoub - CV.docx.pdf, chunk_id=0).
+O. AbuReesh — skills include "sql" and "mongodb" (O.AbuReesh - CV.pdf, chunk_id=6).
+Rama (cv_training.pdf) — lists "sql" and familiarity with "mongodb" and projects using cloud DB (cv_training.pdf, chunk_id=2).
+Toqa Asedah — built an ETL pipeline "with python and sql" and coursework includes "database systems (sql & nosql)" (ToqaAsedahCV.pdf, chunk_id=6; ToqaAsedahCV.pdf, chunk_id=1).
+If you want, I can rank these candidates by depth of database experience based on the provided excerpts.
+
+3. Negative tests (hallucination guard 🔒)
+Q:Which candidate has experience with Rust?
+A: not found in the provided resumes
+
+Q: Who has 5+ years of experience?
+A: not found in the provided resumes
+
+4. “Best candidate” reasoning tests (ranking logic)
+
+Q: Ranked shortlist (best match first) for a backend developer role, with evidence:
+
+A: 
+Adham Yaqoub
+Evidence of dedicated backend training and work with relevant stack: "backend developer trainee – oppotrain ... training in backend development using django rest framework and postgresql" and "implemented rbac & authorization using jwt tokens" and "developed drhealth project: crud for admin & health expert, login & registration apis, and getme api" (Adham Yaqoub - CV.docx.pdf, chunk_id=0).
+Additional web/backend toolset listed (Adham Yaqoub - CV.docx.pdf, chunk_id=4).
+Emad Daraghmeh
+Built backend services and implemented auth/RBAC: "built ... employee vacation management system ... developed backend services with c# and mysql, implementing" and "implemented jwt - based authentication and role - based access flows" (Emad Daraghmeh CV.docx.pdf, chunk_id=1).
+Also built CRUD backend/user management with Node in another internship (Emad Daraghmeh CV.docx.pdf, chunk_id=2).
+Mohammad Sayeh
+Formal Java EE backend training and practical project: "completed a 320-hour java ee backend training ... focusing on servlets, jsp, and struts framework" and "worked on a task management system ... implementing user roles, login / logout functionality, and task assignment features" (Mohammad Sayeh resume.pdf, chunk_id=1).
+Listed backend frameworks and databases including "asp. net core, entity framework" and "sql server, elasticsearch" (Mohammad Sayeh resume.pdf, chunk_id=2).
+Ibrahim Khdair
+Multiple backend projects using Node.js/Express and databases: "the backend is built with node. js, express, and mongodb / mongoose" (decision-support app) and technical skills listing node.js, express, mysql, mongodb (Ibrahim khdairCV(SW).pdf, chunk_id=3; Ibrahim khdairCV(SW).pdf, chunk_id=2).
+Has full‑stack projects demonstrating backend implementation (Ibrahim khdairCV .docx.pdf, chunk_id=1/3).
+Other candidates with backend-relevant skills (not ranked above):
+
+Toqa Asedah: built and integrated back-end APIs using FastAPI (ToqaAsedahCV.pdf, chunk_id=2).
+Rama (cv_training.pdf): expresses interest in backend development and has related projects/skills (cv_training.pdf, chunk_id=0; chunk_id=1).
+O. AbuReesh and Sama Shalabi list Node/Express, databases and auth work but show less explicit backend project/training detail compared with the top four (O.AbuReesh - CV.pdf, chunk_id=6; samaShalabiCV(fullstack).pdf, chunk_id=7).
+Recommendation summary:
+
+If you want a candidate with explicit REST framework experience and JWT/RBAC implemented, Adham Yaqoub is the top match (Adham Yaqoub - CV.docx.pdf, chunk_id=0).
+If you prefer C#/ASP.NET Core backend experience plus JWT/RBAC, consider Emad Daraghmeh (Emad Daraghmeh CV.docx.pdf, chunk_id=1).
+For Java EE / Struts / servlet experience, consider Mohammad Sayeh (Mohammad Sayeh resume.pdf, chunk_id=1).
+For Node.js/Express/MongoDB backend work, consider Ibrahim Khdair (Ibrahim khdairCV(SW).pdf, chunk_id=3; chunk_id=2).
+If you want, I can (a) filter candidates by a specific tech stack (Django, Node, Java, C#), or (b) produce interview questions tailored to the top candidate(s).
+
+Q: Who would you recommend for a data analyst position and why?
+
+A: Recommended shortlist for a data analyst position (ranked) with reasons and evidence:
+
+Toqa Khaled Asedah
+Strong big‑data / pipeline background: built a real‑time data pipeline for processing, sentiment analysis, and visualization of Twitter data using Apache Kafka and Elasticsearch (ToqaAsedahCV.pdf, chunk_3).
+Relevant technologies and coursework: lists python, sql, Apache Spark, Hadoop, Kafka, Elasticsearch and coursework in data warehouse & ETL and big‑data analytics (ToqaAsedahCV.pdf, chunks_0 and 3).
+Practical AI / ML internship experience (data preprocessing, model training, real‑time inference) that complements analytical work (ToqaAsedahCV.pdf, chunk_2).
+Rama Mohammed Sabboubeh
+Formal data analyst training: Data Analyst (Udacity) Feb–Jul 2025 (cv_training.pdf, chunk_4).
+Core data skills: explicitly lists python, sql, numpy, pandas, Jupyter notebooks (cv_training.pdf, chunk_1).
+Applied ML / data projects (e.g., fetal health classification) showing end‑to‑end data work and model evaluation (cv_training.pdf, chunk_2).
+O. AbuReesh
+Data science / ML and visualization skills: lists python, sql, machine learning techniques, feature engineering, data visualization (O.AbuReesh - CV.pdf, chunk_6).
+Practical project and internship experience: data science intern (DataCamp) with projects (Netflix investigation) and text classification on Reuters using embeddings and classical ML algorithms (O.AbuReesh - CV.pdf, chunks_5 and 3).
+Also experienced in accurate data collection and entry (useful for cleaning/ingestion) (O.AbuReesh - CV.pdf, chunk_5).
+Mohammad Sayeh
+Big‑data storage and analytics experience: designed data storage for a tweets project using Elasticsearch for efficient querying/visualization (Mohammad Sayeh resume.pdf, chunk_4).
+ML / feature engineering experience (medical claim predictor project) relevant to analytics and model‑assisted insights (Mohammad Sayeh resume.pdf, chunk_4).
+Adham Yaqoub (additional candidate to consider)
+Completed a Udacity Data Analysis Nanodegree (data analysis & visualization using Python, pandas, numpy) (Adham Yaqoub - CV.docx.pdf, chunk_5).
+Notes / gaps
+
+Explicit experience with BI tools (Tableau, Power BI) is not found in the provided resumes.
+If you need a narrower recommendation (e.g., focus on big‑data pipelines vs. exploratory analysis and visualization), I can re-rank or select the best fit based on that criterion.
+
+5. Comparison questions (harder but 🔥)
+Q: Compare Candidate O. AbuReesh and Ibrahim Khdair in terms of technical skills.
+
+A: Summary: O. AbuReesh’s resume emphasizes data science / machine‑learning and some web/backend work (Elasticsearch, Node/React, Mongo/SQL). Ibrahim Khdair’s resume lists a broader set of software engineering / full‑stack backend technologies and languages (Java, PHP, C#, multiple frameworks, SQL DBs) and common dev tools. Evidence below.
+
+O. AbuReesh — technical skills & evidence
+
+Python, SQL, MongoDB, machine‑learning techniques, feature engineering, data visualization (O.AbuReesh - CV.pdf, chunk_id=6).
+Node.js, React.js, Git & GitHub (O.AbuReesh - CV.pdf, chunk_id=6).
+Built a document retrieval/indexing system using Elasticsearch (O.AbuReesh - CV.pdf, chunk_id=0).
+Applied word embeddings (GloVe, Word2Vec) and ML algorithms (random forest, SVM) on text classification projects (O.AbuReesh - CV.pdf, chunk_id=3).
+Completed AI fundamentals certificate / Data Science internship (Datacamp) and built projects (investigating Netflix movies) (O.AbuReesh - CV.pdf, chunk_id=5; O.AbuReesh - CV.pdf, chunk_id=4).
+Ibrahim Khdair — technical skills & evidence
+
+Programming languages: Java, JavaFX, JavaScript, TypeScript, C++, C#, PHP, Python (Ibrahim khdairCV .docx.pdf, chunk_id=5; Ibrahim khdairCV(SW).pdf, chunk_id=4).
+Frameworks / libraries: Laravel, Angular, ASP.NET Core, React, Django REST Framework, Node.js, Express (Ibrahim khdairCV .docx.pdf, chunk_id=5; Ibrahim khdairCV(SW).pdf, chunk_id=4).
+Databases: MySQL, SQL Server, PostgreSQL, MongoDB (Ibrahim khdairCV .docx.pdf, chunk_id=5; Ibrahim khdairCV(SW).pdf, chunk_id=4).
+Tools / others: GitHub, Trello, Slack, Postman, Swagger, Figma, Docker (basic), design patterns & principles, Notion, Jira (Ibrahim khdairCV .docx.pdf, chunk_id=5; Ibrahim khdairCV(SW).pdf, chunk_id=4; Ibrahim khdairCV .docx.pdf, chunk_id=6).
+Direct comparisons / overlap (both mention)
+
+Python (O.AbuReesh - CV.pdf, chunk_id=6) and (Ibrahim khdairCV .docx.pdf, chunk_id=5).
+JavaScript / frontend frameworks (React) and Node.js: O. AbuReesh lists React.js and Node.js (O.AbuReesh - CV.pdf, chunk_id=6); Ibrahim lists React and Node.js / Express (Ibrahim khdairCV .docx.pdf, chunk_id=5; Ibrahim khdairCV(SW).pdf, chunk_id=4).
+Git / GitHub and general dev tooling: O. AbuReesh lists git & github (O.AbuReesh - CV.pdf, chunk_id=6); Ibrahim lists GitHub and many collaboration tools (Ibrahim khdairCV .docx.pdf, chunk_id=5).
+Key differences
+
+ML / IR focus: O. AbuReesh shows explicit ML / NLP work (word embeddings, RF, SVM), Elasticsearch-based document retrieval, and a Datacamp/data‑science internship (O.AbuReesh - CV.pdf, chunk_id=3; O.AbuReesh - CV.pdf, chunk_id=0; O.AbuReesh - CV.pdf, chunk_id=5).
+Broad language & framework coverage: Ibrahim lists many additional languages (Java, TypeScript, C#, PHP) and backend/web frameworks (Laravel, ASP.NET Core, Django REST) and enterprise DBs (SQL Server, PostgreSQL) not shown for O. AbuReesh (Ibrahim khdairCV .docx.pdf, chunk_id=5; Ibrahim khdairCV(SW).pdf, chunk_id=4).
+Databases: both list MongoDB and SQL variants, but Ibrahim explicitly lists multiple RDBMS (MySQL, SQL Server, PostgreSQL) (Ibrahim khdairCV .docx.pdf, chunk_id=5; O.AbuReesh - CV.pdf, chunk_id=6).
+Short conclusion
+
+If you need a candidate with machine‑learning / NLP and search/indexing experience: O. AbuReesh is better supported by the resume (Elasticsearch, embeddings, RF/SVM, Datacamp/data‑science internship) (O.AbuReesh - CV.pdf, chunk_id=0; chunk_id=3; chunk_id=5).
+If you need broad full‑stack / backend engineering coverage across many languages, frameworks, and RDBMS tools: Ibrahim Khdair shows broader exposure (Java, PHP, C#, Laravel, ASP.NET Core, Django REST, MySQL/SQL Server/Postgres, Docker, Postman, Swagger) (Ibrahim khdairCV .docx.pdf, chunk_id=5; Ibrahim khdairCV(SW).pdf, chunk_id=4).
+If you want, I can produce a one‑line shortlist recommendation for a specific role (ML engineer vs. Full‑stack/Backend) with the cited rationale.
+
+Q: Which candidate is stronger in programming vs analytics?
+
+A: Here’s a short categorization from the provided resumes showing who appears stronger in programming vs analytics (each claim backed by evidence):
+
+Stronger in programming
+
+Ibrahim Khdair — multiple programming languages and web frameworks listed (python, javascript, c++, java; node.js, react, express) (Ibrahim khdairCV(SW).pdf, chunk_id=4). Project evidence: backend web apps, automated testing, TDD repositories (Ibrahim khdairCV .docx.pdf, chunk_id=5; Ibrahim khdairCV .docx.pdf, chunk_id=2).
+Mohammad Sayeh — emphasis on data structures, algorithms, OOP and a 320‑hour Java EE backend internship (servlets, JSP, Struts) (Mohammad Sayeh resume.pdf, chunk_id=0; Mohammad Sayeh resume.pdf, chunk_id=1).
+Emad Daraghmeh — lists proficient Java, C++, Scala, C# and development tools; intermediate Python and data processing skills (Emad Daraghmeh CV.docx.pdf, chunk_id=0).
+Stronger in analytics / data / ML
+
+Toqa Khaled Asedah — explicit ML and big‑data skills and projects: transfer learning, CNNs, transformers, Apache Spark, Hadoop, Kafka, Elasticsearch, big‑data twitter pipeline, ML intern work (ToqaAsedahCV.pdf, chunk_id=3; ToqaAsedahCV.pdf, chunk_id=1).
+O. AbuReesh — data science intern (DataCamp) with ML, feature engineering and data visualization experience plus Python/SQL/MongoDB listed (O.AbuReesh - CV.pdf, chunk_id=5; O.AbuReesh - CV.pdf, chunk_id=6).
+Rama Sabboubeh (cv_training.pdf) — data analyst Udacity nanodegree and ML projects (fetal health classification) using numpy/pandas/ML algorithms (cv_training.pdf, chunk_id=0; cv_training.pdf, chunk_id=2).
+Gaith — built a real‑time Twitter data streaming pipeline with Spark and Kafka (big‑data/analytics focus) (Gaith Resume Template 2026.pdf, chunk_id=7).
+Hybrid / both programming and analytics
+
+Sama Shalabi — strong programming languages (python, c++, javascript) and AI/ML libraries (langchain, scikit‑learn, tensorflow, spark, pandas, numpy) — suitable for both programming and ML work (sama shalabi CV(AI) latest.pdf, chunk_id=5; sama shalabi CV(AI) latest.pdf, chunk_id=6).
+Adham Yaqoub — has frontend dev (React) and a data analysis nanodegree (Adham Yaqoub - CV.docx.pdf, chunk_id=5).
+If you want a direct pairing (best programming candidate vs best analytics candidate) I can pick top one from each group with concise justification. Which form would you prefer?
+
+
+
+6. Context-only enforcement test (critical for your prompt)
+Q: Based on the resumes, who would be a good CTO
+
+A: Ranked shortlist for a CTO role (based only on the provided resumes)
+
+Ibrahim Khdair
+Broad full‑stack and backend technology coverage: java, javascript, typescript, python, c++, c#, php; frameworks: node.js, react, express, django rest, laravel, asp.net core (Ibrahim khdairCV .docx.pdf, chunk 5; Ibrahim khdairCV(SW).pdf, chunk 4).
+Architecture & engineering practice signals: design patterns/principles, docker (basic), databases (mysql, sql server, postgresql), tools like github/trello/slack/figma/postman/swagger — useful for leading engineering teams and system design (Ibrahim khdairCV .docx.pdf, chunk 5).
+Experience delivering end‑to‑end systems and automation pipelines and multiple full‑stack projects (9gag, CAP advisor, QA repos) showing practical delivery and technical ownership (Ibrahim khdairCV .docx.pdf, chunk 1; Ibrahim khdairCV .docx.pdf, chunk 2).
+Gaith (Gaith Resume Template 2026)
+Hands‑on system architecture work: refactored a monolith into modular microservices and maintained core backend services — directly relevant to platform/architecture leadership (Gaith Resume Template 2026, chunk 3).
+Full‑stack experience and applied modern stacks (react, next.js) and also experience with prompt engineering — useful for product + technical strategy (Gaith Resume Template 2026, chunks 3 & 5).
+O. AbuReesh
+Demonstrated team leadership on a job‑matching platform (led a team on "talento"), implemented user authentication and fostered clear team communication — relevant product and people leadership signals (O.AbuReesh - CV.pdf, chunk 3; chunk 4).
+Technical breadth across web and ML: node.js, react.js, python, sql, mongodb, machine learning techniques and data visualization — good for a CTO bridging product, ML and engineering (O.AbuReesh - CV.pdf, chunk 6; chunk 5).
+Toqa Asedah
+Strong AI and systems work: designed real‑time data pipelines (Kafka + Elasticsearch), built sign‑language translation with model training and real‑time inference, and integrated backends (fastapi) with frontends (react) — good for ML/AI‑centric technical leadership (ToqaAsedahCV.pdf, chunk 3; chunk 2).
+Exposure to devops/deployment (Azure DevOps) and agile teamwork (ToqaAsedahCV.pdf, chunk 2).
+Sama Shalabi
+Experience building retrieval‑augmented/semantic search systems and production AI components (RAG system, summarization with Azure AI, ChromaDB, LangChain) — strong for an AI‑focused CTO role (sama Shalabi CV(AI) latest.pdf, chunk 1; chunk 5).
+Full‑stack and infra skills (react, node.js, databases, vector DBs) supportive of productization of AI (sama Shalabi CV(AI) latest.pdf, chunk 5).
+Notes and limitations
+
+None of the resumes explicitly list prior CTO or executive‑level titles — not found in the provided resumes.
+Recommendations above focus on candidates who show the strongest mix of technical breadth, architecture/system work, and evidence of team/project leadership in the resumes cited. For a final hire decision you should validate leadership experience, strategic product/technology vision, and seniority in interviews and references.
+
+7. Chat continuity test (light memory)
+Q: Who has experience with Python?
+
+A: Candidates in the provided resumes who have Python experience:
+
+Emad Daraghmeh — (Emad Daraghmeh CV.docx.pdf, chunk_id=0)
+Sama Shalabi — (samaShalabiCV(fullstack).pdf, chunk_id=4) and (sama shalabi CV(AI) latest.pdf, chunk_id=5)
+Ibrahim Khdair / Ibraheem Khdier — (Ibrahim khdairCV(SW).pdf, chunk_id=4) and (Ibrahim khdairCV .docx.pdf, chunk_id=0)
+Rama Mohammed Sabboubeh — (cv_training.pdf, chunk_id=1) and (cv_training.pdf, chunk_id=0)
+Gaith (Gaith Resume Template 2026.pdf) — (Gaith Resume Template 2026.pdf, chunk_id=1)
+Adham Yaqoub — (Adham Yaqoub - CV.docx.pdf, chunk_id=4)
+If you want, I can extract the exact Python-related lines for any of these candidates.
+
+Q: Which of them also mentions cloud or DevOps?
+
+A: Those resumes that mention cloud or DevOps (with evidence):
+
+Toqa Asedah — "gained exposure to azure devops for deployment and project management." (ToqaAsedahCV.pdf, chunk_id=2)
+Ghaith A. Hantash (Gaith) — coursework lists "cloud computing"; technical skills include "aws" and "docker". (Gaith Resume Template 2026.pdf, chunk_id=1; Gaith Resume Template 2026.pdf, chunk_id=2)
+cv_training (author) — uses "cloud as db", lists "github actions", and is "familiar: docker". (cv_training.pdf, chunk_id=2)
+Ibrahim Khdair — lists "docker (basic)". (Ibrahim khdairCV .docx.pdf, chunk_id=6)
+Baraa Sulaiby — "integrated real-time database and cloud storage" in a project. (Baraa Sulaiby_Resume.pdf, chunk_id=3)
+Sama Shalabi — completed "Microsoft develop AI solutions in Azure" course and used Azure AI summarization APIs. (samaShalabiCV(fullstack).pdf, chunk_id=1)
+If you want, I can rank these by explicit DevOps mention (e.g., Azure DevOps, Docker, GitHub Actions) vs. general cloud mentions.
+
+8. Debug-mode tests (optional but super useful)
+Q: Why did you choose this candidate?
+
+A: I chose this candidate for a combination of relevant technical skills, applied ML/web projects, and demonstrated teamwork & accuracy. Evidence:
+
+Relevant technical stack: lists node.js, react.js, python, sql, mongodb, machine learning techniques, feature engineering, and data visualization (O.AbuReesh - CV.pdf, chunk_id=6).
+Applied ML experience: used word embeddings (GloVe, word2vec) and trained classifiers (random forest, SVM) on the Reuters dataset (O.AbuReesh - CV.pdf, chunk_id=3).
+Web development + authentication: contributed to an e‑commerce project ("Storify") and implemented user authentication features (O.AbuReesh - CV.pdf, chunk_id=4; chunk_id=3).
+Internship and certification: Data Science intern at DataCamp (Feb 2024–present) and completed the AI fundamental certificate with hands‑on projects (O.AbuReesh - CV.pdf, chunk_id=5).
+Attention to detail and data handling: data entry / data collector role where they collected, filtered, and entered opportunities, implementing search‑best practices and maintaining accuracy under deadlines (O.AbuReesh - CV.pdf, chunk_id=5; chunk_id=6).
+Teamwork and leadership: led/fostered team communication on projects and received recognition from a project supervisor for performance (O.AbuReesh - CV.pdf, chunk_id=4; chunk_id=3).
+If you want, I can rank this candidate against others in the set or highlight any gaps that would need clarification from the candidate.
+
+---------------------------------------------------
+Q:Give a ranked shortlist for a full-stack developer, then explain why the others were not selected.
+
+A: Ranked shortlist (best matches for a full‑stack developer)
+
+Ibrahim Khdair
+Why: explicit MERN/full‑stack projects (9gag meme sharing platform — user authentication, uploads, responsive UI) and backend projects built with Node.js/Express/MongoDB; technical skills list includes Node.js, React, Express, MongoDB. (Ibrahim khdairCV(SW).pdf, chunk_id=1; Ibrahim khdairCV(SW).pdf, chunk_id=4; Ibrahim khdairCV .docx.pdf, chunk_id=2)
+Gaith (Gaith Resume Template 2026)
+Why: internship experience developing/maintaining backend services and web front‑ends using React and Next.js; concrete full‑stack project (bus reservation app) using React + MongoDB. (Gaith Resume Template 2026.pdf, chunk_id=4; Gaith Resume Template 2026.pdf, chunk_id=3; Gaith Resume Template 2026.pdf, chunk_id=6)
+Toqa Asedah
+Why: lists MERN stack and related technologies and describes contributing to a full‑stack MERN web application (focused on front‑end) plus building/integrating back‑end APIs with FastAPI and responsive front‑ends in React. (ToqaAsedahCV.pdf, chunk_id=3; ToqaAsedahCV.pdf, chunk_id=2)
+Why the others were not selected for the top 3 (brief)
+
+Adham Yaqoub — Has relevant web/full‑stack skills (HTML/CSS, React, Node.js) and self‑identifies as a "full stack javascript developer" and notes developing full‑stack apps with Angular and Node.js, but compared to the top 3 there is less project/internship evidence of end‑to‑end MERN/Next.js experience in the provided snippets. (Adham Yaqoub - CV.docx.pdf, chunk_id=4; Adham Yaqoub - CV.docx.pdf, chunk_id=5)
+
+O. AbuReesh — Has Node.js and React skills and a multifunctional e‑commerce project with user authentication (Storify) and talent management work, but most listed experience in the excerpts is data‑science/data‑entry internships rather than multiple full‑stack web projects. (O.AbuReesh - CV.pdf, chunk_id=4; O.AbuReesh - CV.pdf, chunk_id=3; O.AbuReesh - CV.pdf, chunk_id=6)
+
+Emad Daraghmeh — Built full web systems (Blazor WebAssembly, ASP.NET Core, C#) and backend services and also worked on a mobile app architecture; good full‑stack evidence but uses primarily C#/Blazor stack rather than the JavaScript/Node/React stacks emphasized in the top choices. (Emad Daraghmeh CV.docx.pdf, chunk_id=1; Emad Daraghmeh CV.docx.pdf, chunk_id=2)
+
+Mohammad Sayeh — Strong backend focus (Java EE, servlets, Struts, ASP.NET Core) with frontend described as "basic" JavaScript; more backend‑oriented in the provided excerpts. (Mohammad Sayeh resume.pdf, chunk_id=1; Mohammad Sayeh resume.pdf, chunk_id=2)
+
+cv_training.pdf (unnamed candidate) — Lists frontend/JavaScript and backend/DB familiarity (FastAPI, MongoDB) and projects in machine learning, but the provided excerpt is less specific about full‑stack web projects or internships compared with the top candidates. (cv_training.pdf, chunk_id=2)
+
+If you want, I can:
+
+expand the shortlist to top 5 and reorder based on a preferred stack (e.g., Node/React vs .NET), or
+produce tailored interview questions for the top 3 focused on their demonstrated stacks.

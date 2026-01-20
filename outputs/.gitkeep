@@ -1,0 +1,8 @@
+# Output directory
+# This directory contains:
+# - eval_results.csv: Evaluation results in CSV format
+# - eval_results.json: Evaluation results in JSON format
+# - run_logs.jsonl: Run logs in JSONL format
+# - Charts and visualizations
+
+# Files are auto-generated when running evaluations.

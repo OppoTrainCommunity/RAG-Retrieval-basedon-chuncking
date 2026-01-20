@@ -1,0 +1,239 @@
+candidate_id,name,email,role,location,years_experience,raw_text
+CV001,Alice Johnson,alice.johnson@email.com,Senior Software Engineer,"San Francisco, CA",8,"
+ALICE JOHNSON
+Senior Software Engineer | San Francisco, CA
+alice.johnson@email.com | (555) 123-4567 | linkedin.com/in/alicejohnson
+
+SUMMARY
+Experienced software engineer with 8+ years of expertise in building scalable web applications and distributed systems. Strong background in Python, JavaScript, and cloud technologies. Passionate about clean code and mentoring junior developers.
+
+EXPERIENCE
+
+Senior Software Engineer | TechCorp Inc. | 2020 - Present
+- Led development of microservices architecture serving 10M+ daily users
+- Implemented CI/CD pipelines reducing deployment time by 60%
+- Mentored team of 5 junior developers
+- Technologies: Python, FastAPI, Kubernetes, AWS, PostgreSQL
+
+Software Engineer | StartupXYZ | 2017 - 2020
+- Built real-time data processing pipeline handling 1M events/hour
+- Developed RESTful APIs for mobile and web clients
+- Reduced infrastructure costs by 40% through optimization
+- Technologies: Python, Django, Redis, Docker, GCP
+
+Junior Developer | WebAgency | 2015 - 2017
+- Developed responsive web applications for various clients
+- Created automated testing suites improving code quality
+- Technologies: JavaScript, React, Node.js, MongoDB
+
+EDUCATION
+Master of Science in Computer Science | Stanford University | 2015
+Bachelor of Science in Computer Science | UC Berkeley | 2013
+
+SKILLS
+Programming: Python, JavaScript, TypeScript, Go, SQL
+Frameworks: FastAPI, Django, React, Node.js, Express
+Cloud & DevOps: AWS, GCP, Kubernetes, Docker, Terraform, CI/CD
+Databases: PostgreSQL, MongoDB, Redis, Elasticsearch
+
+CERTIFICATIONS
+- AWS Solutions Architect Professional
+- Google Cloud Professional Data Engineer
+- Kubernetes Administrator (CKA)
+
+PROJECTS
+Open Source Contributor - Contributed to multiple Python libraries including FastAPI and Pydantic
+ML Pipeline Framework - Built internal framework for deploying ML models at scale
+"
+CV002,Bob Martinez,bob.martinez@email.com,Data Scientist,"New York, NY",5,"
+BOB MARTINEZ
+Data Scientist | New York, NY
+bob.martinez@email.com | (555) 987-6543 | github.com/bobmartinez
+
+PROFILE
+Data Scientist with 5 years of experience in machine learning, statistical modeling, and data analysis. Expertise in NLP, computer vision, and recommendation systems. Strong communicator who bridges the gap between technical teams and business stakeholders.
+
+EXPERIENCE
+
+Senior Data Scientist | DataDriven Corp | 2021 - Present
+- Developed NLP models for sentiment analysis achieving 94% accuracy
+- Built recommendation engine increasing user engagement by 35%
+- Led A/B testing framework used across 20+ product experiments
+- Technologies: Python, PyTorch, TensorFlow, Spark, Airflow
+
+Data Scientist | AnalyticsPro | 2019 - 2021
+- Created customer churn prediction model saving $2M annually
+- Implemented computer vision pipeline for quality control
+- Built automated reporting dashboards for executive team
+- Technologies: Python, Scikit-learn, Pandas, Tableau, SQL
+
+Data Analyst | FinanceHub | 2018 - 2019
+- Performed statistical analysis on financial datasets
+- Created data visualization for quarterly reports
+- Automated data collection processes
+- Technologies: Python, R, Excel, Power BI
+
+EDUCATION
+PhD in Statistics (ABD) | Columbia University | 2018
+Master of Science in Applied Mathematics | NYU | 2016
+Bachelor of Science in Mathematics | MIT | 2014
+
+SKILLS
+ML/AI: Deep Learning, NLP, Computer Vision, Recommendation Systems
+Tools: Python, R, PyTorch, TensorFlow, Scikit-learn, Spark
+Data: SQL, Pandas, NumPy, Matplotlib, Tableau, Power BI
+Cloud: AWS SageMaker, GCP AI Platform, Databricks
+
+PUBLICATIONS
+- Transformer-based Approach for Domain-Specific NER - ACL 2022
+- Scalable Recommendation Systems Using Graph Neural Networks - RecSys 2021
+
+AWARDS
+- Best Paper Award - Data Science Conference 2021
+- Innovation Award - DataDriven Corp 2022
+"
+CV003,Carol Chen,carol.chen@email.com,Product Manager,"Seattle, WA",6,"
+CAROL CHEN
+Product Manager | Seattle, WA
+carol.chen@email.com | (555) 456-7890 | linkedin.com/in/carolchen
+
+SUMMARY
+Strategic product manager with 6 years of experience driving product development from conception to launch. Track record of delivering products that delight users and drive business growth. Strong technical background combined with business acumen.
+
+EXPERIENCE
+
+Senior Product Manager | CloudTech Solutions | 2021 - Present
+- Launched enterprise SaaS product generating $5M ARR in first year
+- Managed cross-functional team of 15 engineers, designers, and analysts
+- Conducted 100+ customer interviews to validate product-market fit
+- Increased user retention by 45% through data-driven feature prioritization
+
+Product Manager | InnovateCo | 2019 - 2021
+- Led mobile app redesign resulting in 4.8 star rating (up from 3.2)
+- Defined and executed product roadmap for 3 product lines
+- Implemented agile methodologies improving sprint velocity by 30%
+- Collaborated with engineering to reduce technical debt by 25%
+
+Associate Product Manager | TechStart | 2017 - 2019
+- Assisted in launching 2 successful products from MVP to scale
+- Created user stories and acceptance criteria for development team
+- Analyzed user behavior data to inform product decisions
+- Coordinated beta testing programs with 500+ users
+
+EDUCATION
+MBA | University of Washington | 2017
+Bachelor of Science in Industrial Engineering | Georgia Tech | 2015
+
+SKILLS
+Product: Roadmapping, User Research, A/B Testing, Analytics, Agile/Scrum
+Technical: SQL, Python (basic), Jira, Amplitude, Mixpanel
+Business: P&L Management, Go-to-Market Strategy, Stakeholder Management
+
+CERTIFICATIONS
+- Certified Scrum Product Owner (CSPO)
+- Google Analytics Certified
+- Product Management Certificate - Product School
+
+PROJECTS
+Customer Feedback Platform - Built internal tool for aggregating customer feedback
+Product Analytics Dashboard - Created executive dashboard for product metrics
+"
+CV004,David Kim,david.kim@email.com,DevOps Engineer,"Austin, TX",7,"
+DAVID KIM
+DevOps Engineer | Austin, TX
+david.kim@email.com | (555) 321-0987 | github.com/davidkim
+
+PROFILE
+DevOps engineer with 7 years of experience in cloud infrastructure, automation, and site reliability. Expert in building and maintaining large-scale distributed systems. Passionate about infrastructure as code and continuous improvement.
+
+EXPERIENCE
+
+Staff DevOps Engineer | ScaleUp Systems | 2021 - Present
+- Architected multi-region Kubernetes infrastructure handling 50K RPS
+- Reduced infrastructure costs by 35% through resource optimization
+- Implemented zero-downtime deployment strategies
+- Led incident response and established SRE practices
+- Technologies: Kubernetes, Terraform, AWS, Prometheus, Grafana
+
+Senior DevOps Engineer | CloudNative Inc | 2018 - 2021
+- Built CI/CD pipelines for 50+ microservices
+- Migrated legacy infrastructure to containerized environment
+- Implemented infrastructure as code reducing provisioning time by 80%
+- Technologies: Docker, Jenkins, Ansible, GCP, ELK Stack
+
+DevOps Engineer | WebScale Corp | 2016 - 2018
+- Managed AWS infrastructure for e-commerce platform
+- Implemented monitoring and alerting systems
+- Automated backup and disaster recovery procedures
+- Technologies: AWS, CloudFormation, Python, Bash
+
+EDUCATION
+Bachelor of Science in Computer Engineering | UT Austin | 2016
+
+SKILLS
+Cloud: AWS (Expert), GCP, Azure
+Containers: Kubernetes, Docker, Helm, Istio
+IaC: Terraform, Pulumi, CloudFormation, Ansible
+CI/CD: Jenkins, GitLab CI, GitHub Actions, ArgoCD
+Monitoring: Prometheus, Grafana, Datadog, PagerDuty
+Languages: Python, Go, Bash, YAML
+
+CERTIFICATIONS
+- AWS Solutions Architect Professional
+- Certified Kubernetes Administrator (CKA)
+- Certified Kubernetes Security Specialist (CKS)
+- HashiCorp Terraform Associate
+
+PROJECTS
+K8s Cost Optimizer - Open source tool for Kubernetes cost optimization
+GitOps Framework - Internal framework for standardized GitOps deployments
+"
+CV005,Emma Wilson,emma.wilson@email.com,UX Designer,"Los Angeles, CA",4,"
+EMMA WILSON
+UX Designer | Los Angeles, CA
+emma.wilson@email.com | (555) 654-3210 | portfolio.emmawilson.design
+
+SUMMARY
+Creative UX designer with 4 years of experience crafting intuitive digital experiences. Skilled in user research, interaction design, and design systems. Advocate for accessibility and inclusive design practices.
+
+EXPERIENCE
+
+Senior UX Designer | DesignForward Agency | 2022 - Present
+- Led UX for enterprise software redesign serving 100K+ users
+- Established design system reducing design-to-development time by 40%
+- Conducted usability studies with 200+ participants
+- Mentored 2 junior designers
+
+UX Designer | AppCreate Studio | 2020 - 2022
+- Designed mobile apps with combined 1M+ downloads
+- Created wireframes, prototypes, and high-fidelity mockups
+- Collaborated with product and engineering teams in agile environment
+- Improved task completion rate by 25% through iterative testing
+
+Junior UX Designer | Digital Agency XY | 2019 - 2020
+- Supported senior designers on client projects
+- Conducted competitive analysis and user research
+- Created user personas and journey maps
+
+EDUCATION
+Bachelor of Fine Arts in Graphic Design | ArtCenter College of Design | 2019
+
+SKILLS
+Design: Figma, Sketch, Adobe Creative Suite, Principle, Framer
+Research: User Interviews, Usability Testing, A/B Testing, Analytics
+Methods: Design Thinking, Jobs-to-be-Done, Accessibility (WCAG)
+Technical: HTML/CSS basics, Design Systems, Component Libraries
+
+CERTIFICATIONS
+- Google UX Design Certificate
+- Certified Usability Analyst (CUA)
+- Accessibility Specialist Certification
+
+AWARDS
+- Webby Award Honoree 2023 - Mobile App Design
+- AIGA Design Award 2022
+
+PROJECTS
+Inclusive Design Toolkit - Created open-source accessibility checklist
+Mobile Banking Redesign - Case study featured in UX Collective
+"

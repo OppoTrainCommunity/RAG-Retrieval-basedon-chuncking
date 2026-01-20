@@ -1,0 +1,10 @@
+{"query": "Who has experience with Python and machine learning?", "expected_candidate_ids": ["CV001", "CV002"], "expected_section_names": ["experience", "skills"], "notes": "Alice (CV001) has Python/ML, Bob (CV002) is a Data Scientist with ML expertise"}
+{"query": "Find candidates with AWS certifications", "expected_candidate_ids": ["CV001", "CV004"], "expected_section_names": ["certifications"], "notes": "Alice has AWS Solutions Architect, David has AWS certs"}
+{"query": "Which candidates have a Master's degree?", "expected_candidate_ids": ["CV001", "CV002", "CV003"], "expected_section_names": ["education"], "notes": "Alice (Stanford CS), Bob (NYU Applied Math), Carol (UW MBA)"}
+{"query": "Who has Kubernetes experience?", "expected_candidate_ids": ["CV001", "CV004"], "expected_section_names": ["experience", "skills"], "notes": "Alice uses K8s at TechCorp, David is DevOps with K8s expertise"}
+{"query": "Find product managers with SaaS experience", "expected_candidate_ids": ["CV003"], "expected_section_names": ["experience", "summary"], "notes": "Carol launched enterprise SaaS product"}
+{"query": "Candidates with data science and NLP skills", "expected_candidate_ids": ["CV002"], "expected_section_names": ["experience", "skills", "publications"], "notes": "Bob has NLP models and publications"}
+{"query": "Who has experience leading teams?", "expected_candidate_ids": ["CV001", "CV003"], "expected_section_names": ["experience"], "notes": "Alice mentored 5 devs, Carol managed 15-person team"}
+{"query": "Find backend engineers with microservices experience", "expected_candidate_ids": ["CV001"], "expected_section_names": ["experience"], "notes": "Alice led microservices architecture at TechCorp"}
+{"query": "Candidates with PhD or doctoral education", "expected_candidate_ids": ["CV002"], "expected_section_names": ["education"], "notes": "Bob has PhD (ABD) in Statistics from Columbia"}
+{"query": "Who has experience with CI/CD pipelines?", "expected_candidate_ids": ["CV001", "CV004"], "expected_section_names": ["experience", "skills"], "notes": "Alice implemented CI/CD, David is DevOps engineer"}

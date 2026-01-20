@@ -1,0 +1,52 @@
+# =============================================
+# CV RAG System Configuration
+# =============================================
+
+# LLM Configuration (for answering queries)
+llm:
+  model: "mistralai/mistral-7b-instruct:free"  # Can be overridden via LLM_MODEL env var
+  temperature: 0.2
+  max_tokens: 800
+
+# Judge Model Configuration (for evaluation)
+judge:
+  model: "mistralai/mistral-7b-instruct:free"  # Can be overridden via JUDGE_MODEL env var
+  temperature: 0.0
+  max_tokens: 400
+
+# Embeddings Configuration
+embeddings:
+  provider: "openrouter"  # Options: "openrouter", "local"
+  model: "openai/text-embedding-3-small"  # Can be overridden via EMBEDDING_MODEL env var
+  # Local model (used when provider is "local")
+  local_model: "all-MiniLM-L6-v2"
+
+# ChromaDB Configuration
+chroma:
+  persist_dir: "./chroma_db"
+  collection: "cv_rag"
+
+# Retrieval Configuration
+retrieval:
+  top_k: 6
+  section_filter: null  # Optional: filter by section name (e.g., "Experience")
+  similarity_metric: "cosine"  # Options: cosine, l2, ip
+
+# Data Paths
+data:
+  cvs_path: "./data/cvs.csv"
+  processed_dir: "./data/processed"
+  chunks_path: "./data/processed/chunks.parquet"
+
+# Output Configuration
+outputs:
+  dir: "./outputs"
+  eval_csv: "eval_results.csv"
+  eval_json: "eval_results.json"
+  logs_file: "run_logs.jsonl"
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  console: true
+  file: true

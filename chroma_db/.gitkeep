@@ -1,0 +1,8 @@
+# Chroma DB directory
+# This directory contains the persistent ChromaDB vector store.
+# Files are auto-generated when building the index.
+
+# To rebuild the index:
+# 1. Delete this directory
+# 2. Run the main.ipynb notebook
+# 3. Or use the src/vectordb/chroma_store.py API

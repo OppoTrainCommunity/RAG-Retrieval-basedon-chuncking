@@ -1,16 +1,12 @@
-from pathlib import Path
+# resume_rag/parse_pdf.py
 from pypdf import PdfReader
 
-def pdf_to_text(path):
-    pdf_path = Path(path)
-    if not pdf_path.exists():
-        raise FileNotFoundError(f"PDF not found: {pdf_path}")
-
-    reader = PdfReader(str(pdf_path))
-    pages = []
-
+def extract_text_from_pdf(pdf_path: str) -> str:
+    reader = PdfReader(pdf_path)
+    parts = []
     for page in reader.pages:
-        text = page.extract_text() or ""
-        pages.append(text)
-
-    return "\n\n".join(pages).strip()
+        txt = page.extract_text() or ""
+        parts.append(txt)
+    text = "\n".join(parts)
+    text = text.replace("\x00", "").strip()
+    return text

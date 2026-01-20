@@ -47,7 +47,7 @@ RAG-Retrieval-basedon-chuncking/
 │   ├── parse_pdf.py
 │   ├── pipeline.py
 │   ├── evaluate_chunking.py
-│   ├── vector_store.py
+│   ├──vector_store_chain.py
 │   ├── __init__.py
 │   │
 │   ├── assets/

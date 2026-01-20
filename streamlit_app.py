@@ -1,6 +1,8 @@
 import os
 import re
 import json
+import uuid
+from io import BytesIO
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
@@ -13,6 +15,26 @@ from langchain.chat_models import init_chat_model
 from langchain_core.messages import BaseMessage
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
+
+# Optional helpers for ingesting uploaded CVs
+try:
+    from docx import Document as DocxDocument
+except Exception:
+    DocxDocument = None
+
+try:
+    # pypdf is the modern successor of PyPDF2
+    from pypdf import PdfReader
+except Exception:
+    try:
+        from PyPDF2 import PdfReader  # type: ignore
+    except Exception:
+        PdfReader = None
+
+try:
+    from src.chunkers.paragraph_chunker import ParagraphChunker
+except Exception:
+    ParagraphChunker = None
 
 load_dotenv()
 
@@ -31,6 +53,125 @@ def load_file_names(cvs_json_path: str) -> List[str]:
     with p.open("r", encoding="utf-8") as f:
         docs = json.load(f)
     return sorted({d.get("file_name") for d in docs if d.get("file_name")})
+
+
+def extract_text_from_uploaded_file(file_name: str, file_bytes: bytes) -> str:
+    """Extract text from an uploaded CV (PDF/DOCX/TXT).
+
+    Notes:
+    - PDF extraction requires pypdf or PyPDF2.
+    - DOCX extraction requires python-docx.
+    """
+    lower = (file_name or "").lower()
+
+    if lower.endswith(".txt"):
+        return file_bytes.decode("utf-8", errors="ignore")
+
+    if lower.endswith(".docx"):
+        if DocxDocument is None:
+            raise RuntimeError("DOCX support is unavailable (python-docx not installed).")
+        doc = DocxDocument(BytesIO(file_bytes))
+        return "\n".join(p.text for p in doc.paragraphs if p.text and p.text.strip())
+
+    if lower.endswith(".pdf"):
+        if PdfReader is None:
+            raise RuntimeError(
+                "PDF support is unavailable (install 'pypdf' or 'PyPDF2')."
+            )
+        reader = PdfReader(BytesIO(file_bytes))
+        pages = []
+        for page in reader.pages:
+            try:
+                pages.append(page.extract_text() or "")
+            except Exception:
+                pages.append("")
+        return "\n".join(pages)
+
+    raise RuntimeError("Unsupported file type. Please upload PDF, DOCX, or TXT.")
+
+
+def simple_clean_text(text: str) -> str:
+    # Light cleanup to reduce weird whitespace from PDFs
+    text = re.sub(r"\s+\n", "\n", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
+
+
+def chunk_text_for_indexing(text: str) -> List[str]:
+    """Chunk text using your ParagraphChunker if available, otherwise fallback."""
+    text = simple_clean_text(text)
+
+    if ParagraphChunker is not None:
+        chunker = ParagraphChunker(tokens_per_chunk=200, chunk_overlap=30)
+        chunks, _, _ = chunker.chunk_texts([text], [{"doc_id": "tmp", "file_name": "tmp"}])
+        # chunker.chunk_texts returns chunks already filtered/split
+        return [c for c in chunks if c and c.strip()]
+
+    # Fallback: split by paragraphs, then merge very small bits
+    paras = [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]
+    out = []
+    buf = ""
+    for p in paras:
+        if len(buf) < 400:
+            buf = (buf + "\n\n" + p).strip()
+        else:
+            out.append(buf)
+            buf = p
+    if buf:
+        out.append(buf)
+    return out
+
+
+def upsert_cv_into_collection(
+    collection,
+    file_name: str,
+    text: str,
+    source: str = "uploaded",
+) -> int:
+    """Chunk a CV and add it to the Chroma collection. Returns #chunks added."""
+    doc_id = str(uuid.uuid4())
+    chunks = chunk_text_for_indexing(text)
+    if not chunks:
+        raise RuntimeError("No text could be extracted / chunked from this file.")
+
+    metadatas = []
+    ids = []
+    for i, chunk in enumerate(chunks):
+        metadatas.append(
+            {
+                "doc_id": doc_id,
+                "file_name": file_name,
+                "source": source,
+                "chunk_id": i,
+                "chunk_type": "paragraph",
+            }
+        )
+        ids.append(f"{doc_id}_par_{i}")
+
+    collection.add(documents=chunks, metadatas=metadatas, ids=ids)
+    return len(chunks)
+
+
+def append_to_cvs_json(cvs_json_path: str, file_name: str, text: str) -> None:
+    """Optional: keep CVs.json in sync so your file_name filter sees new uploads."""
+    p = Path(cvs_json_path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    existing = []
+    if p.exists():
+        with p.open("r", encoding="utf-8") as f:
+            try:
+                existing = json.load(f) or []
+            except Exception:
+                existing = []
+    new_item = {
+        "id": str(uuid.uuid4()),
+        "file_name": file_name,
+        "text": text,
+        "source": "uploaded",
+    }
+    existing.append(new_item)
+    with p.open("w", encoding="utf-8") as f:
+        json.dump(existing, f, ensure_ascii=False, indent=2)
 
 
 # -----------------------------
@@ -218,20 +359,37 @@ with st.sidebar:
 
     st.divider()
     st.header("Retrieval")
+    # default is k=25 
     k = st.slider("Top K chunks", 5, 120, 25, 40)
+    # default is max_chars=16000
     max_chars = st.slider("Max context chars", 4000, 24000, 16000, 1000)
 
     st.divider()
     st.header("LLM (tuning for now)")
     model = st.text_input("OpenRouter model", value="openai/gpt-5-mini")
+    # default is temperature=0.3
     temperature = st.slider("temperature", 0.0, 1.0, 0.3, 0.05)
+    # default is max_tokens=4500
     max_tokens = st.slider("max tokens", 500, 8000, 4500, 2500)
+    # default is timeout=60
     timeout = st.slider("timeout (sec)", 10, 180, 60, 5)
 
     st.divider()
     st.header("Optional CV filter")
     cvs_json_path = st.text_input("CVs.json path", value="data/CVs.json")
     use_filter = st.checkbox("Filter retrieval by one file_name", value=False)
+
+    st.divider()
+    st.header("Add a new CV to the index")
+    uploaded_cv = st.file_uploader(
+        "Upload a CV (PDF/DOCX/TXT)",
+        type=["pdf", "docx", "txt"],
+    )
+    save_to_cvs_json = st.checkbox(
+        "Also append it to CVs.json (enables file_name filter)",
+        value=True,
+    )
+    ingest_clicked = st.button("Chunk + add to collection")
 
     st.divider()
     debug_show_chunks = st.checkbox("Show retrieved chunks (debug)", value=False)
@@ -261,6 +419,33 @@ for msg in st.session_state.messages:
 
 # Connect to Chroma collection
 collection = get_chroma_collection(persist_dir, collection_name, embedding_model)
+
+# Handle CV ingestion (sidebar button)
+if ingest_clicked:
+    if uploaded_cv is None:
+        st.sidebar.error("Please upload a CV file first.")
+    else:
+        try:
+            file_name = uploaded_cv.name
+            file_bytes = uploaded_cv.getvalue()
+            raw_text = extract_text_from_uploaded_file(file_name, file_bytes)
+            cleaned_text = simple_clean_text(raw_text)
+
+            n_chunks = upsert_cv_into_collection(
+                collection=collection,
+                file_name=file_name,
+                text=cleaned_text,
+                source="uploaded",
+            )
+
+            if save_to_cvs_json:
+                append_to_cvs_json(cvs_json_path, file_name, cleaned_text)
+
+            st.sidebar.success(f"Added {n_chunks} chunks from '{file_name}' to the collection.")
+            # Refresh UI elements that depend on CVs.json (like the file_name filter list)
+            st.rerun()
+        except Exception as e:
+            st.sidebar.error(f"Ingestion failed: {e}")
 
 # Chat input
 user_text = st.chat_input("Ask about candidates, skills, or best fit for a role...")

@@ -218,14 +218,14 @@ with st.sidebar:
 
     st.divider()
     st.header("Retrieval")
-    k = st.slider("Top K chunks", 5, 120, 40, 5)
+    k = st.slider("Top K chunks", 5, 120, 25, 40)
     max_chars = st.slider("Max context chars", 4000, 24000, 16000, 1000)
 
     st.divider()
     st.header("LLM (tuning for now)")
     model = st.text_input("OpenRouter model", value="openai/gpt-5-mini")
-    temperature = st.slider("temperature", 0.0, 1.0, 0.2, 0.05)
-    max_tokens = st.slider("max tokens", 500, 8000, 2500, 100)
+    temperature = st.slider("temperature", 0.0, 1.0, 0.3, 0.05)
+    max_tokens = st.slider("max tokens", 500, 8000, 4500, 2500)
     timeout = st.slider("timeout (sec)", 10, 180, 60, 5)
 
     st.divider()

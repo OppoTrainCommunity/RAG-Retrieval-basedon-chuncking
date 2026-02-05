@@ -16,6 +16,8 @@ from langchain_core.messages import BaseMessage
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
+from src.indexers.chroma_indexer import ChromaIndexer
+
 # Optional helpers for ingesting uploaded CVs
 try:
     from docx import Document as DocxDocument
@@ -178,25 +180,23 @@ def append_to_cvs_json(cvs_json_path: str, file_name: str, text: str) -> None:
 # Chroma: connect + retrieve
 # -----------------------------
 @st.cache_resource
-def get_chroma_collection(persist_dir: str, collection_name: str, embedding_model: str):
-    client = chromadb.PersistentClient(path=persist_dir)
-    embed_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
-        model_name=embedding_model
-    )
-    return client.get_or_create_collection(
-        name=collection_name,
-        embedding_function=embed_fn,
-        metadata={"description": f"Collection for {collection_name}"},
+def get_chroma_indexer(persist_dir: str, collection_name: str, embedding_model: str):
+    return ChromaIndexer(
+        collection_name=collection_name,
+        embedding_model=embedding_model,
+        persist_directory=persist_dir,
+        client_type="persistent",
     )
 
 
 def retrieve_chunks(
-    collection,
+    indexer: ChromaIndexer,
     query: str,
     k: int = 40,
     where: Optional[Dict[str, Any]] = None,
 ):
-    return collection.query(query_texts=[query], n_results=k, where=where)
+    # ChromaIndexer.search returns same shape as collection.query
+    return indexer.search(query=query, n_results=k, where=where)
 
 
 def build_context_with_meta(
@@ -418,7 +418,7 @@ for msg in st.session_state.messages:
         st.markdown(msg["content"])
 
 # Connect to Chroma collection
-collection = get_chroma_collection(persist_dir, collection_name, embedding_model)
+collection = get_chroma_indexer(persist_dir, collection_name, embedding_model)
 
 # Handle CV ingestion (sidebar button)
 if ingest_clicked:

@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pydantic
+pymupdf
+chromadb
+tqdm
+requests
+numpy
+langchain
+langchain-core
+langchain-text-splitters

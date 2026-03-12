@@ -2,8 +2,16 @@
 # ===================
 # Production dependencies for the RAG CV Analysis system
 
+# ── PyTorch CPU-only (MUST come before sentence-transformers) ──
+# This avoids downloading the massive CUDA version (~2GB)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.0.0
+
 # Core Framework
 streamlit>=1.28.0
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.6
 
 # LangChain Ecosystem
 langchain>=0.2.0
@@ -40,3 +48,7 @@ pytest>=7.0.0
 # Utilities
 tiktoken>=0.5.0
 langchain-ollama
+
+# Monitoring & Metrics
+prometheus-client>=0.21.0
+starlette-exporter>=0.22.0

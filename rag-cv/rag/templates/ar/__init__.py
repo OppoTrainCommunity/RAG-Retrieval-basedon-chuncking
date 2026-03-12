@@ -1,0 +1,1 @@
+# Arabic templates package

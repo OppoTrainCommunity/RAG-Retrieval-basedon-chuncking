@@ -11,6 +11,7 @@ from .logging_utils import get_logger
 from .config import settings, OPENROUTER_HEADERS
 from .prompts import get_rag_prompt
 from .retriever import format_retrieved_docs, get_sources_summary
+from .monitoring import MetricsTimer, RETRIEVAL_LATENCY, LLM_LATENCY
 
 logger = get_logger(__name__)
 
@@ -160,12 +161,13 @@ class OpenRouterLLM:
         return response.content
 
 
-def create_rag_chain(retriever) -> "RAGChain":
+def create_rag_chain(retriever, language: str = None) -> "RAGChain":
     """
     Factory function to create a RAG chain based on configuration.
     
     Args:
         retriever: Configuration retriever instance
+        language: Optional language for prompts ('en', 'ar')
         
     Returns:
         Configured RAGChain
@@ -175,7 +177,8 @@ def create_rag_chain(retriever) -> "RAGChain":
     
     return RAGChain(
         llm=llm,
-        retriever=retriever
+        retriever=retriever,
+        language=language,
     )
 
 class RAGChain:
@@ -186,14 +189,21 @@ class RAGChain:
     def __init__(
         self,
         llm,
-        retriever
+        retriever,
+        language: str = None,
     ):
         """
         Initialize the RAG chain.
+        
+        Args:
+            llm: LLM instance
+            retriever: Document retriever
+            language: Prompt language ('en', 'ar'). Defaults to config setting.
         """
         self.llm = llm
         self.retriever = retriever
-        self.prompt = get_rag_prompt()
+        self.language = language or settings.prompt_language
+        self.prompt = get_rag_prompt(language=self.language)
         
         self._chain = self._build_chain()
     
@@ -201,7 +211,8 @@ class RAGChain:
         """Build the RAG chain."""
         def retrieve_and_format(question: str) -> Dict[str, Any]:
             """Retrieve documents and format context."""
-            docs = self.retriever.retrieve(question)
+            with MetricsTimer(RETRIEVAL_LATENCY):
+                docs = self.retriever.retrieve(question)
             return {
                 "context": format_retrieved_docs(docs),
                 "question": question,
@@ -216,7 +227,8 @@ class RAGChain:
             })
             
             # Handle both string response (Ollama wrapper) and AIMessage (LangChain)
-            response = self.llm.invoke(messages)
+            with MetricsTimer(LLM_LATENCY):
+                response = self.llm.invoke(messages)
             content = response.content if hasattr(response, 'content') else str(response)
             
             return {

@@ -78,6 +78,11 @@ class Settings:
     llm_temperature: float = 0.1
     llm_max_tokens: int = 1024
     llm_request_timeout: int = 60
+
+    # Template / Language Settings
+    prompt_language: str = field(
+        default_factory=lambda: os.getenv("PROMPT_LANGUAGE", "en")
+    )
     
     def __post_init__(self):
         """Create directories if they don't exist."""

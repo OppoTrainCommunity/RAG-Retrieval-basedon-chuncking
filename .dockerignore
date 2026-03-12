@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.git/
+.github/
+.specify/
+.vscode/
+data/
+node_modules/
+*.md
+*.log
+.env
+.env.example
+.gitignore
+frontend/node_modules/

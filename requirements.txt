@@ -9,3 +9,4 @@ numpy
 langchain
 langchain-core
 langchain-text-splitters
+python-dotenv

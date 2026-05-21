@@ -4,6 +4,15 @@ from app.rag_core import init_rag, ask_question, index_pdfs
 
 app = FastAPI(title="Resume RAG API")
 
+# ← add this block
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],        # or lock to your frontend domain e.g. ["https://yoursite.com"]
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
 class AskRequest(BaseModel):
     question: str
 
